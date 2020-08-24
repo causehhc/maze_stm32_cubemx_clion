@@ -58,3 +58,27 @@ void set_PWM(motorVar *left_var, motorVar *right_var){
     __HAL_TIM_SET_COMPARE(&htim8, TIM_CHANNEL_4, 7200+right_var->PWM);
   }
 }
+
+void go_straight(motorVar *left_var, motorVar *right_var, int lenth){
+  left_var->TGT = 10;
+  right_var->TGT = 10;
+  while(left_var->ADD > lenth && right_var->ADD > lenth);
+}
+
+void go_left(motorVar *left_var, motorVar *right_var, int lenth){
+  left_var->TGT = -10;
+  right_var->TGT = 10;
+  while(left_var->ADD > lenth && right_var->ADD > lenth);
+}
+
+void go_right(motorVar *left_var, motorVar *right_var, int lenth){
+  left_var->TGT = 10;
+  right_var->TGT = -10;
+  while(left_var->ADD > lenth && right_var->ADD > lenth);
+}
+
+void go_turn(motorVar *left_var, motorVar *right_var, int lenth){
+  left_var->TGT = 10;
+  right_var->TGT = -10;
+  while(left_var->ADD > lenth && right_var->ADD > lenth);
+}

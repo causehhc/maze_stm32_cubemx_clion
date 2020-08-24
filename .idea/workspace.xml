@@ -11,7 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="" />
+    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/infrared.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/infrared.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/maze.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/maze.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/motor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/motor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +30,16 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="51mode" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gX5wYb0VR8DI0vi9zZoP2V33iH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,9 +47,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="D:/projectManager==============/CLionProjects/baiCarTrue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,22 +75,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598248338182</updated>
-      <workItem from="1598248354138" duration="10234000" />
+      <workItem from="1598248354138" duration="19452000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598249908533">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598249908533" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1598248840595">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1598260559657">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598248840595" />
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598260559657" />
+    <state x="587" y="314" key="Github.ShareDialog" timestamp="1598260604570">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="587" y="314" key="Github.ShareDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598260604570" />
+    <state x="481" y="121" key="Github.UntrackedFilesDialog" timestamp="1598260622478">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="481" y="121" key="Github.UntrackedFilesDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598260622478" />
     <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1598249982261">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

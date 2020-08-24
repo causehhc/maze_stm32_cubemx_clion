@@ -77,9 +77,29 @@ void para_init(char x, char y){
   pos_var.x = x;
   pos_var.x = y;
   pos_var.relDir = 0;
-  pos_var.absDir = 0;
-  pos_var.offset = 0;
 }
+
+void check(){
+
+}
+
+void goToNext(char aim_x, char aim_y){
+  char absDir = checkAbsDir(pos_var.x, pos_var.y, aim_x, aim_y);
+  pos_var.relDir = checkNextDir(pos_var.relDir, absDir);
+  if(pos_var.relDir == 0){
+    go_straight(&left_var, &right_var, 999);
+  }else if(pos_var.relDir == 1) {
+    go_left(&left_var, &right_var, 999);
+    go_straight(&left_var, &right_var, 999);
+  }else if(pos_var.relDir == 2){
+    go_turn(&left_var, &right_var, 999);
+    go_straight(&left_var, &right_var, 999);
+  }else{
+    go_right(&left_var, &right_var, 999);
+    go_straight(&left_var, &right_var, 999);
+  }
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -89,6 +109,7 @@ void para_init(char x, char y){
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+  char flag = 1;
 
   /* USER CODE END 1 */
 
@@ -98,6 +119,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+  para_init(0,0);
 
   /* USER CODE END Init */
 
@@ -115,7 +137,6 @@ int main(void)
   MX_TIM6_Init();
   MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
-  para_init(0,0,7,7);
 
   HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_1|TIM_CHANNEL_2);
   HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_1|TIM_CHANNEL_2);
@@ -134,8 +155,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    left_var.TGT = 10;
-    right_var.TGT = 10;
+    if(flag){
+      check();
+      goToNext(aim_x, aim_y);
+    }
   }
   /* USER CODE END 3 */
 }
@@ -180,13 +203,6 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //10ms
-    //posionCheck
-    check_offset(&left_var.ADD, &right_var.ADD, &pos_var);
-    check_pos(&pos_var);
-    //irMapDraw
-
-    //aimCheck
-
     //motorControl
     check_ENC(&left_var, &right_var);
     plus_ADD(&left_var, &right_var);

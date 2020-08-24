@@ -6,7 +6,7 @@
 #define MAZE_STM32_CUBEMX_CLION_MAZE_H
 #include <math.h>
 
-#define DPI 64
+#define DPI 8
 #define MAZELENTH 128 //xmm
 #define PASSWIDTH 128 //xmm
 #define WALLWIDTH 128 //xmm
@@ -16,12 +16,9 @@
 typedef struct {
     char x;
     char y;
-    double relDir; //相对方向
-    double absDir; //绝对方向
-    int offset; //距离上次清0时的中心偏移量
+    char relDir; //相对方向
 }positionVar;
 
-void check_offset(int *left, int *right, positionVar *pos_var);
-void check_pos(positionVar *pos_var);
-
+char checkAbsDir(char now_x, char now_y, char aim_x, char aim_y);
+char checkNextDir(char relDir, char absDir);
 #endif //MAZE_STM32_CUBEMX_CLION_MAZE_H

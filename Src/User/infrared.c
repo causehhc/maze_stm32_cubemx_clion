@@ -4,8 +4,3 @@
 
 #include "infrared.h"
 
-void check_ir(int x, int y, int **maze, int dpi, int mazeLenth){
-  if(HAL_GPIO_ReadPin(IR0_GPIO_Port, IR0_Pin)){
-    
-  }
-}

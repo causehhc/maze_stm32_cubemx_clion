@@ -4,18 +4,20 @@
 
 #include "maze.h"
 
-void check_offset(int *left, int *right, positionVar *pos_var){
-  static double a = 0;
-  double x = (double)*left;
-  double y = (double)*right;
-  a = (x-y)/CARWIDTH;
-  pos_var->relDir += a;
-  pos_var->offset = (int)(sin(a)*(y/a+CARWIDTH/2)/cos(a/2));
-  *left = 0;
-  *right = 0;
+char checkAbsDir(char now_x, char now_y, char aim_x, char aim_y){
+  if(aim_x-now_x == 1 && aim_y-now_y == 0)  return 0;
+  if(aim_x-now_x == 0 && aim_y-now_y == -1) return 1;
+  if(aim_x-now_x == -1 && aim_y-now_y == 0) return 2;
+  if(aim_x-now_x == 0 && aim_y-now_y == 1) return 3;
+  return 4;
 }
 
-void check_pos(positionVar *pos_var){
-  pos_var->x += (int)(pos_var->offset * cos(pos_var->relDir));
-  pos_var->y += (int)(pos_var->offset * sin(pos_var->relDir));
+char checkNextDir(char relDir, char absDir){
+  if(absDir == 2) relDir += 2;
+  if(absDir == 1) relDir ++;
+  if(absDir == 3) relDir --;
+  if(relDir < 0)  relDir += 4;
+  if(relDir > 3)  relDir -= 4;
+  return relDir;
 }
+

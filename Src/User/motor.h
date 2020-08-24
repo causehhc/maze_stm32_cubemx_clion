@@ -24,5 +24,9 @@ void incremental_PI_A(motorVar *left_var);
 void incremental_PI_B(motorVar *right_var);
 void range_PWM(motorVar *left_var, motorVar *right_var, int amplitude);
 void set_PWM(motorVar *left_var, motorVar *right_var);
+void go_straight(motorVar *left_var, motorVar *right_var, int lenth);
+void go_left(motorVar *left_var, motorVar *right_var, int lenth);
+void go_right(motorVar *left_var, motorVar *right_var, int lenth);
+void go_turn(motorVar *left_var, motorVar *right_var, int lenth);
 
 #endif //MAZE_STM32_CUBEMX_CLION_MOTOR_H
