@@ -4,6 +4,11 @@
 
 #include "motor.h"
 
+float Velocity_KP_A = 10,Velocity_KI_A = 10;
+int Bias_A,Pwm_A,Last_bias_A;
+float Velocity_KP_B = 10,Velocity_KI_B = 10;
+int Bias_B,Pwm_B,Last_bias_B;
+
 void check_ENC(motorVar *left_var, motorVar *right_var){
   left_var->ENC = (short)__HAL_TIM_GET_COUNTER(&htim3);
   __HAL_TIM_SET_COUNTER(&htim3, 0);

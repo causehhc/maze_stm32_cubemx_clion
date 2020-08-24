@@ -53,8 +53,8 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : PCPin PCPin PCPin PCPin 
                            PCPin */
-  GPIO_InitStruct.Pin = IR0_Pin|IR1_Pin|IR2_Pin|IR3_Pin 
-                          |IR4_Pin;
+  GPIO_InitStruct.Pin = IR1_Pin|IR2_Pin|IR3_Pin|IR4_Pin 
+                          |IR5_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);

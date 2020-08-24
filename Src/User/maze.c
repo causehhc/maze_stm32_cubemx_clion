@@ -4,20 +4,20 @@
 
 #include "maze.h"
 
-char checkAbsDir(char now_x, char now_y, char aim_x, char aim_y){
-  if(aim_x-now_x == 1 && aim_y-now_y == 0)  return 0;
-  if(aim_x-now_x == 0 && aim_y-now_y == -1) return 1;
-  if(aim_x-now_x == -1 && aim_y-now_y == 0) return 2;
-  if(aim_x-now_x == 0 && aim_y-now_y == 1) return 3;
-  return 4;
+char checkAbsDir(positionVar *pos_var){
+  if(pos_var->aim_x-pos_var->x == 1 && pos_var->aim_y-pos_var->y == 0)  return 1;
+  if(pos_var->aim_x-pos_var->x == 0 && pos_var->aim_y-pos_var->y == -1) return 2;
+  if(pos_var->aim_x-pos_var->x == -1 && pos_var->aim_y-pos_var->y == 0) return 3;
+  if(pos_var->aim_x-pos_var->x == 0 && pos_var->aim_y-pos_var->y == 1) return 4;
+  return 0;
 }
 
 char checkNextDir(char relDir, char absDir){
-  if(absDir == 2) relDir += 2;
-  if(absDir == 1) relDir ++;
-  if(absDir == 3) relDir --;
-  if(relDir < 0)  relDir += 4;
-  if(relDir > 3)  relDir -= 4;
+  if(absDir == 3) relDir += 2;
+  if(absDir == 2) relDir ++;
+  if(absDir == 4) relDir --;
+  if(relDir < 1)  relDir += 4;
+  if(relDir > 4)  relDir -= 4;
   return relDir;
 }
 

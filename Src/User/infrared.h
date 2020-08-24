@@ -7,4 +7,5 @@
 
 #include "gpio.h"
 
+void check_edge(char x, char y, char relDir, char **maze);
 #endif //MAZE_STM32_CUBEMX_CLION_INFRARED_H

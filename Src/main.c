@@ -51,7 +51,7 @@
 motorVar left_var;
 motorVar right_var;
 positionVar pos_var;
-char maze[DPI][DPI] = {0};
+uint8_t maze[DPI][DPI] = {0x01};//走过是1，障碍是1
 
 /* USER CODE END PV */
 
@@ -76,28 +76,64 @@ void para_init(char x, char y){
 
   pos_var.x = x;
   pos_var.x = y;
+  pos_var.aim_x = x;
+  pos_var.aim_y = y;
   pos_var.relDir = 0;
+
+  maze[x][y] = 0x10;
 }
 
 void check(){
+  check_edge(pos_var.x, pos_var.y, pos_var.relDir, (char **) maze);
+  if(maze[pos_var.x+1][pos_var.y] == 0x00){
+    pos_var.aim_x = pos_var.x+1;
+    pos_var.aim_y = pos_var.y;
+    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
+  }else if(maze[pos_var.x+1][pos_var.y] == 0x10){
 
+  }
+  if(maze[pos_var.x][pos_var.y-1] == 0x00){
+    pos_var.aim_x = pos_var.x;
+    pos_var.aim_y = pos_var.y-1;
+    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
+  }else if(maze[pos_var.x][pos_var.y-1] == 0x10){
+
+  }
+  if(maze[pos_var.x-1][pos_var.y] == 0x00){
+    pos_var.aim_x = pos_var.x-1;
+    pos_var.aim_y = pos_var.y;
+    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
+  }else if(maze[pos_var.x-1][pos_var.y] == 0x10){
+
+  }
+  if(maze[pos_var.x][pos_var.y+1] == 0x00){
+    pos_var.aim_x = pos_var.x;
+    pos_var.aim_y = pos_var.y+1;
+    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
+  }else if(maze[pos_var.x][pos_var.y+1] == 0x10){
+
+  }
 }
 
-void goToNext(char aim_x, char aim_y){
-  char absDir = checkAbsDir(pos_var.x, pos_var.y, aim_x, aim_y);
+void goToNext(){
+  char absDir = checkAbsDir(&pos_var);
   pos_var.relDir = checkNextDir(pos_var.relDir, absDir);
-  if(pos_var.relDir == 0){
+  if(pos_var.relDir == 1){
     go_straight(&left_var, &right_var, 999);
-  }else if(pos_var.relDir == 1) {
+  }else if(pos_var.relDir == 2) {
     go_left(&left_var, &right_var, 999);
     go_straight(&left_var, &right_var, 999);
-  }else if(pos_var.relDir == 2){
+  }else if(pos_var.relDir == 3){
     go_turn(&left_var, &right_var, 999);
     go_straight(&left_var, &right_var, 999);
-  }else{
+  }else if(pos_var.relDir == 4){
     go_right(&left_var, &right_var, 999);
     go_straight(&left_var, &right_var, 999);
+  }else{
+    while(1);
   }
+  pos_var.x = pos_var.aim_x;
+  pos_var.y = pos_var.aim_y;
 }
 
 /* USER CODE END 0 */
@@ -119,7 +155,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  para_init(0,0);
+  para_init(1,1);
 
   /* USER CODE END Init */
 
@@ -157,7 +193,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
     if(flag){
       check();
-      goToNext(aim_x, aim_y);
+      goToNext();
     }
   }
   /* USER CODE END 3 */

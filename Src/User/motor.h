@@ -13,11 +13,6 @@ typedef struct {
     int TGT;
 }motorVar;
 
-float Velocity_KP_A = 10,Velocity_KI_A = 10;
-int Bias_A,Pwm_A,Last_bias_A;
-float Velocity_KP_B = 10,Velocity_KI_B = 10;
-int Bias_B,Pwm_B,Last_bias_B;
-
 void check_ENC(motorVar *left_var, motorVar *right_var);
 void plus_ADD(motorVar *left_var, motorVar *right_var);
 void incremental_PI_A(motorVar *left_var);
