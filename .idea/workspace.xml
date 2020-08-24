@@ -11,25 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="DEMO">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/infrared.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/infrared.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/infrared.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/infrared.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/maze.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/maze.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/motor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze_stm32_cubemx+clion.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/maze_stm32_cubemx+clion.ioc" afterDir="false" />
-    </list>
+    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="FUCK" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598248338182</updated>
-      <workItem from="1598248354138" duration="23522000" />
+      <workItem from="1598248354138" duration="23542000" />
     </task>
     <task id="LOCAL-00001" summary="DEMO">
       <created>1598270141761</created>
@@ -93,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598270141761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FUCK">
+      <created>1598274582735</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598274582735</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +90,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DEMO" />
-    <option name="LAST_COMMIT_MESSAGE" value="DEMO" />
+    <MESSAGE value="FUCK" />
+    <option name="LAST_COMMIT_MESSAGE" value="FUCK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598249908533">
@@ -120,22 +110,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="481" y="121" key="Github.UntrackedFilesDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598260622478" />
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1598249982261">
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1598274590246">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598249982261" />
-    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1598249982261">
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598274590246" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1598274590246">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598249982261" />
-    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1598249982261">
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598274590246" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1598274590246">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598249982261" />
-    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1598249982261">
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598274590246" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1598274590246">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598249982261" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598274590246" />
     <state x="270" y="61" key="SettingsEditor" timestamp="1598248557651">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
