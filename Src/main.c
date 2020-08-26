@@ -95,16 +95,16 @@ char isWall(carInfoType carInfo, char absDir){
   char relDir = abs_to_rel(carInfo.dir, absDir);
   char ir = read_DirIr(relDir);
   if(ir == -1){
-    ir = read_map_wall((char **) maze, carInfo, absDir);
+    ir = read_map_wall((uint8_t **) maze, carInfo, absDir);
   }else{
-    write_map_wall((char **) maze, carInfo, absDir, ir);
+    write_map_wall((uint8_t **) maze, carInfo, absDir, ir);
   }
   return ir;
 }
 
 /* 判断此方向是否是新路*/
 char isNew(carInfoType carInfo, char absDir){
-  return read_map_path((char **) maze, carInfo, absDir);
+  return read_map_path((uint8_t **) maze, carInfo, absDir);
 }
 
 /* 搜索可走的所有方向*/
@@ -130,6 +130,16 @@ void go_to_next(carInfoType carInfo, char nextDir){
   if(relDir == 3) go_left(&leftInfo, &rightInfo, 999);
 }
 
+/* 刷新地图路径信息*/
+void flash_mapPathInfo(carInfoType carInfo, char nextDir){
+  write_map_path((uint8_t **)maze, carInfo, nextDir, 0);
+}
+
+/* 刷新方向栈*/
+void flash_pathStack(char dir){
+  dirStack[dirStackIdx++] = dir;
+}
+
 /* 刷新小车自身信息*/
 void flash_carInfo(carInfoType *carInfo, char nextDir){
   if(nextDir == 0)  carInfo->y--;
@@ -137,38 +147,6 @@ void flash_carInfo(carInfoType *carInfo, char nextDir){
   if(nextDir == 2)  carInfo->y++;
   if(nextDir == 3)  carInfo->x--;
   carInfo->dir = nextDir;
-}
-
-/* 刷新地图路径信息*/
-void flash_mapPathInfo(carInfoType carInfo, char nextDir){
-  write_map_path((char **) maze, carInfo, nextDir, 0);
-
-}
-
-/* 刷新路径栈*/
-void flash_pathStack(char dir){
-  dirStack[dirStackIdx++] = dir;
-}
-
-/* 回溯路径栈*/
-char backtrack(){
-  char backDir = 0;
-  if(--dirStackIdx != -1){
-    backDir = dirStack[dirStackIdx];
-    if(backDir >= 0) backDir += 2;
-    if(backDir >= 4) backDir -= 4;
-  }
-  return backDir;
-}
-
-/* 前往下一个最优路径*/
-char bestPath(){
-  return dirStack[dirStackIdx++];
-}
-
-/* 创建最优路径*/
-void creat_bestPath(){
-
 }
 
 /* USER CODE END 0 */
@@ -231,15 +209,15 @@ int main(void)
     if(sprintFlag == 0){  //探索阶段
       nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下一步的方向
     }else if(sprintFlag == 1){  //冲刺阶段
-      nextDir = bestPath(); //根据计算得出的最优路径得出下一步的方向
+      nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下一步的方向
     }else{
       while(1);
     }
 
     if(nextDir == -1){ //如果无法得出下一步方向，进行回溯
-      nextDir = backtrack();
+      nextDir = backtrack(dirStack, &dirStackIdx);
       if(nextDir == -1){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-        creat_bestPath();  //计算最优路径
+        creat_bestPath(carInfo, (uint8_t **) maze, dirStack);  //计算最优路径
         sprintFlag = 1; //切换冲刺标记
       }
     }

@@ -29,13 +29,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="okk">
-      <change afterPath="$PROJECT_DIR$/PIC/1.png" afterDir="false" />
+    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="V0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/User/maze.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/motor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/maze.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,9 @@
     <setting file="file://$PROJECT_DIR$/Src/main.c" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1gX5wYb0VR8DI0vi9zZoP2V33iH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,7 +81,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -99,7 +104,8 @@
       <workItem from="1598274751653" duration="378000" />
       <workItem from="1598355752437" duration="60000" />
       <workItem from="1598355888939" duration="1625000" />
-      <workItem from="1598416362005" duration="15322000" />
+      <workItem from="1598416362005" duration="15854000" />
+      <workItem from="1598434058272" duration="4527000" />
     </task>
     <task id="LOCAL-00001" summary="DEMO">
       <created>1598270141761</created>
@@ -136,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598430682295</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="V0.1">
+      <created>1598433514346</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598433514346</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,17 +172,22 @@
     <MESSAGE value="FUCK" />
     <MESSAGE value="ok" />
     <MESSAGE value="okk" />
-    <option name="LAST_COMMIT_MESSAGE" value="okk" />
+    <MESSAGE value="V0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V0.1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="338" y="197" width="582" height="440" key="#Notifications" timestamp="1598416541029">
+    <state x="338" y="197" width="582" height="440" key="#Notifications" timestamp="1598433749744">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="338" y="197" width="582" height="440" key="#Notifications/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598416541029" />
+    <state x="338" y="197" width="582" height="440" key="#Notifications/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598433749744" />
     <state x="517" y="281" key="#Updates" timestamp="1598356902344">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="517" y="281" key="#Updates/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598356902344" />
+    <state x="518" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598443943939">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="518" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598443943939" />
     <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598249908533">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -186,30 +204,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="481" y="121" key="Github.UntrackedFilesDialog/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598260622478" />
-    <state width="1493" height="54" key="GridCell.Tab.0.bottom" timestamp="1598430670970">
+    <state width="1493" height="54" key="GridCell.Tab.0.bottom" timestamp="1598434008592">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="54" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598430670970" />
-    <state width="1493" height="54" key="GridCell.Tab.0.center" timestamp="1598430670970">
+    <state width="1493" height="54" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
+    <state width="1493" height="54" key="GridCell.Tab.0.center" timestamp="1598434008592">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="54" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598430670970" />
-    <state width="1493" height="54" key="GridCell.Tab.0.left" timestamp="1598430670970">
+    <state width="1493" height="54" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
+    <state width="1493" height="54" key="GridCell.Tab.0.left" timestamp="1598434008592">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="54" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598430670970" />
-    <state width="1493" height="54" key="GridCell.Tab.0.right" timestamp="1598430670970">
+    <state width="1493" height="54" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
+    <state width="1493" height="54" key="GridCell.Tab.0.right" timestamp="1598434008592">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="54" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598430670970" />
-    <state x="270" y="61" key="SettingsEditor" timestamp="1598356877234">
+    <state width="1493" height="54" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
+    <state x="270" y="61" key="SettingsEditor" timestamp="1598434079593">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="61" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598356877234" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1598430793047">
+    <state x="270" y="61" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434079593" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1598434063800">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598430793047" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434063800" />
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598431032725">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -218,10 +236,11 @@
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1265" y="0" width="1143" height="1057" key="dock-window-1/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598432178523" />
-    <state x="0" y="0" width="1525" height="810" maximized="true" key="dock-window-2" timestamp="1598433276844">
+    <state x="607" y="218" width="1525" height="810" key="dock-window-2" timestamp="1598433750087">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="0" y="0" width="1525" height="810" maximized="true" key="dock-window-2/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1598433276844" />
+    <state x="607" y="218" width="1525" height="810" key="dock-window-2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598433750087" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1598253625229">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
