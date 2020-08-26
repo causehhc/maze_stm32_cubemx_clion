@@ -29,17 +29,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="ok">
+    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="okk">
+      <change afterPath="$PROJECT_DIR$/PIC/1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/infrared.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/infrared.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/infrared.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/infrared.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/User/maze.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/maze.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/motor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +80,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\PIC" />
       <recent name="C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src" />
       <recent name="C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Inc" />
     </key>
@@ -102,7 +99,7 @@
       <workItem from="1598274751653" duration="378000" />
       <workItem from="1598355752437" duration="60000" />
       <workItem from="1598355888939" duration="1625000" />
-      <workItem from="1598416362005" duration="12524000" />
+      <workItem from="1598416362005" duration="15322000" />
     </task>
     <task id="LOCAL-00001" summary="DEMO">
       <created>1598270141761</created>
@@ -132,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598421768807</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="okk">
+      <created>1598430682295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598430682295</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +158,8 @@
     <MESSAGE value="DEMO" />
     <MESSAGE value="FUCK" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="okk" />
+    <option name="LAST_COMMIT_MESSAGE" value="okk" />
   </component>
   <component name="WindowStateProjectService">
     <state x="338" y="197" width="582" height="440" key="#Notifications" timestamp="1598416541029">
@@ -201,10 +206,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="61" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598356877234" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1598274885247">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1598430793047">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598274885247" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598430793047" />
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598431032725">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598431032725" />
+    <state x="-1265" y="0" width="1143" height="1057" key="dock-window-1" timestamp="1598432178523">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1265" y="0" width="1143" height="1057" key="dock-window-1/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598432178523" />
+    <state x="0" y="0" width="1525" height="810" maximized="true" key="dock-window-2" timestamp="1598433276844">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="0" width="1525" height="810" maximized="true" key="dock-window-2/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1598433276844" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1598253625229">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

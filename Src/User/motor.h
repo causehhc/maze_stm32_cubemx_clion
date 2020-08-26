@@ -7,10 +7,10 @@
 #include "tim.h"
 
 typedef struct {
-    int ENC;
-    int PWM;
-    int ADD;
-    int TGT;
+    int ENC;  //当前编码器示数
+    int ADD;  //编码器累计示数
+    int TGT;  //电机转速期望值
+    int PWM;  //电机实际PWM赋值
 }motorInfoType;
 
 void check_ENC(motorInfoType *leftInfo, motorInfoType *rightInfo);
