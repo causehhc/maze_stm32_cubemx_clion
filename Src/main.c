@@ -50,7 +50,7 @@
 /* USER CODE BEGIN PV */
 motorInfoType leftInfo;
 motorInfoType rightInfo;
-uint8_t maze[DPI][DPI] = {0x00};//走过是1，能走是1
+uint8_t maze[DPI][DPI] = {0x11};//新路是1，有墙是1
 
 char dirStack[100];
 int dirStackIdx = 0;
@@ -80,86 +80,100 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
   carInfo->y = y;
   carInfo->dir = dir;
 
-  maze[x][y] = 0x11;
+  maze[x][y] = 0x00;
 }
-char abs_to_rel(char nowDir, char absDir){
-  return (nowDir+absDir)%4;
-}
-char read_map_wall(carInfoType carInfo, char dir){
 
-}
-char read_map_path(carInfoType carInfo, char dir){
+/** 绝对方向：
+  *     0
+  * 3       1
+  *     2
+**/
+/** 相对方向：
+  * 0：直行
+  * 1：右转
+  * 2：掉头
+  * 3：左转
+**/
 
-}
-void write_map_wall(carInfoType carInfo, char dir, char val){
-
-}
-void write_map_path(carInfoType carInfo, char dir, char val){
-
-}
-char isWall(carInfoType carInfo, char dir){
-  char relDir = abs_to_rel(carInfo.dir, dir);
-  char ir = read_IR(relDir);
-  write_map_wall(carInfo, dir, ir);
+/* 判断此方向是否有墙*/
+char isWall(carInfoType carInfo, char absDir){
+  char relDir = abs_to_rel(carInfo.dir, absDir);
+  char ir = read_DirIr(relDir);
+  if(ir == -1){
+    ir = read_map_wall((char **) maze, carInfo, absDir);
+  }else{
+    write_map_wall((char **) maze, carInfo, absDir, ir);
+  }
   return ir;
 }
-char isNew(carInfoType carInfo, char dir){
-  return read_map_path(carInfo, dir);
+
+/* 判断此方向是否是新路*/
+char isNew(carInfoType carInfo, char absDir){
+  return read_map_path((char **) maze, carInfo, absDir);
 }
+
+/* 搜索可走的所有方向*/
 char search_dir(carInfoType carInfo){
-  char aimDir = 0;
-  for(int dir=1; dir<5; dir++){
-    aimDir = isWall(carInfo, dir);
-    if(isNew(carInfo, aimDir)){
-      return aimDir;
+  char aimDir = -1;
+  for(int absDir=0; absDir < 4; absDir++){
+    if(!isWall(carInfo, absDir)){
+      if(isNew(carInfo, absDir)){
+        aimDir = absDir;
+        return aimDir;
+      }
     }
   }
   return aimDir;
 }
+
+/* 前往相邻的下一个方向*/
 void go_to_next(carInfoType carInfo, char nextDir){
   char relDir = abs_to_rel(carInfo.dir, nextDir);
-  if(relDir == 1) {
-    go_straight(&leftInfo, &rightInfo, 999);
-  }
-  if(relDir == 2) {
-    go_left(&leftInfo, &rightInfo, 999);
-  }
-  if(relDir == 3) {
-    go_right(&leftInfo, &rightInfo, 999);
-  }
-  if(relDir == 4) {
-    go_turn(&leftInfo, &rightInfo, 999);
-  }
+  if(relDir == 0) go_straight(&leftInfo, &rightInfo, 999);
+  if(relDir == 1) go_right(&leftInfo, &rightInfo, 999);
+  if(relDir == 2) go_turn(&leftInfo, &rightInfo, 999);
+  if(relDir == 3) go_left(&leftInfo, &rightInfo, 999);
 }
+
+/* 刷新小车自身信息*/
 void flash_carInfo(carInfoType *carInfo, char nextDir){
-  if(nextDir == 1){
-    carInfo->x++;
-  }
-  if(nextDir == 2){
-    carInfo->y--;
-  }
-  if(nextDir == 3){
-    carInfo->x--;
-  }
-  if(nextDir == 4){
-    carInfo->y++;
-  }
+  if(nextDir == 0)  carInfo->y--;
+  if(nextDir == 1)  carInfo->x++;
+  if(nextDir == 2)  carInfo->y++;
+  if(nextDir == 3)  carInfo->x--;
   carInfo->dir = nextDir;
 }
-void flash_mapInfo(char x, char y){
-  maze[x][y] |= 0x10;
+
+/* 刷新地图路径信息*/
+void flash_mapPathInfo(carInfoType carInfo, char nextDir){
+  write_map_path((char **) maze, carInfo, nextDir, 0);
+
 }
+
+/* 刷新路径栈*/
 void flash_pathStack(char dir){
   dirStack[dirStackIdx++] = dir;
 }
+
+/* 回溯路径栈*/
 char backtrack(){
   char backDir = 0;
   if(--dirStackIdx != -1){
     backDir = dirStack[dirStackIdx];
-    if(backDir > 0) backDir += 2;
-    if(backDir > 4) backDir -= 4;
+    if(backDir >= 0) backDir += 2;
+    if(backDir >= 4) backDir -= 4;
   }
   return backDir;
+}
+
+/* 前往下一个最优路径*/
+char bestPath(){
+  return dirStack[dirStackIdx++];
+}
+
+/* 创建最优路径*/
+void creat_bestPath(){
+
 }
 
 /* USER CODE END 0 */
@@ -223,20 +237,22 @@ int main(void)
       nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下一步的方向
     }else if(sprintFlag == 1){  //冲刺阶段
       nextDir = bestPath(); //根据计算得出的最优路径得出下一步的方向
+    }else{
+      while(1);
     }
 
-    if(nextDir == 0){ //如果无法得出下一步方向，进行回溯
+    if(nextDir == -1){ //如果无法得出下一步方向，进行回溯
       nextDir = backtrack();
-      if(nextDir == 0){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-        creatBestPath();  //计算最优路径
+      if(nextDir == -1){ //如果回溯栈空，说明以遍历回起点，准备冲刺
+        creat_bestPath();  //计算最优路径
         sprintFlag = 1; //切换冲刺标记
       }
     }
 
     go_to_next(carInfo, nextDir);  //执行
+    flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
+    flash_pathStack(nextDir); //刷新方向栈
     flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
-    flash_mapInfo(carInfo.x, carInfo.y); //刷新地图信息
-    flash_pathStack(carInfo.dir); //刷新方向栈
   }
 }
   /* USER CODE END 3 */
@@ -281,6 +297,9 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //10ms
+    //ircheck
+    if(check_IR(2)) rightInfo.TGT += 5;
+    if(check_IR(4)) leftInfo.TGT += 5;
     //motorControl
     check_ENC(&leftInfo, &rightInfo);
     plus_ADD(&leftInfo, &rightInfo);

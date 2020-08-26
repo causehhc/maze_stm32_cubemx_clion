@@ -19,4 +19,11 @@ typedef struct {
     char dir; //绝对方向
 }carInfoType;
 
+char rel_to_abs(char nowAbsDir, char relDir);
+char abs_to_rel(char nowAbsDir, char absDir);
+char read_map_wall(char **maze, carInfoType carInfo, char absDir);
+char read_map_path(char **maze, carInfoType carInfo, char absDir);
+void write_map_wall(char **maze, carInfoType carInfo, char absDir, char val);
+void write_map_path(char **maze, carInfoType carInfo, char absDir, char val);
+
 #endif //MAZE_STM32_CUBEMX_CLION_MAZE_H
