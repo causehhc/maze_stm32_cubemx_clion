@@ -48,10 +48,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-motorVar left_var;
-motorVar right_var;
-positionVar pos_var;
-uint8_t maze[DPI][DPI] = {0x01};//走过是1，障碍是1
+motorInfoType leftInfo;
+motorInfoType rightInfo;
+uint8_t maze[DPI][DPI] = {0x00};//走过是1，能走是1
+
+char dirStack[100];
+int dirStackIdx = 0;
 
 /* USER CODE END PV */
 
@@ -63,77 +65,101 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void para_init(char x, char y){
-  left_var.ENC = 0;
-  left_var.PWM = 0;
-  left_var.ADD = 0;
-  left_var.TGT = 0;
+void para_init(carInfoType *carInfo, char x, char y, char dir){
+  leftInfo.ENC = 0;
+  leftInfo.PWM = 0;
+  leftInfo.ADD = 0;
+  leftInfo.TGT = 0;
 
-  right_var.ENC = 0;
-  right_var.PWM = 0;
-  right_var.ADD = 0;
-  right_var.TGT = 0;
+  rightInfo.ENC = 0;
+  rightInfo.PWM = 0;
+  rightInfo.ADD = 0;
+  rightInfo.TGT = 0;
 
-  pos_var.x = x;
-  pos_var.x = y;
-  pos_var.aim_x = x;
-  pos_var.aim_y = y;
-  pos_var.relDir = 0;
+  carInfo->x = x;
+  carInfo->y = y;
+  carInfo->dir = dir;
 
-  maze[x][y] = 0x10;
+  maze[x][y] = 0x11;
 }
+char abs_to_rel(char nowDir, char absDir){
+  return (nowDir+absDir)%4;
+}
+char read_map_wall(carInfoType carInfo, char dir){
 
-void check(){
-  check_edge(pos_var.x, pos_var.y, pos_var.relDir, (char **) maze);
-  if(maze[pos_var.x+1][pos_var.y] == 0x00){
-    pos_var.aim_x = pos_var.x+1;
-    pos_var.aim_y = pos_var.y;
-    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
-  }else if(maze[pos_var.x+1][pos_var.y] == 0x10){
+}
+char read_map_path(carInfoType carInfo, char dir){
 
+}
+void write_map_wall(carInfoType carInfo, char dir, char val){
+
+}
+void write_map_path(carInfoType carInfo, char dir, char val){
+
+}
+char isWall(carInfoType carInfo, char dir){
+  char relDir = abs_to_rel(carInfo.dir, dir);
+  char ir = read_IR(relDir);
+  write_map_wall(carInfo, dir, ir);
+  return ir;
+}
+char isNew(carInfoType carInfo, char dir){
+  return read_map_path(carInfo, dir);
+}
+char search_dir(carInfoType carInfo){
+  char aimDir = 0;
+  for(int dir=1; dir<5; dir++){
+    aimDir = isWall(carInfo, dir);
+    if(isNew(carInfo, aimDir)){
+      return aimDir;
+    }
   }
-  if(maze[pos_var.x][pos_var.y-1] == 0x00){
-    pos_var.aim_x = pos_var.x;
-    pos_var.aim_y = pos_var.y-1;
-    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
-  }else if(maze[pos_var.x][pos_var.y-1] == 0x10){
-
+  return aimDir;
+}
+void go_to_next(carInfoType carInfo, char nextDir){
+  char relDir = abs_to_rel(carInfo.dir, nextDir);
+  if(relDir == 1) {
+    go_straight(&leftInfo, &rightInfo, 999);
   }
-  if(maze[pos_var.x-1][pos_var.y] == 0x00){
-    pos_var.aim_x = pos_var.x-1;
-    pos_var.aim_y = pos_var.y;
-    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
-  }else if(maze[pos_var.x-1][pos_var.y] == 0x10){
-
+  if(relDir == 2) {
+    go_left(&leftInfo, &rightInfo, 999);
   }
-  if(maze[pos_var.x][pos_var.y+1] == 0x00){
-    pos_var.aim_x = pos_var.x;
-    pos_var.aim_y = pos_var.y+1;
-    maze[pos_var.aim_x][pos_var.aim_y] |= 0x10;
-  }else if(maze[pos_var.x][pos_var.y+1] == 0x10){
-
+  if(relDir == 3) {
+    go_right(&leftInfo, &rightInfo, 999);
+  }
+  if(relDir == 4) {
+    go_turn(&leftInfo, &rightInfo, 999);
   }
 }
-
-void goToNext(){
-  char absDir = checkAbsDir(&pos_var);
-  pos_var.relDir = checkNextDir(pos_var.relDir, absDir);
-  if(pos_var.relDir == 1){
-    go_straight(&left_var, &right_var, 999);
-  }else if(pos_var.relDir == 2) {
-    go_left(&left_var, &right_var, 999);
-    go_straight(&left_var, &right_var, 999);
-  }else if(pos_var.relDir == 3){
-    go_turn(&left_var, &right_var, 999);
-    go_straight(&left_var, &right_var, 999);
-  }else if(pos_var.relDir == 4){
-    go_right(&left_var, &right_var, 999);
-    go_straight(&left_var, &right_var, 999);
-  }else{
-    while(1);
+void flash_carInfo(carInfoType *carInfo, char nextDir){
+  if(nextDir == 1){
+    carInfo->x++;
   }
-  pos_var.x = pos_var.aim_x;
-  pos_var.y = pos_var.aim_y;
+  if(nextDir == 2){
+    carInfo->y--;
+  }
+  if(nextDir == 3){
+    carInfo->x--;
+  }
+  if(nextDir == 4){
+    carInfo->y++;
+  }
+  carInfo->dir = nextDir;
+}
+void flash_mapInfo(char x, char y){
+  maze[x][y] |= 0x10;
+}
+void flash_pathStack(char dir){
+  dirStack[dirStackIdx++] = dir;
+}
+char backtrack(){
+  char backDir = 0;
+  if(--dirStackIdx != -1){
+    backDir = dirStack[dirStackIdx];
+    if(backDir > 0) backDir += 2;
+    if(backDir > 4) backDir -= 4;
+  }
+  return backDir;
 }
 
 /* USER CODE END 0 */
@@ -145,7 +171,9 @@ void goToNext(){
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  char flag = 1;
+  carInfoType carInfo; //小车自身信息
+  char sprintFlag = 0;  //冲刺标记
+  char nextDir = 0; //下一步绝对方向
 
   /* USER CODE END 1 */
 
@@ -155,7 +183,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  para_init(1,1);
+  para_init(&carInfo, 1, 1, 1);
 
   /* USER CODE END Init */
 
@@ -191,13 +219,27 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    if(flag){
-      check();
-      goToNext();
+    if(sprintFlag == 0){  //探索阶段
+      nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下一步的方向
+    }else if(sprintFlag == 1){  //冲刺阶段
+      nextDir = bestPath(); //根据计算得出的最优路径得出下一步的方向
     }
+
+    if(nextDir == 0){ //如果无法得出下一步方向，进行回溯
+      nextDir = backtrack();
+      if(nextDir == 0){ //如果回溯栈空，说明以遍历回起点，准备冲刺
+        creatBestPath();  //计算最优路径
+        sprintFlag = 1; //切换冲刺标记
+      }
+    }
+
+    go_to_next(carInfo, nextDir);  //执行
+    flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
+    flash_mapInfo(carInfo.x, carInfo.y); //刷新地图信息
+    flash_pathStack(carInfo.dir); //刷新方向栈
   }
-  /* USER CODE END 3 */
 }
+  /* USER CODE END 3 */
 
 /**
   * @brief System Clock Configuration
@@ -240,12 +282,12 @@ void SystemClock_Config(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //10ms
     //motorControl
-    check_ENC(&left_var, &right_var);
-    plus_ADD(&left_var, &right_var);
-    incremental_PI_A(&left_var);
-    incremental_PI_B(&right_var);
-    range_PWM(&left_var, &right_var, 6000);
-    set_PWM(&left_var, &right_var);
+    check_ENC(&leftInfo, &rightInfo);
+    plus_ADD(&leftInfo, &rightInfo);
+    incremental_PI_A(&leftInfo);
+    incremental_PI_B(&rightInfo);
+    range_PWM(&leftInfo, &rightInfo, 6000);
+    set_PWM(&leftInfo, &rightInfo);
   }
 }
 

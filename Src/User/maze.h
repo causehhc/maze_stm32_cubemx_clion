@@ -14,13 +14,9 @@
 #define CARWIDTH 10.0 //xmm
 
 typedef struct {
-    char x;
-    char y;
-    char aim_x;
-    char aim_y;
-    char relDir; //相对方向
-}positionVar;
+    char x; //坐标x
+    char y; //坐标y
+    char dir; //绝对方向
+}carInfoType;
 
-char checkAbsDir(positionVar *pos_var);
-char checkNextDir(char relDir, char absDir);
 #endif //MAZE_STM32_CUBEMX_CLION_MAZE_H
