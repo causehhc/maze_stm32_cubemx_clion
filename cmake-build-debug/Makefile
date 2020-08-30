@@ -338,6 +338,33 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
@@ -473,6 +500,33 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
 Src/User/infrared.obj: Src/User/infrared.c.obj
 
 .PHONY : Src/User/infrared.obj
@@ -554,6 +608,33 @@ Src/User/motor.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.s
 .PHONY : Src/User/motor.c.s
 
+Src/User/oled.obj: Src/User/oled.c.obj
+
+.PHONY : Src/User/oled.obj
+
+# target to build an object file
+Src/User/oled.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+.PHONY : Src/User/oled.c.obj
+
+Src/User/oled.i: Src/User/oled.c.i
+
+.PHONY : Src/User/oled.i
+
+# target to preprocess a source file
+Src/User/oled.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.i
+.PHONY : Src/User/oled.c.i
+
+Src/User/oled.s: Src/User/oled.c.s
+
+.PHONY : Src/User/oled.s
+
+# target to generate assembly for a file
+Src/User/oled.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.s
+.PHONY : Src/User/oled.c.s
+
 Src/gpio.obj: Src/gpio.c.obj
 
 .PHONY : Src/gpio.obj
@@ -580,6 +661,33 @@ Src/gpio.s: Src/gpio.c.s
 Src/gpio.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.s
 .PHONY : Src/gpio.c.s
+
+Src/i2c.obj: Src/i2c.c.obj
+
+.PHONY : Src/i2c.obj
+
+# target to build an object file
+Src/i2c.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+.PHONY : Src/i2c.c.obj
+
+Src/i2c.i: Src/i2c.c.i
+
+.PHONY : Src/i2c.i
+
+# target to preprocess a source file
+Src/i2c.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.i
+.PHONY : Src/i2c.c.i
+
+Src/i2c.s: Src/i2c.c.s
+
+.PHONY : Src/i2c.s
+
+# target to generate assembly for a file
+Src/i2c.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.s
+.PHONY : Src/i2c.c.s
 
 Src/main.obj: Src/main.c.obj
 
@@ -743,6 +851,33 @@ Src/tim.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.s
 .PHONY : Src/tim.c.s
 
+Src/usart.obj: Src/usart.c.obj
+
+.PHONY : Src/usart.obj
+
+# target to build an object file
+Src/usart.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+.PHONY : Src/usart.c.obj
+
+Src/usart.i: Src/usart.c.i
+
+.PHONY : Src/usart.i
+
+# target to preprocess a source file
+Src/usart.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.i
+.PHONY : Src/usart.c.i
+
+Src/usart.s: Src/usart.c.s
+
+.PHONY : Src/usart.s
+
+# target to generate assembly for a file
+Src/usart.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.s
+.PHONY : Src/usart.c.s
+
 startup/startup_stm32f103xe.obj: startup/startup_stm32f103xe.s.obj
 
 .PHONY : startup/startup_stm32f103xe.obj
@@ -785,6 +920,9 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.s
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.s
@@ -800,6 +938,9 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
 	@echo ... Src/User/infrared.obj
 	@echo ... Src/User/infrared.i
 	@echo ... Src/User/infrared.s
@@ -809,9 +950,15 @@ help:
 	@echo ... Src/User/motor.obj
 	@echo ... Src/User/motor.i
 	@echo ... Src/User/motor.s
+	@echo ... Src/User/oled.obj
+	@echo ... Src/User/oled.i
+	@echo ... Src/User/oled.s
 	@echo ... Src/gpio.obj
 	@echo ... Src/gpio.i
 	@echo ... Src/gpio.s
+	@echo ... Src/i2c.obj
+	@echo ... Src/i2c.i
+	@echo ... Src/i2c.s
 	@echo ... Src/main.obj
 	@echo ... Src/main.i
 	@echo ... Src/main.s
@@ -830,6 +977,9 @@ help:
 	@echo ... Src/tim.obj
 	@echo ... Src/tim.i
 	@echo ... Src/tim.s
+	@echo ... Src/usart.obj
+	@echo ... Src/usart.i
+	@echo ... Src/usart.s
 	@echo ... startup/startup_stm32f103xe.obj
 .PHONY : help
 

@@ -4,6 +4,25 @@
 
 #include "infrared.h"
 
+void ir_on(char num){
+  num -= 1;
+  if(num&0x01){
+    HAL_GPIO_WritePin(A0_GPIO_Port, A0_Pin, GPIO_PIN_SET);
+  }else{
+    HAL_GPIO_WritePin(A0_GPIO_Port, A0_Pin, GPIO_PIN_RESET);
+  }
+  if(num&0x02){
+    HAL_GPIO_WritePin(A1_GPIO_Port, A1_Pin, GPIO_PIN_SET);
+  }else{
+    HAL_GPIO_WritePin(A1_GPIO_Port, A1_Pin, GPIO_PIN_RESET);
+  }
+  if(num&0x04){
+    HAL_GPIO_WritePin(A2_GPIO_Port, A2_Pin, GPIO_PIN_SET);
+  }else{
+    HAL_GPIO_WritePin(A2_GPIO_Port, A2_Pin, GPIO_PIN_RESET);
+  }
+}
+
 char check_IR(char num){
   char res = -1;
   if(num == 1){

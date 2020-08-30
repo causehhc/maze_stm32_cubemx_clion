@@ -199,6 +199,9 @@
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
@@ -212,6 +215,9 @@
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
@@ -238,6 +244,9 @@
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
@@ -251,6 +260,9 @@
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/STM32F103RCTx_FLASH.ld">
@@ -274,7 +286,19 @@
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/motor.h">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.c">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.h">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oledfont.h">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/gpio.c">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/i2c.c">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/main.c">
@@ -293,6 +317,9 @@
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/tim.c">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/usart.c">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/startup/startup_stm32f103xe.s">

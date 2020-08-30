@@ -84,15 +84,15 @@ void creat_bestPath(carInfoType carInfo, uint8_t **maze, char *dirStack){
   while(dirQueueIdx != 0){
     char heightAddFlag = 0;
     char tempDir = dirQueue[dirQueueIdx--];
-    for(char absDir=0; absDir<4; absDir++){
-      if(isConnect(nowX, nowY, newX, newY)){
-        if(height[newX][newY] == -1){
-          heightAddFlag = 1;
-          dirQueue[dirQueueIdx++] = absDir;
-          highTable[newX][newY] = height;
-        }
-      }
-    }
+//    for(char absDir=0; absDir<4; absDir++){
+//      if(isConnect(nowX, nowY, newX, newY)){
+//        if(height[newX][newY] == -1){
+//          heightAddFlag = 1;
+//          dirQueue[dirQueueIdx++] = absDir;
+//          highTable[newX][newY] = height;
+//        }
+//      }
+//    }
     if(heightAddFlag) height++;
   }
 }

@@ -160,9 +160,22 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm3
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c > CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.i
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.s
+
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -175,7 +188,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm3
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -188,7 +201,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm3
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -201,7 +214,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm3
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -214,7 +227,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm3
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -225,9 +238,22 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm3
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
 
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c > CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.i
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.s
+
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj: ../Src/User/infrared.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\User\infrared.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\User\infrared.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.i: cmake_force
@@ -240,7 +266,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.s: cmake_force
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj: ../Src/User/maze.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\User\maze.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\User\maze.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.i: cmake_force
@@ -253,7 +279,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.s: cmake_force
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj: ../Src/User/motor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\User\motor.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\User\motor.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.i: cmake_force
@@ -264,9 +290,22 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.s"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\User\motor.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\User\motor.c.s
 
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj: ../Src/User/oled.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\User\oled.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\User\oled.c
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.i"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\User\oled.c > CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\User\oled.c.i
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.s"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\User\oled.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\User\oled.c.s
+
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj: ../Src/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\gpio.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\gpio.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.i: cmake_force
@@ -277,9 +316,22 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.s"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\gpio.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\gpio.c.s
 
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj: ../Src/i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\i2c.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\i2c.c
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.i"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\i2c.c > CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\i2c.c.i
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.s"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\i2c.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\i2c.c.s
+
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj: ../Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\main.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\main.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.i: cmake_force
@@ -292,7 +344,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.s: cmake_force
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Src/stm32f1xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\stm32f1xx_hal_msp.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -305,7 +357,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.s: cmake_forc
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj: ../Src/stm32f1xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\stm32f1xx_it.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\stm32f1xx_it.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.i: cmake_force
@@ -318,7 +370,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.s: cmake_force
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj: ../Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\syscalls.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\syscalls.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.i: cmake_force
@@ -331,7 +383,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj: ../Src/system_stm32f1xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\system_stm32f1xx.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\system_stm32f1xx.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.i: cmake_force
@@ -344,7 +396,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.s: cmake_force
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj: ../Src/tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\tim.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\tim.c
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.i: cmake_force
@@ -355,9 +407,22 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.s"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\tim.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\tim.c.s
 
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj: ../Src/usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\usart.c.obj   -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\usart.c
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.i"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\usart.c > CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\usart.c.i
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.s"
+	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Src\usart.c -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\Src\usart.c.s
+
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/flags.make
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj: ../startup/startup_stm32f103xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building ASM object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building ASM object CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj"
 	C:\PROGRA~2\GNUTOO~1\50A5A~1.420\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\maze_stm32_cubemx+clion.elf.dir\startup\startup_stm32f103xe.s.obj -c C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\startup\startup_stm32f103xe.s
 
 # Object files for target maze_stm32_cubemx+clion.elf
@@ -370,21 +435,26 @@ maze_stm32_cubemx___clion_elf_OBJECTS = \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" \
+"CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
+"CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj" \
+"CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj" \
+"CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj" \
+"CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj" \
 "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj"
 
 # External object files for target maze_stm32_cubemx+clion.elf
@@ -398,25 +468,30 @@ maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/build.make
 maze_stm32_cubemx+clion.elf: CMakeFiles/maze_stm32_cubemx+clion.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C executable maze_stm32_cubemx+clion.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking C executable maze_stm32_cubemx+clion.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\maze_stm32_cubemx+clion.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/maze_stm32_cubemx+clion.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/maze_stm32_cubemx+clion.bin"

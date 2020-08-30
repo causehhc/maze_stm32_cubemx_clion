@@ -10,9 +10,9 @@ float Velocity_KP_B = 10,Velocity_KI_B = 10;
 int Bias_B,Pwm_B,Last_bias_B;
 
 void check_ENC(motorInfoType *leftInfo, motorInfoType *rightInfo){
-  leftInfo->ENC = (short)__HAL_TIM_GET_COUNTER(&htim3);
+  leftInfo->ENC = -(short)__HAL_TIM_GET_COUNTER(&htim3);
   __HAL_TIM_SET_COUNTER(&htim3, 0);
-  rightInfo->ENC = (short)__HAL_TIM_GET_COUNTER(&htim4);
+  rightInfo->ENC = -(short)__HAL_TIM_GET_COUNTER(&htim4);
   __HAL_TIM_SET_COUNTER(&htim4, 0);
 }
 
