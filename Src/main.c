@@ -59,10 +59,10 @@ motorInfoType leftInfo;
 motorInfoType rightInfo;
 uint8_t maze[DPI][DPI] = {0x11};//新路�??????1，有墙是1
 
-char dirStack[100];
+char dirStack[200];
 int dirStackIdx = 0;
 
-char irR1=0, irR2=0, irR3=0, irR4=0, irR5=0;
+extern char irR1, irR2, irR3, irR4, irR5;
 
 /* USER CODE END PV */
 
@@ -94,6 +94,18 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
       maze[x][y] = 0x11;
     }
   }
+  for(char i=0; i<DPI; i++) {
+    maze[0][i] = 0x01;
+  }
+  for(char i=0; i<DPI; i++) {
+    maze[DPI-1][i] = 0x01;
+  }
+  for(char i=0; i<DPI; i++) {
+    maze[i][0] = 0x01;
+  }
+  for(char i=0; i<DPI; i++) {
+    maze[i][DPI-1] = 0x01;
+  }
   maze[x][y] = 0x00;
 }
 
@@ -103,22 +115,37 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
   *     2           2：掉�??????
   *                 3：左�??????
 **/
-
+char banEdge(carInfoType carInfo, char absDir){
+  if(carInfo.y!=1 || absDir!=0){
+    if(carInfo.y!=DPI-2 || absDir!=2){
+      if(carInfo.x!=1 || absDir!=3){
+        if(carInfo.x!=DPI-2 || absDir!=1){
+          return 1;
+        }
+      }
+    }
+  }
+  return 0;
+}
 /* 判断此方向是否有�??????*/
 char isWall(carInfoType carInfo, char absDir){
   char relDir = abs_to_rel(carInfo.dir, absDir);
   char ir = read_DirIr(relDir);
   if(ir == -1){
-    ir = read_map_wall((uint8_t **) maze, carInfo, absDir);
+    ir = read_map_wall(maze, carInfo, absDir);
   }else{
-    write_map_wall((uint8_t **) maze, carInfo, absDir, ir);
+    if(banEdge(carInfo, absDir)){
+      write_map_wall(maze, carInfo, absDir, ir);
+    }else{
+      ir = 1;
+    }
   }
   return ir;
 }
 
 /* 判断此方向是否是新路*/
 char isNew(carInfoType carInfo, char absDir){
-  return read_map_path((uint8_t **) maze, carInfo, absDir);
+  return read_map_path(maze, carInfo, absDir);
 }
 
 /* 搜索可走的所有方�??????*/
@@ -138,15 +165,26 @@ char search_dir(carInfoType carInfo){
 /* 前往相邻的下�??????个方�??????*/
 void go_to_next(carInfoType carInfo, char nextDir){
   char relDir = abs_to_rel(carInfo.dir, nextDir);
-  if(relDir == 0) go_straight(&leftInfo, &rightInfo, 999);
-  if(relDir == 1) go_right(&leftInfo, &rightInfo, 999);
-  if(relDir == 2) go_turn(&leftInfo, &rightInfo, 999);
-  if(relDir == 3) go_left(&leftInfo, &rightInfo, 999);
+  if(relDir == 0) {
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+  }
+  if(relDir == 1) {
+    go_right(&leftInfo, &rightInfo, 2300,1);
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+  }
+  if(relDir == 2) {
+    go_turn(&leftInfo, &rightInfo, 2300,1);
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+  }
+  if(relDir == 3) {
+    go_left(&leftInfo, &rightInfo, 2300,1);
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+  }
 }
 
 /* 刷新地图路径信息*/
 void flash_mapPathInfo(carInfoType carInfo, char nextDir){
-  write_map_path((uint8_t **)maze, carInfo, nextDir, 0);
+  write_map_path(maze, carInfo, nextDir, 0);
 }
 
 /* 刷新方向�??????*/
@@ -167,8 +205,8 @@ void flash_OLED_maze(){
   static char val;
   for(char x=0; x<DPI; x++) {
     for (char y = 0; y < DPI; y++) {
-      if (maze[x][y] & 0x01) val = 1;
-      else val = 0;
+      if(maze[x][y] & 0x01) val = 1;
+      else  val = 0;
       for (char i = 0; i < 64 / DPI; i++) {
         for (char j = 0; j < 64 / DPI; j++) {
           OLED_writeDPI(i + x * 4, j + y * 4, val);
@@ -198,12 +236,10 @@ void flash_OLED_carPos(carInfoType carInfo){
 void flash_OLED_ir(){
   static char x=70,y=5;
   if(irR1){
-    HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
     OLED_writeDPI(x, y-1, 1);
     OLED_writeDPI(x, y-2, 1);
     OLED_writeDPI(x, y-3, 1);
   }else{
-    HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
     OLED_writeDPI(x, y-1, 0);
     OLED_writeDPI(x, y-2, 0);
     OLED_writeDPI(x, y-3, 0);
@@ -250,22 +286,60 @@ void flash_OLED_ir(){
   }
 }
 
-void OLED_test(carInfoType carInfo){
-  for (char i = 0; i < (64 / DPI)/2; i++) {
-    for (char j = 0; j < (64 / DPI)/2; j++) {
-      OLED_writeDPI(i + carInfo.x*4+1, j + carInfo.y*4+1, 1);
-    }
+void change(int x, char *str, char len){
+  for(int i=0; i<len; i++){
+    str[i] = '0';
   }
-  if(carInfo.dir == 0){
-    OLED_writeDPI(carInfo.x*4+1, carInfo.y*4+1-2, 1);
-  }else if(carInfo.dir == 1){
-    OLED_writeDPI(carInfo.x*4+1+2, carInfo.y*4+1, 1);
-  }else if(carInfo.dir == 2){
-    OLED_writeDPI(carInfo.x*4+1, carInfo.y*4+1+2, 1);
+  if(x >= 0){
+    str[0] = '+';
   }else{
-    OLED_writeDPI(carInfo.x*4+1-2, carInfo.y*4+1, 1);
+    str[0] = '-';
+    x = -x;
+  }
+  str[--len] = '\0';
+  while(x){
+    str[--len] = x%10 + '0';
+    x /= 10;
   }
 }
+
+void flash_OLED_info(){
+  static char x=70,y=5;
+  static uint8_t char_size = 1;
+  static char str_tgtA[6];
+  static char str_tgtB[6];
+  static char str_pwmA[6];
+  static char str_pwmB[6];
+  static char str_encA[6];
+  static char str_encB[6];
+
+  static char str_addA[6];
+  static char str_addB[6];
+
+  change(leftInfo.TGT, str_tgtA, 6);
+  change(rightInfo.TGT, str_tgtB, 6);
+  change(leftInfo.PWM, str_pwmA, 6);
+  change(rightInfo.PWM, str_pwmB, 6);
+  change(leftInfo.ENC, str_encA, 6);
+  change(rightInfo.ENC, str_encB, 6);
+  change(leftInfo.ADD, str_addA, 6);
+  change(rightInfo.ADD, str_addB, 6);
+
+  if(1){
+    OLED_ShowString(x,2,str_encA,char_size);
+    OLED_ShowString(x,3,str_tgtA,char_size);
+    OLED_ShowString(x,4,str_pwmA,char_size);
+
+    OLED_ShowString(x,5,str_encB,char_size);
+    OLED_ShowString(x,6,str_tgtB,char_size);
+    OLED_ShowString(x,7,str_pwmB,char_size);
+  } else{
+    OLED_ShowString(x,2,str_addA,char_size);
+    OLED_ShowString(x,4,str_addB,char_size);
+  }
+
+}
+
 
 void start_run(){
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
@@ -280,15 +354,19 @@ void start_run(){
       break;
     }
     flash_OLED_ir();
+    flash_OLED_info();
   }
 
-  while(1){
-    if(!irR2) {
-      leftInfo.TGT = 10;
-      rightInfo.TGT = -10;
-    }
-    flash_OLED_ir();
-  }
+//  while(1){
+//
+////    if(!irR2 & !irR4 & !irR1) {
+////      leftInfo.TGT = 30;
+////      rightInfo.TGT = -30;
+////    }
+//
+//    flash_OLED_ir();
+//    flash_OLED_info();
+//  }
 }
 /* USER CODE END 0 */
 
@@ -302,6 +380,7 @@ int main(void)
   carInfoType carInfo; //小车自身信息
   char sprintFlag = 0;  //冲刺标记
   char nextDir = 0; //下一步绝对方�??????
+  char backFlag = 0; //下一步绝对方�??????
 
   /* USER CODE END 1 */
 
@@ -338,16 +417,17 @@ int main(void)
   HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_4);
+  HAL_UART_Receive_IT(&huart1, &RxBuffer1, 1);
+  HAL_UART_Receive_IT(&huart2, &RxBuffer2, 1);
   HAL_TIM_Base_Start_IT(&htim6);
   HAL_TIM_Base_Start_IT(&htim7);
-  HAL_UART_Receive_IT(&huart1, &RxBuffer1, 1);
-//  HAL_UART_Receive_IT(&huart2, &RxBuffer2, 1);
 
   OLED_Init();
   OLED_Clear();
   para_init(&carInfo, 1, 1, 1);
   flash_OLED_maze();
   flash_OLED_carPos(carInfo);
+
   start_run();
 
   /* USER CODE END 2 */
@@ -367,21 +447,30 @@ int main(void)
       while(1);
     }
 
-    if(nextDir == -1){ //如果无法得出下一步方向，进行回溯
+    if(nextDir == 255){ //如果无法得出下一步方向，进行回溯
       nextDir = backtrack(dirStack, &dirStackIdx);
-      if(nextDir == -1){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-        creat_bestPath(carInfo, (uint8_t **) maze, dirStack);  //计算�??????优路�??????
+      backFlag = 1;
+      if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
+        creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
         sprintFlag = 1; //切换冲刺标记
       }
     }
 
 //    go_to_next(carInfo, nextDir);  //执行
+
+    /*刷新信息*/
     flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
-    flash_pathStack(nextDir); //刷新方向�??????
+    if(!backFlag) {
+      flash_pathStack(nextDir); //刷新方向�??????
+      backFlag = 0;
+    }
     flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
+
+    /*刷新OLED*/
     flash_OLED_maze();
     flash_OLED_carPos(carInfo);
     flash_OLED_ir();
+    flash_OLED_info();
   }
   /* USER CODE END 3 */
 }
@@ -426,31 +515,30 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //10ms
-    //ircheck
-    if(irR2){
-      if(rightInfo.TGT < 10){
-        rightInfo.TGT += 1;
-      }
-    }
+    //xiuzheng
+//    if(irR2){
+//      if(rightInfo.TGT < 0){
+//        rightInfo.TGT += 1;
+//      }
+//    }
 //    if(irR4){
-//      if(leftInfo.TGT>0){
+//      if(leftInfo.TGT > 0){
 //        leftInfo.TGT -= 1;
 //      }
 //    }
 //    if(irR1){
-//      leftInfo.TGT = 10;
-//      rightInfo.TGT = -10;
+//      leftInfo.TGT = 30;
+//      rightInfo.TGT = 30;
 //    }
     //motorControl
     check_ENC(&leftInfo, &rightInfo);
     plus_ADD(&leftInfo, &rightInfo);
     incremental_PI_A(&leftInfo);
     incremental_PI_B(&rightInfo);
-    range_PWM(&leftInfo, &rightInfo, 6000);
+    range_PWM(&leftInfo, &rightInfo, 7000);
     set_PWM(&leftInfo, &rightInfo);
   }
   if (htim->Instance == htim7.Instance){ //10ms
-//    HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin); //翻转LED
     static uint8_t flag = 0;
     static uint8_t num = 1;
 

@@ -7,7 +7,8 @@
 
 #include "gpio.h"
 
+
+
 void ir_on(char num);
-char check_IR(char num);
 char read_DirIr(char relDir);
 #endif //MAZE_STM32_CUBEMX_CLION_INFRARED_H

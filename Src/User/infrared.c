@@ -4,6 +4,15 @@
 
 #include "infrared.h"
 
+/** 绝对方向：       相对方向：
+  *     0           0：直行
+  * 3       1       1：右转
+  *     2           2：掉头
+  *                 3：左转
+**/
+
+char irR1=0, irR2=0, irR3=0, irR4=0, irR5=0;
+
 void ir_on(char num){
   num -= 1;
   if(num&0x01){
@@ -23,29 +32,9 @@ void ir_on(char num){
   }
 }
 
-char check_IR(char num){
-  char res = -1;
-  if(num == 1){
-    res = HAL_GPIO_ReadPin(IR1_GPIO_Port, IR1_Pin);
-  }
-  if(num == 2){
-    res = HAL_GPIO_ReadPin(IR2_GPIO_Port, IR2_Pin);
-  }
-  if(num == 3){
-    res = HAL_GPIO_ReadPin(IR3_GPIO_Port, IR3_Pin);
-  }
-  if(num == 4){
-    res = HAL_GPIO_ReadPin(IR4_GPIO_Port, IR4_Pin);
-  }
-  if(num == 5){
-    res = HAL_GPIO_ReadPin(IR5_GPIO_Port, IR5_Pin);
-  }
-  return res;
-}
-
 char read_DirIr(char relDir){
-  if(relDir == 0) return check_IR(3);
-  if(relDir == 1) return check_IR(5);
-  if(relDir == 3) return check_IR(1);
+  if(relDir == 0) return irR1;
+  if(relDir == 1) return irR5;
+  if(relDir == 3) return irR3;
   return -1;
 }

@@ -18,14 +18,14 @@ void check_ENC(motorInfoType *leftInfo, motorInfoType *rightInfo){
 
 void plus_ADD(motorInfoType *leftInfo, motorInfoType *rightInfo){
   leftInfo->ADD += leftInfo->ENC;
-  rightInfo->ADD += leftInfo->ENC;
+  rightInfo->ADD += rightInfo->ENC;
 }
 
 void incremental_PI_A(motorInfoType *leftInfo){
   Bias_A= leftInfo->TGT - leftInfo->ENC;
   Pwm_A += Velocity_KP_A * (Bias_A - Last_bias_A) + Velocity_KI_A * Bias_A;
-  if(Pwm_A > 7200)Pwm_A=7200;
-  if(Pwm_A < -7200)Pwm_A=-7200;
+  if(Pwm_A > 7200)  Pwm_A=7200;
+  if(Pwm_A < -7200) Pwm_A=-7200;
   Last_bias_A=Bias_A;
   leftInfo->PWM = Pwm_A;
 }
@@ -33,8 +33,8 @@ void incremental_PI_A(motorInfoType *leftInfo){
 void incremental_PI_B(motorInfoType *rightInfo){
   Bias_B= rightInfo->TGT - rightInfo->ENC;
   Pwm_B += Velocity_KP_B * (Bias_B - Last_bias_B) + Velocity_KI_B * Bias_B;
-  if(Pwm_B > 7200)Pwm_B=7200;
-  if(Pwm_B < -7200)Pwm_B=-7200;
+  if(Pwm_B > 7200)  Pwm_B=7200;
+  if(Pwm_B < -7200) Pwm_B=-7200;
   Last_bias_B=Bias_B;
   rightInfo->PWM = Pwm_B;
 }
@@ -64,26 +64,32 @@ void set_PWM(motorInfoType *leftInfo, motorInfoType *rightInfo){
   }
 }
 
-void go_straight(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth){
+void go_straight(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int mul){
   leftInfo->TGT = 10;
-  rightInfo->TGT = 10;
-  while(leftInfo->ADD > lenth && rightInfo->ADD > lenth);
+  rightInfo->TGT = -10;
+  while(leftInfo->ADD < lenth*mul || rightInfo->ADD > -lenth*mul);
+  leftInfo->ADD=0;
+  rightInfo->ADD=0;
 }
-
-void go_left(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth){
+void go_left(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int mul){
   leftInfo->TGT = -10;
+  rightInfo->TGT = -10;
+  while(leftInfo->ADD > -lenth*mul || rightInfo->ADD > -lenth*mul);
+  leftInfo->ADD=0;
+  rightInfo->ADD=0;
+}
+void go_right(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int mul){
+  leftInfo->TGT = 10;
   rightInfo->TGT = 10;
-  while(leftInfo->ADD > lenth && rightInfo->ADD > lenth);
+  while(leftInfo->ADD < lenth*mul || rightInfo->ADD < lenth*mul);
+  leftInfo->ADD=0;
+  rightInfo->ADD=0;
 }
 
-void go_right(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth){
+void go_turn(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int mul){
   leftInfo->TGT = 10;
-  rightInfo->TGT = -10;
-  while(leftInfo->ADD > lenth && rightInfo->ADD > lenth);
-}
-
-void go_turn(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth){
-  leftInfo->TGT = 10;
-  rightInfo->TGT = -10;
-  while(leftInfo->ADD > lenth && rightInfo->ADD > lenth);
+  rightInfo->TGT = 10;
+  while(leftInfo->ADD < lenth*mul || rightInfo->ADD < lenth*mul);
+  leftInfo->ADD=0;
+  rightInfo->ADD=0;
 }

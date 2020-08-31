@@ -22,13 +22,13 @@ typedef struct {
 
 char rel_to_abs(char nowAbsDir, char relDir);
 char abs_to_rel(char nowAbsDir, char absDir);
-char read_map_wall(uint8_t **maze, carInfoType carInfo, char absDir);
-char read_map_path(uint8_t **maze, carInfoType carInfo, char absDir);
-void write_map_wall(uint8_t **maze, carInfoType carInfo, char absDir, char val);
-void write_map_path(uint8_t **maze, carInfoType carInfo, char absDir, char val);
+char read_map_wall(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir);
+char read_map_path(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir);
+void write_map_wall(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir, char val);
+void write_map_path(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir, char val);
 
 char backtrack(char *dirStack, int *dirStackIdx);
 char bestPath(char *dirStack, int *dirStackIdx);
-void creat_bestPath(carInfoType carInfo, uint8_t **maze, char *dirStack);
+void creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
 
 #endif //MAZE_STM32_CUBEMX_CLION_MAZE_H
