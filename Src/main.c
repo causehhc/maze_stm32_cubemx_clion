@@ -434,8 +434,8 @@ int main(void)
       nextDir = backtrack(dirStack, &dirStackIdx);
       backFlag = 1;
       if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-//        creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
-        creat_bestPath_test(carInfo, maze, dirStack);
+        creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
+//        creat_bestPath_test(carInfo, maze, dirStack);
         sprintFlag = 1; //切换冲刺标记
       }
     }

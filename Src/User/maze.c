@@ -111,29 +111,58 @@ char bestPath(char *dirStack, int *dirStackIdx){
   return dirStack[++(*dirStackIdx)];
 }
 
+char isConnect(uint8_t maze[DPI][DPI], char nowX,char nowY,char newX,char newY){
+  if(maze[newY][newY] & 0x01){
+    return 0;
+  }
+  return 1;
+}
+
 /* 创建最优路径*/
 void creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
   char highTable[DPI][DPI] = {-1};
+  for(char x=0;x<DPI;x++){
+    for(char y=0;y<DPI;y++){
+      highTable[x][y] = -1;
+    }
+  }
   char height = 0;
-  char dirQueue[99] = {-1};
+  char dirQueue[STKDEEP] = {-1};
   char dirQueueIdx = 0;
 
-  dirQueue[dirQueueIdx++] = 1;
+  char nowX = carInfo.x;
+  char nowY = carInfo.y;
+  char newX = nowX;
+  char newY = nowY;
+
+  highTable[nowX][nowY] = height;
+  dirQueue[dirQueueIdx++] = 4;
   while(dirQueueIdx != 0){
-//    char heightAddFlag = 0;
-//    char tempDir = dirQueue[dirQueueIdx--];
-//    for(char absDir=0; absDir<4; absDir++){
-//      if(isConnect(nowX, nowY, newX, newY)){
-//        if(height[newX][newY] == -1){
-//          heightAddFlag = 1;
-//          dirQueue[dirQueueIdx++] = absDir;
-//          highTable[newX][newY] = height;
-//        }
-//      }
-//    }
-//    if(heightAddFlag) height++;
+    char heightAddFlag = 0;
+    char tempDir = dirQueue[--dirQueueIdx];
+    if(tempDir == 0)  nowY--;
+    if(tempDir == 1)  nowX++;
+    if(tempDir == 2)  nowY++;
+    if(tempDir == 3)  nowX--;
+    for(char absDir=0; absDir<4; absDir++){
+      newX = nowX;
+      newY = nowY;
+      if(absDir == 0)  newY = nowY-1;
+      if(absDir == 1)  newX = nowX+1;
+      if(absDir == 2)  newY = nowY+1;
+      if(absDir == 3)  newX = nowX-1;
+      if(isConnect(maze, nowX, nowY, newX, newY)){
+        if(highTable[newX][newY] == 255){
+          heightAddFlag = 1;
+          dirQueue[dirQueueIdx++] = absDir;
+          highTable[newX][newY] = height;
+        }
+      }
+    }
+    if(heightAddFlag) height++;
   }
 }
+
 void creat_bestPath_test(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
   init_stack(dirStack);
   dirStack[0] = 1;
