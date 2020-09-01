@@ -12,6 +12,31 @@
 **/
 //新路�??????1，有墙是1
 
+void init_maze(uint8_t maze[DPI][DPI]){
+  for(char x=0; x<DPI; x++) {
+    for (char y = 0; y < DPI; y++) {
+      maze[x][y] = 0x11;
+    }
+  }
+  for(char i=0; i<DPI; i++) {
+    maze[0][i] = 0x01;
+  }
+  for(char i=0; i<DPI; i++) {
+    maze[DPI-1][i] = 0x01;
+  }
+  for(char i=0; i<DPI; i++) {
+    maze[i][0] = 0x01;
+  }
+  for(char i=0; i<DPI; i++) {
+    maze[i][DPI-1] = 0x01;
+  }
+}
+void init_stack(char dirStack[]){
+  for(char i=0; i<STKDEEP; i++) {
+    dirStack[i] = -1;
+  }
+}
+
 /* 相对方向->绝对方向*/
 char rel_to_abs(char nowAbsDir, char relDir){
   return (relDir + nowAbsDir) % 4;
@@ -80,7 +105,10 @@ char backtrack(char *dirStack, int *dirStackIdx){
 
 /* 前往下一个最优路径*/
 char bestPath(char *dirStack, int *dirStackIdx){
-  return dirStack[(*dirStackIdx)++];
+  if(*dirStackIdx == STKDEEP){
+    return -1;
+  }
+  return dirStack[++(*dirStackIdx)];
 }
 
 /* 创建最优路径*/
@@ -105,4 +133,27 @@ void creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack)
 //    }
 //    if(heightAddFlag) height++;
   }
+}
+void creat_bestPath_test(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
+  init_stack(dirStack);
+  dirStack[0] = 1;
+  dirStack[1] = 2;
+  dirStack[2] = 1;
+  dirStack[3] = 2;
+  dirStack[4] = 1;
+  dirStack[5] = 2;
+  dirStack[6] = 1;
+  dirStack[7] = 2;
+  dirStack[8] = 1;
+  dirStack[9] = 2;
+  dirStack[10] = 1;
+  dirStack[11] = 2;
+  dirStack[12] = 1;
+  dirStack[13] = 2;
+  dirStack[14] = 1;
+  dirStack[15] = 2;
+  dirStack[16] = 1;
+  dirStack[17] = 2;
+  dirStack[18] = 1;
+  dirStack[19] = 2;
 }

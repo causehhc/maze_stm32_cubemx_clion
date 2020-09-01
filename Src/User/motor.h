@@ -23,5 +23,6 @@ void go_straight(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, i
 void go_left(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int mul);
 void go_right(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int mul);
 void go_turn(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int mul);
+void go_stop(motorInfoType *leftInfo, motorInfoType *rightInfo);
 
 #endif //MAZE_STM32_CUBEMX_CLION_MOTOR_H

@@ -93,3 +93,8 @@ void go_turn(motorInfoType *leftInfo, motorInfoType *rightInfo, int lenth, int m
   leftInfo->ADD=0;
   rightInfo->ADD=0;
 }
+
+void go_stop(motorInfoType *leftInfo, motorInfoType *rightInfo){
+  leftInfo->TGT = 0;
+  rightInfo->TGT = 0;
+}

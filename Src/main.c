@@ -59,7 +59,7 @@ motorInfoType leftInfo;
 motorInfoType rightInfo;
 uint8_t maze[DPI][DPI] = {0x11};//新路�??????1，有墙是1
 
-char dirStack[200];
+char dirStack[STKDEEP] = {-1};
 int dirStackIdx = 0;
 
 extern char irR1, irR2, irR3, irR4, irR5;
@@ -89,23 +89,9 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
   carInfo->y = y;
   carInfo->dir = dir;
 
-  for(char x=0; x<DPI; x++) {
-    for (char y = 0; y < DPI; y++) {
-      maze[x][y] = 0x11;
-    }
-  }
-  for(char i=0; i<DPI; i++) {
-    maze[0][i] = 0x01;
-  }
-  for(char i=0; i<DPI; i++) {
-    maze[DPI-1][i] = 0x01;
-  }
-  for(char i=0; i<DPI; i++) {
-    maze[i][0] = 0x01;
-  }
-  for(char i=0; i<DPI; i++) {
-    maze[i][DPI-1] = 0x01;
-  }
+  init_maze(maze);
+  init_stack(dirStack);
+
   maze[x][y] = 0x00;
 }
 
@@ -180,6 +166,9 @@ void go_to_next(carInfoType carInfo, char nextDir){
     go_left(&leftInfo, &rightInfo, 2300,1);
     go_straight(&leftInfo, &rightInfo, 2300,2);
   }
+  if(relDir == 255) {
+    go_stop(&leftInfo, &rightInfo);
+  }
 }
 
 /* 刷新地图路径信息*/
@@ -198,7 +187,7 @@ void flash_carInfo(carInfoType *carInfo, char nextDir){
   if(nextDir == 1)  carInfo->x++;
   if(nextDir == 2)  carInfo->y++;
   if(nextDir == 3)  carInfo->x--;
-  carInfo->dir = nextDir;
+  if(nextDir != 255 ) carInfo->dir = nextDir;
 }
 
 void flash_OLED_maze(){
@@ -356,17 +345,6 @@ void start_run(){
     flash_OLED_ir();
     flash_OLED_info();
   }
-
-//  while(1){
-//
-////    if(!irR2 & !irR4 & !irR1) {
-////      leftInfo.TGT = 30;
-////      rightInfo.TGT = -30;
-////    }
-//
-//    flash_OLED_ir();
-//    flash_OLED_info();
-//  }
 }
 /* USER CODE END 0 */
 
@@ -441,17 +419,23 @@ int main(void)
     /* USER CODE BEGIN 3 */
     if(sprintFlag == 0){  //探索阶段
       nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�??????步的方向
-    }else if(sprintFlag == 1){  //冲刺阶段
+    }else {  //冲刺阶段
       nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下�??????步的方向
-    }else{
-      while(1);
+      if(nextDir == 255){ //ENDOFCODE
+        leftInfo.TGT=0;
+        rightInfo.TGT=0;
+        HAL_TIM_Base_Stop_IT(&htim6);
+        HAL_TIM_Base_Stop_IT(&htim7);
+        while(1);
+      }
     }
 
     if(nextDir == 255){ //如果无法得出下一步方向，进行回溯
       nextDir = backtrack(dirStack, &dirStackIdx);
       backFlag = 1;
       if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-        creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
+//        creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
+        creat_bestPath_test(carInfo, maze, dirStack);
         sprintFlag = 1; //切换冲刺标记
       }
     }
@@ -525,10 +509,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 //      if(leftInfo.TGT > 0){
 //        leftInfo.TGT -= 1;
 //      }
-//    }
-//    if(irR1){
-//      leftInfo.TGT = 30;
-//      rightInfo.TGT = 30;
 //    }
     //motorControl
     check_ENC(&leftInfo, &rightInfo);

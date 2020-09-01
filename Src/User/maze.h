@@ -8,6 +8,7 @@
 #include "main.h"
 
 #define DPI 16
+#define STKDEEP 200
 #define MAZELENTH 128 //xmm
 #define PASSWIDTH 128 //xmm
 #define WALLWIDTH 128 //xmm
@@ -26,9 +27,12 @@ char read_map_wall(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir);
 char read_map_path(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir);
 void write_map_wall(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir, char val);
 void write_map_path(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir, char val);
+void init_maze(uint8_t maze[DPI][DPI]);
+void init_stack(char dirStack[STKDEEP]);
 
 char backtrack(char *dirStack, int *dirStackIdx);
 char bestPath(char *dirStack, int *dirStackIdx);
 void creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
+void creat_bestPath_test(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
 
 #endif //MAZE_STM32_CUBEMX_CLION_MAZE_H
