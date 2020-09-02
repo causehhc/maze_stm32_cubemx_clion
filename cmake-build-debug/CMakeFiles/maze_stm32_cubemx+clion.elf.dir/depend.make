@@ -551,6 +551,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj: ../Inc/main.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj: ../Src/User/maze.c
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj: ../Src/User/maze.h
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj: ../Src/User/queue.h
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -622,6 +623,9 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj: ../Inc/stm32f1xx
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj: ../Src/User/oled.c
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj: ../Src/User/oled.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj: ../Src/User/oledfont.h
+
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj: ../Src/User/queue.c
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj: ../Src/User/queue.h
 
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h

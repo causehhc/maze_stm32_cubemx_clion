@@ -3,6 +3,8 @@
 //
 
 #include "maze.h"
+#include "queue.h"
+#include <stdio.h>
 
 /** 绝对方向：       相对方向：
   *     0           0：直行
@@ -105,84 +107,93 @@ char backtrack(char *dirStack, int *dirStackIdx){
 
 /* 前往下一个最优路径*/
 char bestPath(char *dirStack, int *dirStackIdx){
-  if(*dirStackIdx == STKDEEP){
+  if(*dirStackIdx == -1){
     return -1;
   }
-  return dirStack[++(*dirStackIdx)];
+  return dirStack[(*dirStackIdx)--];
 }
 
-char isConnect(uint8_t maze[DPI][DPI], char nowX,char nowY,char newX,char newY){
-  if(maze[newY][newY] & 0x01){
-    return 0;
-  }
-  return 1;
-}
-
-/* 创建最优路径*/
-void creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
-  char highTable[DPI][DPI] = {-1};
+void initTable(char highTable[DPI][DPI]){
   for(char x=0;x<DPI;x++){
     for(char y=0;y<DPI;y++){
       highTable[x][y] = -1;
     }
   }
-  char height = 0;
-  char dirQueue[STKDEEP] = {-1};
-  char dirQueueIdx = 0;
+}
 
-  char nowX = carInfo.x;
-  char nowY = carInfo.y;
-  char newX = nowX;
-  char newY = nowY;
+char isConnect(uint8_t maze[DPI][DPI], char newX,char newY){
+  if(maze[newX][newY] & 0x01){
+    return 0;
+  }
+  return 1;
+}
 
-  highTable[nowX][nowY] = height;
-  dirQueue[dirQueueIdx++] = 4;
-  while(dirQueueIdx != 0){
-    char heightAddFlag = 0;
-    char tempDir = dirQueue[--dirQueueIdx];
-    if(tempDir == 0)  nowY--;
-    if(tempDir == 1)  nowX++;
-    if(tempDir == 2)  nowY++;
-    if(tempDir == 3)  nowX--;
-    for(char absDir=0; absDir<4; absDir++){
-      newX = nowX;
-      newY = nowY;
-      if(absDir == 0)  newY = nowY-1;
-      if(absDir == 1)  newX = nowX+1;
-      if(absDir == 2)  newY = nowY+1;
-      if(absDir == 3)  newX = nowX-1;
-      if(isConnect(maze, nowX, nowY, newX, newY)){
-        if(highTable[newX][newY] == 255){
-          heightAddFlag = 1;
-          dirQueue[dirQueueIdx++] = absDir;
-          highTable[newX][newY] = height;
-        }
-      }
+void trans(char highTable[DPI][DPI]){
+  for(char x=0; x<DPI; x++){
+    printf("=====");
+  }
+  printf("\n");
+  for(char y=0; y<DPI; y++){
+    for(char x=0; x<DPI; x++){
+      printf("%d\t", highTable[x][y]);
     }
-    if(heightAddFlag) height++;
+    printf("\n");
   }
 }
 
-void creat_bestPath_test(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
-  init_stack(dirStack);
-  dirStack[0] = 1;
-  dirStack[1] = 2;
-  dirStack[2] = 1;
-  dirStack[3] = 2;
-  dirStack[4] = 1;
-  dirStack[5] = 2;
-  dirStack[6] = 1;
-  dirStack[7] = 2;
-  dirStack[8] = 1;
-  dirStack[9] = 2;
-  dirStack[10] = 1;
-  dirStack[11] = 2;
-  dirStack[12] = 1;
-  dirStack[13] = 2;
-  dirStack[14] = 1;
-  dirStack[15] = 2;
-  dirStack[16] = 1;
-  dirStack[17] = 2;
-  dirStack[18] = 1;
-  dirStack[19] = 2;
+/* 创建最优路径*/
+char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
+  Queue *q = initQueue();
+  type pos;
+  pos.x = carInfo.x;
+  pos.y = carInfo.y;
+  queue_offer(q, pos);
+
+  char highTable[DPI][DPI] = {-1};
+  initTable(highTable);
+  highTable[pos.x][pos.y] = 0;
+
+  while(!isEmpty(q)){
+    type tempPos = queue_poll(q);
+    for(char absDir=0; absDir<4; absDir++) {
+      char newX = tempPos.x;
+      char newY = tempPos.y;
+      if (absDir == 0) newY = tempPos.y - 1;
+      else if (absDir == 1) newX = tempPos.x + 1;
+      else if (absDir == 2) newY = tempPos.y + 1;
+      else if (absDir == 3) newX = tempPos.x - 1;
+      if (isConnect(maze, newX, newY)) {
+        if (highTable[newX][newY] == 255) {
+          pos.x = newX;
+          pos.y = newY;
+          queue_offer(q, pos);
+          highTable[newX][newY] = highTable[tempPos.x][tempPos.y]+1;
+        }
+      }
+    }
+  }
+  char idx=0;
+  pos.x = END;
+  pos.y = END;
+  while(!(pos.x==carInfo.x && pos.y==carInfo.y)){
+    for(char absDir=0; absDir<4; absDir++) {
+      char newX = pos.x;
+      char newY = pos.y;
+      if (absDir == 0) newY = pos.y - 1;
+      else if (absDir == 1) newX = pos.x + 1;
+      else if (absDir == 2) newY = pos.y + 1;
+      else if (absDir == 3) newX = pos.x - 1;
+      if(highTable[newX][newY] == highTable[pos.x][pos.y]-1){
+        char backDir = absDir;
+        if(backDir >= 0) backDir += 2;
+        if(backDir >= 4) backDir -= 4;
+        dirStack[idx++] = backDir;
+        highTable[pos.x][pos.y] = 200;
+        pos.x = newX;
+        pos.y = newY;
+        break;
+      }
+    }
+  }
+  return idx-1;
 }

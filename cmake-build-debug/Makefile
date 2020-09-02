@@ -635,6 +635,33 @@ Src/User/oled.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.s
 .PHONY : Src/User/oled.c.s
 
+Src/User/queue.obj: Src/User/queue.c.obj
+
+.PHONY : Src/User/queue.obj
+
+# target to build an object file
+Src/User/queue.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+.PHONY : Src/User/queue.c.obj
+
+Src/User/queue.i: Src/User/queue.c.i
+
+.PHONY : Src/User/queue.i
+
+# target to preprocess a source file
+Src/User/queue.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.i
+.PHONY : Src/User/queue.c.i
+
+Src/User/queue.s: Src/User/queue.c.s
+
+.PHONY : Src/User/queue.s
+
+# target to generate assembly for a file
+Src/User/queue.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.s
+.PHONY : Src/User/queue.c.s
+
 Src/gpio.obj: Src/gpio.c.obj
 
 .PHONY : Src/gpio.obj
@@ -953,6 +980,9 @@ help:
 	@echo ... Src/User/oled.obj
 	@echo ... Src/User/oled.i
 	@echo ... Src/User/oled.s
+	@echo ... Src/User/queue.obj
+	@echo ... Src/User/queue.i
+	@echo ... Src/User/queue.s
 	@echo ... Src/gpio.obj
 	@echo ... Src/gpio.i
 	@echo ... Src/gpio.s

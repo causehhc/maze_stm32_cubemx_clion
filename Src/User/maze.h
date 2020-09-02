@@ -8,12 +8,8 @@
 #include "main.h"
 
 #define DPI 16
+#define END 14
 #define STKDEEP 200
-#define MAZELENTH 128 //xmm
-#define PASSWIDTH 128 //xmm
-#define WALLWIDTH 128 //xmm
-#define CARLENTH 10.0 //xmm
-#define CARWIDTH 10.0 //xmm
 
 typedef struct {
     char x; //坐标x
@@ -32,7 +28,6 @@ void init_stack(char dirStack[STKDEEP]);
 
 char backtrack(char *dirStack, int *dirStackIdx);
 char bestPath(char *dirStack, int *dirStackIdx);
-void creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
-void creat_bestPath_test(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
+char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
 
 #endif //MAZE_STM32_CUBEMX_CLION_MAZE_H

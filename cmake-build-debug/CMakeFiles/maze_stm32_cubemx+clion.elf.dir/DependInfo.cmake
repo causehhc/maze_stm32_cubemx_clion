@@ -43,6 +43,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.c" "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj"
   "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/motor.c" "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj"
   "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.c" "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj"
+  "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.c" "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj"
   "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/gpio.c" "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj"
   "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/i2c.c" "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj"
   "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/main.c" "C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj"

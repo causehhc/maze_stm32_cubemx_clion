@@ -552,6 +552,7 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  ../Inc/stm32f1xx_hal_conf.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.c
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.h
+ C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -623,6 +624,9 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.c
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oledfont.h
+CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.c
+ C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h

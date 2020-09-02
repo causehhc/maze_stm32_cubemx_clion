@@ -426,6 +426,8 @@ int main(void)
         rightInfo.TGT=0;
         HAL_TIM_Base_Stop_IT(&htim6);
         HAL_TIM_Base_Stop_IT(&htim7);
+        uint8_t str[] = "OK";
+        OLED_ShowString(10,2,str,16);
         while(1);
       }
     }
@@ -434,8 +436,7 @@ int main(void)
       nextDir = backtrack(dirStack, &dirStackIdx);
       backFlag = 1;
       if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-        creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
-//        creat_bestPath_test(carInfo, maze, dirStack);
+        dirStackIdx = creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
         sprintFlag = 1; //切换冲刺标记
       }
     }
