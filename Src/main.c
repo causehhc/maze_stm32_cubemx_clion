@@ -103,9 +103,9 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
 **/
 char banEdge(carInfoType carInfo, char absDir){
   if(carInfo.y!=1 || absDir!=0){
-    if(carInfo.y!=DPI-2 || absDir!=2){
+    if(carInfo.y!=15 || absDir!=2){
       if(carInfo.x!=1 || absDir!=3){
-        if(carInfo.x!=DPI-2 || absDir!=1){
+        if(carInfo.x!=15 || absDir!=1){
           return 1;
         }
       }
@@ -186,10 +186,10 @@ void flash_pathStack(char dir){
 
 /* 刷新小车自身信息*/
 void flash_carInfo(carInfoType *carInfo, char nextDir){
-  if(nextDir == 0)  carInfo->y--;
-  if(nextDir == 1)  carInfo->x++;
-  if(nextDir == 2)  carInfo->y++;
-  if(nextDir == 3)  carInfo->x--;
+  if(nextDir == 0)  carInfo->y-=2;
+  if(nextDir == 1)  carInfo->x+=2;
+  if(nextDir == 2)  carInfo->y+=2;
+  if(nextDir == 3)  carInfo->x-=2;
   if(nextDir != 255 ) carInfo->dir = nextDir;
 }
 
@@ -199,9 +199,9 @@ void flash_OLED_maze(){
     for (char y = 0; y < DPI; y++) {
       if(maze[x][y] & 0x01) val = 1;
       else  val = 0;
-      for (char i = 0; i < 64 / DPI; i++) {
-        for (char j = 0; j < 64 / DPI; j++) {
-          OLED_writeDPI(i + x * 4, j + y * 4, val);
+      for (char i = 0; i < LEN / DPI; i++) {
+        for (char j = 0; j < LEN / DPI; j++) {
+          OLED_writeDPI(i + x * (LEN / DPI), j + y * (LEN / DPI), val);
         }
       }
     }
@@ -209,20 +209,20 @@ void flash_OLED_maze(){
 }
 
 void flash_OLED_carPos(carInfoType carInfo){
-  for (char i = 0; i < (64 / DPI)/2; i++) {
-    for (char j = 0; j < (64 / DPI)/2; j++) {
-      OLED_writeDPI(i + carInfo.x*4+1, j + carInfo.y*4+1, 1);
+  for (char i = 0; i < (LEN / DPI)/2; i++) {
+    for (char j = 0; j < (LEN / DPI)/2; j++) {
+      OLED_writeDPI(i + carInfo.x*(LEN / DPI)+1, j + carInfo.y*(LEN / DPI)+1, 1);
     }
   }
-  if(carInfo.dir == 0){
-    OLED_writeDPI(carInfo.x*4+1, carInfo.y*4+1-2, 1);
-  }else if(carInfo.dir == 1){
-    OLED_writeDPI(carInfo.x*4+1+2, carInfo.y*4+1, 1);
-  }else if(carInfo.dir == 2){
-    OLED_writeDPI(carInfo.x*4+1, carInfo.y*4+1+2, 1);
-  }else{
-    OLED_writeDPI(carInfo.x*4+1-2, carInfo.y*4+1, 1);
-  }
+//  if(carInfo.dir == 0){
+//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1-2, 1);
+//  }else if(carInfo.dir == 1){
+//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1+2, carInfo.y*(LEN / DPI)+1, 1);
+//  }else if(carInfo.dir == 2){
+//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1+2, 1);
+//  }else{
+//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1-2, carInfo.y*(LEN / DPI)+1, 1);
+//  }
 }
 
 void flash_OLED_ir(){
@@ -329,7 +329,6 @@ void flash_OLED_info(){
     OLED_ShowString(x,2,str_addA,char_size);
     OLED_ShowString(x,4,str_addB,char_size);
   }
-
 }
 
 
@@ -410,6 +409,8 @@ int main(void)
   flash_OLED_carPos(carInfo);
 
   start_run();
+  uint8_t str[] = "Run... ";
+  OLED_ShowString(3,8,str,12);
 
   /* USER CODE END 2 */
 
@@ -435,8 +436,8 @@ int main(void)
           rightInfo.TGT = 0;
           HAL_TIM_Base_Stop_IT(&htim6);
           HAL_TIM_Base_Stop_IT(&htim7);
-          uint8_t str[] = "OK";
-          OLED_ShowString(10,2,str,16);
+          uint8_t str[] = "FINISH ";
+          OLED_ShowString(3,8,str,12);
           while(1);
         }
       }
@@ -450,28 +451,12 @@ int main(void)
         }
       }
 
-//      go_to_next(carInfo, nextDir);  //执行
+      go_to_next(carInfo, nextDir);  //执行
 
-      char relDir = abs_to_rel(carInfo.dir, nextDir);
-      if(relDir==1 || relDir==3 || relDir== 2 ||relDir==0){
-        flag=1;
-        HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_RESET);
-      }else{
-        flag=0;
-        HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin,GPIO_PIN_SET);
-      }
       /*刷新信息*/
       if(!backFlag) flash_pathStack(nextDir); //刷新方向�??????
-      if(flag==1){
-        for(char i=0; i<2; i++){
-          flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
-          write_map_wall(maze, carInfo, nextDir, 0);
-          flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
-        }
-      }else{
-        flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
-        flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
-      }
+      flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
+      flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
 
       /*刷新OLED*/
       flash_OLED_maze();
@@ -479,12 +464,12 @@ int main(void)
       flash_OLED_ir();
       flash_OLED_info();
 
-      for(int i=0;i<15;i++){
-        printf("%d ",dirStack[i]);
-      }
-      printf("\n");
-      printf("%d %d %d %d\n",carInfo.x, carInfo.y, carInfo.dir, dirStackIdx);
-      trans(maze);
+//      for(int i=0;i<15;i++){
+//        printf("%d ",dirStack[i]);
+//      }
+//      printf("\n");
+//      printf("%d %d %d %d\n",carInfo.x, carInfo.y, carInfo.dir, dirStackIdx);
+//      trans(maze);
     }
     flash_OLED_ir();
   }

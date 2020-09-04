@@ -268,6 +268,14 @@ C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/infrared.h
 gpio.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/gpio.h
 
+C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.c
+maze.h
+C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.h
+queue.h
+C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.h
+stdio.h
+-
+
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.h
 math.h
 -
@@ -281,6 +289,8 @@ C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/tim.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.h
 stm32f1xx_hal.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stm32f1xx_hal.h
+
+C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.h
 
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/main.c
 main.h
