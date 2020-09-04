@@ -131,6 +131,7 @@ void OLED_ShowString(uint8_t x,uint8_t y,uint8_t *chr,uint8_t Char_Size){
         j++;
     }
 }
+
 //显示汉字
 //hzk 用取模软件得出的数组
 void OLED_ShowCHinese(uint8_t x,uint8_t y,uint8_t no){

@@ -1,11 +1,5 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
-                              CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj (__aeabi_fadd)
-c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
-                              CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj (__aeabi_fmul)
-c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixsfsi.o)
-                              CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj (__aeabi_f2iz)
 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
                               CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj (__errno)
 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
@@ -630,12 +624,16 @@ Discarded input sections
                 0x00000000      0x224 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OC_Stop_DMA
                 0x00000000      0x164 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Init
+                0x00000000       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_DeInit
                 0x00000000       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_MspInit
                 0x00000000       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_MspDeInit
                 0x00000000       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_Start
+                0x00000000       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_Stop
                 0x00000000       0xb0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_Start_IT
@@ -682,12 +680,16 @@ Discarded input sections
                 0x00000000       0x88 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OnePulse_Stop_IT
                 0x00000000       0xd8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_Init
+                0x00000000      0x11c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Encoder_DeInit
                 0x00000000       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Encoder_MspInit
                 0x00000000       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Encoder_MspDeInit
                 0x00000000       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.HAL_TIM_Encoder_Start
+                0x00000000       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Encoder_Stop
                 0x00000000       0x90 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Encoder_Start_IT
@@ -702,6 +704,8 @@ Discarded input sections
                 0x00000000       0xc0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_IC_ConfigChannel
                 0x00000000      0x138 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.HAL_TIM_PWM_ConfigChannel
+                0x00000000      0x18c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OnePulse_ConfigChannel
                 0x00000000      0x180 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_DMABurst_WriteStart
@@ -768,6 +772,14 @@ Discarded input sections
                 0x00000000       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_DMATriggerHalfCplt
                 0x00000000       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.TIM_OC1_SetConfig
+                0x00000000       0xe0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.TIM_OC2_SetConfig
+                0x00000000       0xe8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.TIM_OC3_SetConfig
+                0x00000000       0xe8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.TIM_OC4_SetConfig
+                0x00000000       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_SlaveTimer_SetConfig
                 0x00000000      0x10c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI1_SetConfig
@@ -786,6 +798,8 @@ Discarded input sections
                 0x00000000       0x34 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_ETR_SetConfig
                 0x00000000       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .text.TIM_CCxChannelCmd
+                0x00000000       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
@@ -847,6 +861,8 @@ Discarded input sections
                 0x00000000       0xc0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .text.HAL_TIMEx_ConfigCommutEvent_DMA
                 0x00000000       0xe4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .text.HAL_TIMEx_ConfigBreakDeadTime
+                0x00000000       0xa4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .text.HAL_TIMEx_RemapConfig
                 0x00000000       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .text.HAL_TIMEx_CommutHalfCpltCallback
@@ -959,6 +975,11 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+ .debug_line    0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+ .debug_str     0x00000000      0x115 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+ .comment       0x00000000       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+ .ARM.attributes
+                0x00000000       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
@@ -977,6 +998,12 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .data.rev_for  0x00000000        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .text.chanLM   0x00000000       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .text.chanRM   0x00000000       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
@@ -988,7 +1015,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .data.y.8183   0x00000000        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
@@ -1021,12 +1047,8 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
- .text.HAL_TIM_Encoder_MspDeInit
-                0x00000000       0x64 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
  .text.HAL_TIM_Base_MspDeInit
                 0x00000000       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
- .text.HAL_TIM_PWM_MspDeInit
-                0x00000000       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
@@ -1035,12 +1057,6 @@ Discarded input sections
  .text          0x00000000       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
- .data          0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
- .bss           0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
- .data          0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
- .bss           0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
- .data          0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixsfsi.o)
- .bss           0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixsfsi.o)
  .text          0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
  .data          0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
  .bss           0x00000000        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
@@ -1252,6 +1268,7 @@ LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
@@ -1290,762 +1307,670 @@ LOAD c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m
                 0x08000000                g_pfnVectors
                 0x080001e4                . = ALIGN (0x4)
 
-.text           0x080001e4     0x7444
+.text           0x080001e4     0x5eb0
                 0x080001e4                . = ALIGN (0x4)
  *(.text)
  .text          0x080001e4       0x5c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .text          0x08000240      0x21c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
-                0x08000240                __aeabi_frsub
-                0x08000248                __subsf3
-                0x08000248                __aeabi_fsub
-                0x0800024c                __aeabi_fadd
-                0x0800024c                __addsf3
-                0x080003ac                __aeabi_ui2f
-                0x080003ac                __floatunsisf
-                0x080003b4                __aeabi_i2f
-                0x080003b4                __floatsisf
-                0x080003d0                __aeabi_ul2f
-                0x080003d0                __floatundisf
-                0x080003e0                __aeabi_l2f
-                0x080003e0                __floatdisf
- .text          0x0800045c      0x2a0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
-                0x0800045c                __mulsf3
-                0x0800045c                __aeabi_fmul
-                0x080005c4                __aeabi_fdiv
-                0x080005c4                __divsf3
- .text          0x080006fc       0x4c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixsfsi.o)
-                0x080006fc                __aeabi_f2iz
-                0x080006fc                __fixsfsi
  *(.text*)
  .text.HAL_Init
-                0x08000748       0x2c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08000748                HAL_Init
+                0x08000240       0x2c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08000240                HAL_Init
  .text.HAL_InitTick
-                0x08000774       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08000774                HAL_InitTick
+                0x0800026c       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0800026c                HAL_InitTick
  .text.HAL_IncTick
-                0x080007d4       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080007d4                HAL_IncTick
+                0x080002cc       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080002cc                HAL_IncTick
  .text.HAL_GetTick
-                0x080007f8       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080007f8                HAL_GetTick
+                0x080002f0       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x080002f0                HAL_GetTick
  .text.HAL_Delay
-                0x0800080c       0x44 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x0800080c                HAL_Delay
+                0x08000304       0x44 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08000304                HAL_Delay
  .text.__NVIC_SetPriorityGrouping
-                0x08000850       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08000348       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x08000898       0x1c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08000390       0x1c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_EnableIRQ
-                0x080008b4       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080003ac       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x080008ec       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080003e4       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08000940       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08000438       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.SysTick_Config
-                0x080009a0       0x44 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08000498       0x44 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x080009e4       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080009e4                HAL_NVIC_SetPriorityGrouping
+                0x080004dc       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080004dc                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x080009fc       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080009fc                HAL_NVIC_SetPriority
+                0x080004f4       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080004f4                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08000a34       0x1c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08000a34                HAL_NVIC_EnableIRQ
+                0x0800052c       0x1c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800052c                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x08000a50       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08000a50                HAL_SYSTICK_Config
+                0x08000548       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08000548                HAL_SYSTICK_Config
  .text.HAL_DMA_Abort_IT
-                0x08000a68      0x23c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08000a68                HAL_DMA_Abort_IT
+                0x08000560      0x23c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08000560                HAL_DMA_Abort_IT
  .text.HAL_GPIO_Init
-                0x08000ca4      0x2d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000ca4                HAL_GPIO_Init
+                0x0800079c      0x2d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x0800079c                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x08000f78       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000f78                HAL_GPIO_ReadPin
+                0x08000a70       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08000a70                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x08000fa8       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000fa8                HAL_GPIO_WritePin
+                0x08000aa0       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08000aa0                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x08000fd8       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08000fd8                HAL_GPIO_TogglePin
+                0x08000ad0       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08000ad0                HAL_GPIO_TogglePin
  .text.HAL_I2C_Init
-                0x08001008      0x250 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08001008                HAL_I2C_Init
+                0x08000b00      0x250 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08000b00                HAL_I2C_Init
  .text.HAL_I2C_Mem_Write
-                0x08001258      0x1f4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08001258                HAL_I2C_Mem_Write
+                0x08000d50      0x1f4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08000d50                HAL_I2C_Mem_Write
  .text.I2C_RequestMemoryWrite
-                0x0800144c      0x110 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08000f44      0x110 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnFlagUntilTimeout
-                0x0800155c       0xb0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08001054       0xb0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnMasterAddressFlagUntilTimeout
-                0x0800160c       0xfc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08001104       0xfc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnTXEFlagUntilTimeout
-                0x08001708       0x84 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08001200       0x84 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnBTFFlagUntilTimeout
-                0x0800178c       0x84 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08001284       0x84 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_IsAcknowledgeFailed
-                0x08001810       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08001308       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.HAL_RCC_OscConfig
-                0x0800186c      0x4fc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x0800186c                HAL_RCC_OscConfig
+                0x08001364      0x4fc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001364                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x08001d68      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001d68                HAL_RCC_ClockConfig
+                0x08001860      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001860                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001f3c       0xc8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001f3c                HAL_RCC_GetSysClockFreq
+                0x08001a34       0xc8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001a34                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x08002004       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002004                HAL_RCC_GetHCLKFreq
+                0x08001afc       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001afc                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08002018       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002018                HAL_RCC_GetPCLK1Freq
+                0x08001b10       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001b10                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08002040       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08002040                HAL_RCC_GetPCLK2Freq
+                0x08001b38       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001b38                HAL_RCC_GetPCLK2Freq
  .text.RCC_Delay
-                0x08002068       0x3c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001b60       0x3c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_TIM_Base_Init
-                0x080020a4       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080020a4                HAL_TIM_Base_Init
+                0x08001b9c       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001b9c                HAL_TIM_Base_Init
  .text.HAL_TIM_Base_Start_IT
-                0x080020fc       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080020fc                HAL_TIM_Base_Start_IT
+                0x08001bf4       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001bf4                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_Base_Stop_IT
-                0x08002144       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002144                HAL_TIM_Base_Stop_IT
- .text.HAL_TIM_PWM_Init
-                0x08002198       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002198                HAL_TIM_PWM_Init
- .text.HAL_TIM_PWM_Start
-                0x080021f0       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080021f0                HAL_TIM_PWM_Start
- .text.HAL_TIM_Encoder_Init
-                0x0800226c      0x11c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800226c                HAL_TIM_Encoder_Init
- .text.HAL_TIM_Encoder_Start
-                0x08002388       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002388                HAL_TIM_Encoder_Start
+                0x08001c3c       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001c3c                HAL_TIM_Base_Stop_IT
  .text.HAL_TIM_IRQHandler
-                0x080023f8      0x210 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080023f8                HAL_TIM_IRQHandler
- .text.HAL_TIM_PWM_ConfigChannel
-                0x08002608      0x18c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002608                HAL_TIM_PWM_ConfigChannel
+                0x08001c90      0x210 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001c90                HAL_TIM_IRQHandler
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08002794       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002794                HAL_TIM_OC_DelayElapsedCallback
+                0x08001ea0       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001ea0                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x080027a8       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080027a8                HAL_TIM_IC_CaptureCallback
+                0x08001eb4       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001eb4                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x080027bc       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080027bc                HAL_TIM_PWM_PulseFinishedCallback
+                0x08001ec8       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001ec8                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x080027d0       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080027d0                HAL_TIM_TriggerCallback
+                0x08001edc       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001edc                HAL_TIM_TriggerCallback
  .text.TIM_Base_SetConfig
-                0x080027e4       0xf4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080027e4                TIM_Base_SetConfig
- .text.TIM_OC1_SetConfig
-                0x080028d8       0xe0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.TIM_OC2_SetConfig
-                0x080029b8       0xe8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080029b8                TIM_OC2_SetConfig
- .text.TIM_OC3_SetConfig
-                0x08002aa0       0xe8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.TIM_OC4_SetConfig
-                0x08002b88       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.TIM_CCxChannelCmd
-                0x08002c30       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002c30                TIM_CCxChannelCmd
+                0x08001ef0       0xf4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001ef0                TIM_Base_SetConfig
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08002c78       0x88 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08002c78                HAL_TIMEx_MasterConfigSynchronization
- .text.HAL_TIMEx_ConfigBreakDeadTime
-                0x08002d00       0xa4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08002d00                HAL_TIMEx_ConfigBreakDeadTime
+                0x08001fe4       0x88 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08001fe4                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutCallback
-                0x08002da4       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08002da4                HAL_TIMEx_CommutCallback
+                0x0800206c       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x0800206c                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08002db8       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08002db8                HAL_TIMEx_BreakCallback
+                0x08002080       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08002080                HAL_TIMEx_BreakCallback
  .text.HAL_UART_Init
-                0x08002dcc       0x9c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08002dcc                HAL_UART_Init
+                0x08002094       0x9c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002094                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08002e68      0x130 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08002e68                HAL_UART_Transmit
+                0x08002130      0x130 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002130                HAL_UART_Transmit
  .text.HAL_UART_Receive_IT
-                0x08002f98       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08002f98                HAL_UART_Receive_IT
+                0x08002260       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002260                HAL_UART_Receive_IT
  .text.HAL_UART_IRQHandler
-                0x08003040      0x1f8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08003040                HAL_UART_IRQHandler
+                0x08002308      0x1f8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002308                HAL_UART_IRQHandler
  .text.HAL_UART_TxCpltCallback
-                0x08003238       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08003238                HAL_UART_TxCpltCallback
+                0x08002500       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002500                HAL_UART_TxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x0800324c       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x0800324c                HAL_UART_ErrorCallback
+                0x08002514       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002514                HAL_UART_ErrorCallback
  .text.UART_WaitOnFlagUntilTimeout
-                0x08003260       0x94 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002528       0x94 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_EndRxTransfer
-                0x080032f4       0x3c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080025bc       0x3c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_DMAAbortOnError
-                0x08003330       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080025f8       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_Transmit_IT
-                0x08003358       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08002620       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_EndTransmit_IT
-                0x08003400       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080026c8       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_Receive_IT
-                0x08003430      0x104 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080026f8      0x104 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x08003534      0x1b4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .text.ir_on    0x080036e8       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
-                0x080036e8                ir_on
+                0x080027fc      0x1b4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .text.ir_on    0x080029b0       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
+                0x080029b0                ir_on
  .text.read_DirIr
-                0x08003764       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
-                0x08003764                read_DirIr
+                0x08002a2c       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
+                0x08002a2c                read_DirIr
  .text.init_maze
-                0x080037ac       0xc4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x080037ac                init_maze
+                0x08002a74       0xc4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08002a74                init_maze
  .text.init_stack
-                0x08003870       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003870                init_stack
+                0x08002b38       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08002b38                init_stack
  .text.abs_to_rel
-                0x080038a0       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x080038a0                abs_to_rel
+                0x08002b68       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08002b68                abs_to_rel
  .text.read_map_path
-                0x080038f8       0xa4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x080038f8                read_map_path
+                0x08002bc0       0xa4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08002bc0                read_map_path
  .text.write_map_wall
-                0x0800399c      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x0800399c                write_map_wall
+                0x08002c64      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08002c64                write_map_wall
  .text.write_map_path
-                0x08003b70      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003b70                write_map_path
+                0x08002e38      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08002e38                write_map_path
  .text.backtrack
-                0x08003d44       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003d44                backtrack
+                0x0800300c       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x0800300c                backtrack
  .text.bestPath
-                0x08003da0       0x34 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003da0                bestPath
+                0x08003068       0x34 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08003068                bestPath
  .text.initTable
-                0x08003dd4       0x4c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003dd4                initTable
+                0x0800309c       0x4c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x0800309c                initTable
  .text.isConnect
-                0x08003e20       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003e20                isConnect
- .text.trans    0x08003e90       0x78 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003e90                trans
- .text.trans2   0x08003f08       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003f08                trans2
+                0x080030e8       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x080030e8                isConnect
+ .text.trans    0x08003158       0x78 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x08003158                trans
+ .text.trans2   0x080031d0       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x080031d0                trans2
  .text.creat_bestPath
-                0x08003f84      0x300 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-                0x08003f84                creat_bestPath
- .text.check_ENC
-                0x08004284       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x08004284                check_ENC
- .text.plus_ADD
-                0x080042cc       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x080042cc                plus_ADD
- .text.incremental_PI_A
-                0x080042fc       0xd0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x080042fc                incremental_PI_A
- .text.incremental_PI_B
-                0x080043cc       0xd0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x080043cc                incremental_PI_B
- .text.range_PWM
-                0x0800449c       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x0800449c                range_PWM
- .text.set_PWM  0x080044fc       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x080044fc                set_PWM
- .text.go_straight
-                0x0800457c       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x0800457c                go_straight
- .text.go_left  0x080045d4       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x080045d4                go_left
- .text.go_right
-                0x08004630       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x08004630                go_right
- .text.go_turn  0x08004684       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x08004684                go_turn
- .text.go_stop  0x080046d8       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x080046d8                go_stop
+                0x0800324c      0x300 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x0800324c                creat_bestPath
  .text.WriteCmd
-                0x080046f8       0x4c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x080046f8                WriteCmd
+                0x0800354c       0x4c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x0800354c                WriteCmd
  .text.OLED_WR_CMD
-                0x08004744       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x08004744                OLED_WR_CMD
+                0x08003598       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x08003598                OLED_WR_CMD
  .text.OLED_WR_DATA
-                0x08004774       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x08004774                OLED_WR_DATA
+                0x080035c8       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x080035c8                OLED_WR_DATA
  .text.OLED_Init
-                0x080047a4       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x080047a4                OLED_Init
+                0x080035f8       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x080035f8                OLED_Init
  .text.OLED_Clear
-                0x080047b8       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x080047b8                OLED_Clear
+                0x0800360c       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x0800360c                OLED_Clear
  .text.OLED_Set_Pos
-                0x0800480c       0x44 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x0800480c                OLED_Set_Pos
+                0x08003660       0x44 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x08003660                OLED_Set_Pos
  .text.OLED_ShowChar
-                0x08004850       0xf4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x08004850                OLED_ShowChar
+                0x080036a4       0xf4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x080036a4                OLED_ShowChar
  .text.OLED_ShowString
-                0x08004944       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x08004944                OLED_ShowString
+                0x08003798       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x08003798                OLED_ShowString
  .text.OLED_writeDPI
-                0x080049a4       0xf4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x080049a4                OLED_writeDPI
+                0x080037f8       0xf4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x080037f8                OLED_writeDPI
  .text.initQueue
-                0x08004a98       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
-                0x08004a98                initQueue
+                0x080038ec       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+                0x080038ec                initQueue
  .text.queue_offer
-                0x08004ac8       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
-                0x08004ac8                queue_offer
- .text.isEmpty  0x08004b24       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
-                0x08004b24                isEmpty
+                0x0800391c       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+                0x0800391c                queue_offer
+ .text.isEmpty  0x08003978       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+                0x08003978                isEmpty
  .text.queue_poll
-                0x08004b44       0x68 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
-                0x08004b44                queue_poll
+                0x08003998       0x68 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+                0x08003998                queue_poll
+ .text.fuzhi    0x08003a00      0x130 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x08003a00                fuzhi
+ .text.go_straight
+                0x08003b30       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x08003b30                go_straight
+ .text.go_left  0x08003ba0       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x08003ba0                go_left
+ .text.go_right
+                0x08003c10       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x08003c10                go_right
+ .text.go_turn  0x08003c80       0x6c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x08003c80                go_turn
  .text.MX_GPIO_Init
-                0x08004bac      0x110 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
-                0x08004bac                MX_GPIO_Init
+                0x08003cec      0x140 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+                0x08003cec                MX_GPIO_Init
  .text.MX_I2C2_Init
-                0x08004cbc       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
-                0x08004cbc                MX_I2C2_Init
+                0x08003e2c       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+                0x08003e2c                MX_I2C2_Init
  .text.HAL_I2C_MspInit
-                0x08004d18       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
-                0x08004d18                HAL_I2C_MspInit
+                0x08003e88       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+                0x08003e88                HAL_I2C_MspInit
  .text.para_init
-                0x08004d98       0x94 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08004d98                para_init
- .text.banEdge  0x08004e2c       0x4c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08004e2c                banEdge
- .text.isWall   0x08004e78       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08004e78                isWall
- .text.isNew    0x08004ed0       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08004ed0                isNew
+                0x08003f08       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08003f08                para_init
+ .text.banEdge  0x08003f64       0x4c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08003f64                banEdge
+ .text.isWall   0x08003fb0       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08003fb0                isWall
+ .text.isNew    0x08004008       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004008                isNew
  .text.search_dir
-                0x08004ef8       0x74 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08004ef8                search_dir
+                0x08004030       0x74 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004030                search_dir
  .text.go_to_next
-                0x08004f6c       0xc4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08004f6c                go_to_next
+                0x080040a4       0x74 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x080040a4                go_to_next
  .text.flash_mapPathInfo
-                0x08005030       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005030                flash_mapPathInfo
+                0x08004118       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004118                flash_mapPathInfo
  .text.flash_pathStack
-                0x08005054       0x2c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005054                flash_pathStack
+                0x0800413c       0x2c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x0800413c                flash_pathStack
  .text.flash_carInfo
-                0x08005080       0x6c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005080                flash_carInfo
+                0x08004168       0x6c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004168                flash_carInfo
  .text.flash_OLED_maze
-                0x080050ec       0xb0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x080050ec                flash_OLED_maze
+                0x080041d4       0xb0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x080041d4                flash_OLED_maze
  .text.flash_OLED_carPos
-                0x0800519c      0x104 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x0800519c                flash_OLED_carPos
+                0x08004284      0x104 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004284                flash_OLED_carPos
  .text.flash_OLED_ir
-                0x080052a0      0x2e8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x080052a0                flash_OLED_ir
- .text.change   0x08005588       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005588                change
- .text.flash_OLED_info
-                0x08005630      0x108 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005630                flash_OLED_info
+                0x08004388      0x2e8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004388                flash_OLED_ir
  .text.start_run
-                0x08005738       0x9c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005738                start_run
- .text.main     0x080057d4      0x214 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x080057d4                main
+                0x08004670       0x98 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004670                start_run
+ .text.main     0x08004708      0x1ac CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004708                main
  .text.SystemClock_Config
-                0x080059e8       0x8c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x080059e8                SystemClock_Config
+                0x080048b4       0x8c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x080048b4                SystemClock_Config
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08005a74      0x190 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005a74                HAL_TIM_PeriodElapsedCallback
+                0x08004940      0x14c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004940                HAL_TIM_PeriodElapsedCallback
  .text.HAL_UART_RxCpltCallback
-                0x08005c04       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005c04                HAL_UART_RxCpltCallback
+                0x08004a8c       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004a8c                HAL_UART_RxCpltCallback
  .text.Error_Handler
-                0x08005c74        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x08005c74                Error_Handler
+                0x08004afc        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x08004afc                Error_Handler
  .text.HAL_MspInit
-                0x08005c80       0x64 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
-                0x08005c80                HAL_MspInit
+                0x08004b08       0x64 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x08004b08                HAL_MspInit
  .text.NMI_Handler
-                0x08005ce4        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005ce4                NMI_Handler
+                0x08004b6c        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004b6c                NMI_Handler
  .text.HardFault_Handler
-                0x08005cf0        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005cf0                HardFault_Handler
+                0x08004b78        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004b78                HardFault_Handler
  .text.MemManage_Handler
-                0x08005cf8        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005cf8                MemManage_Handler
+                0x08004b80        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004b80                MemManage_Handler
  .text.BusFault_Handler
-                0x08005d00        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d00                BusFault_Handler
+                0x08004b88        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004b88                BusFault_Handler
  .text.UsageFault_Handler
-                0x08005d08        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d08                UsageFault_Handler
+                0x08004b90        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004b90                UsageFault_Handler
  .text.SVC_Handler
-                0x08005d10        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d10                SVC_Handler
+                0x08004b98        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004b98                SVC_Handler
  .text.DebugMon_Handler
-                0x08005d1c        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d1c                DebugMon_Handler
+                0x08004ba4        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004ba4                DebugMon_Handler
  .text.PendSV_Handler
-                0x08005d28        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d28                PendSV_Handler
+                0x08004bb0        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004bb0                PendSV_Handler
  .text.SysTick_Handler
-                0x08005d34        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d34                SysTick_Handler
+                0x08004bbc        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004bbc                SysTick_Handler
  .text.USART1_IRQHandler
-                0x08005d40       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d40                USART1_IRQHandler
+                0x08004bc8       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004bc8                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x08005d54       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d54                USART2_IRQHandler
+                0x08004bdc       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004bdc                USART2_IRQHandler
  .text.TIM6_IRQHandler
-                0x08005d68       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d68                TIM6_IRQHandler
+                0x08004bf0       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004bf0                TIM6_IRQHandler
  .text.TIM7_IRQHandler
-                0x08005d7c       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08005d7c                TIM7_IRQHandler
- .text._read    0x08005d90       0x3c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
-                0x08005d90                _read
- .text._write   0x08005dcc       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
-                0x08005dcc                _write
- .text._sbrk    0x08005e04       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
-                0x08005e04                _sbrk
- .text._close   0x08005e5c       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
-                0x08005e5c                _close
- .text._fstat   0x08005e74       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
-                0x08005e74                _fstat
- .text._isatty  0x08005e94       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
-                0x08005e94                _isatty
- .text._lseek   0x08005ea8       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
-                0x08005ea8                _lseek
+                0x08004c04       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08004c04                TIM7_IRQHandler
+ .text._read    0x08004c18       0x3c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x08004c18                _read
+ .text._write   0x08004c54       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x08004c54                _write
+ .text._sbrk    0x08004c8c       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x08004c8c                _sbrk
+ .text._close   0x08004ce4       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x08004ce4                _close
+ .text._fstat   0x08004cfc       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x08004cfc                _fstat
+ .text._isatty  0x08004d1c       0x14 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x08004d1c                _isatty
+ .text._lseek   0x08004d30       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x08004d30                _lseek
  .text.SystemInit
-                0x08005ec0       0x68 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
-                0x08005ec0                SystemInit
- .text.MX_TIM3_Init
-                0x08005f28       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x08005f28                MX_TIM3_Init
- .text.MX_TIM4_Init
-                0x08005fd0       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x08005fd0                MX_TIM4_Init
+                0x08004d48       0x68 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+                0x08004d48                SystemInit
  .text.MX_TIM6_Init
-                0x08006078       0x6c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x08006078                MX_TIM6_Init
+                0x08004db0       0x6c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+                0x08004db0                MX_TIM6_Init
  .text.MX_TIM7_Init
-                0x080060e4       0x6c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x080060e4                MX_TIM7_Init
- .text.MX_TIM8_Init
-                0x08006150      0x150 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x08006150                MX_TIM8_Init
- .text.HAL_TIM_Encoder_MspInit
-                0x080062a0       0xd8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x080062a0                HAL_TIM_Encoder_MspInit
+                0x08004e1c       0x6c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+                0x08004e1c                MX_TIM7_Init
  .text.HAL_TIM_Base_MspInit
-                0x08006378       0x84 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x08006378                HAL_TIM_Base_MspInit
- .text.HAL_TIM_PWM_MspInit
-                0x080063fc       0x3c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x080063fc                HAL_TIM_PWM_MspInit
- .text.HAL_TIM_MspPostInit
-                0x08006438       0x68 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x08006438                HAL_TIM_MspPostInit
+                0x08004e88       0x84 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+                0x08004e88                HAL_TIM_Base_MspInit
  .text.MX_USART1_UART_Init
-                0x080064a0       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
-                0x080064a0                MX_USART1_UART_Init
+                0x08004f0c       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+                0x08004f0c                MX_USART1_UART_Init
  .text.MX_USART2_UART_Init
-                0x080064f4       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
-                0x080064f4                MX_USART2_UART_Init
+                0x08004f60       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+                0x08004f60                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x08006548      0x128 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
-                0x08006548                HAL_UART_MspInit
+                0x08004fb4      0x128 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+                0x08004fb4                HAL_UART_MspInit
  .text.__io_putchar
-                0x08006670       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
-                0x08006670                __io_putchar
+                0x080050dc       0x24 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+                0x080050dc                __io_putchar
  .text.Reset_Handler
-                0x08006694       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
-                0x08006694                Reset_Handler
+                0x08005100       0x48 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x08005100                Reset_Handler
  .text.Default_Handler
-                0x080066dc        0x2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
-                0x080066dc                RTC_Alarm_IRQHandler
-                0x080066dc                EXTI2_IRQHandler
-                0x080066dc                TIM8_TRG_COM_IRQHandler
-                0x080066dc                TIM8_CC_IRQHandler
-                0x080066dc                TIM1_CC_IRQHandler
-                0x080066dc                PVD_IRQHandler
-                0x080066dc                SDIO_IRQHandler
-                0x080066dc                EXTI3_IRQHandler
-                0x080066dc                EXTI0_IRQHandler
-                0x080066dc                I2C2_EV_IRQHandler
-                0x080066dc                ADC1_2_IRQHandler
-                0x080066dc                SPI1_IRQHandler
-                0x080066dc                TAMPER_IRQHandler
-                0x080066dc                TIM8_UP_IRQHandler
-                0x080066dc                DMA2_Channel2_IRQHandler
-                0x080066dc                DMA1_Channel4_IRQHandler
-                0x080066dc                USART3_IRQHandler
-                0x080066dc                RTC_IRQHandler
-                0x080066dc                DMA1_Channel7_IRQHandler
-                0x080066dc                CAN1_RX1_IRQHandler
-                0x080066dc                UART5_IRQHandler
-                0x080066dc                ADC3_IRQHandler
-                0x080066dc                TIM4_IRQHandler
-                0x080066dc                DMA2_Channel1_IRQHandler
-                0x080066dc                I2C1_EV_IRQHandler
-                0x080066dc                DMA1_Channel6_IRQHandler
-                0x080066dc                UART4_IRQHandler
-                0x080066dc                TIM3_IRQHandler
-                0x080066dc                RCC_IRQHandler
-                0x080066dc                TIM1_TRG_COM_IRQHandler
-                0x080066dc                DMA1_Channel1_IRQHandler
-                0x080066dc                Default_Handler
-                0x080066dc                EXTI15_10_IRQHandler
-                0x080066dc                TIM5_IRQHandler
-                0x080066dc                EXTI9_5_IRQHandler
-                0x080066dc                SPI2_IRQHandler
-                0x080066dc                DMA1_Channel5_IRQHandler
-                0x080066dc                EXTI4_IRQHandler
-                0x080066dc                USB_LP_CAN1_RX0_IRQHandler
-                0x080066dc                USB_HP_CAN1_TX_IRQHandler
-                0x080066dc                DMA1_Channel3_IRQHandler
-                0x080066dc                FSMC_IRQHandler
-                0x080066dc                TIM1_UP_IRQHandler
-                0x080066dc                WWDG_IRQHandler
-                0x080066dc                TIM2_IRQHandler
-                0x080066dc                TIM1_BRK_IRQHandler
-                0x080066dc                EXTI1_IRQHandler
-                0x080066dc                DMA2_Channel4_5_IRQHandler
-                0x080066dc                I2C2_ER_IRQHandler
-                0x080066dc                DMA1_Channel2_IRQHandler
-                0x080066dc                TIM8_BRK_IRQHandler
-                0x080066dc                CAN1_SCE_IRQHandler
-                0x080066dc                FLASH_IRQHandler
-                0x080066dc                SPI3_IRQHandler
-                0x080066dc                I2C1_ER_IRQHandler
-                0x080066dc                USBWakeUp_IRQHandler
-                0x080066dc                DMA2_Channel3_IRQHandler
- *fill*         0x080066de        0x2 
- .text.__errno  0x080066e0        0xc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
-                0x080066e0                __errno
+                0x08005148        0x2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x08005148                RTC_Alarm_IRQHandler
+                0x08005148                EXTI2_IRQHandler
+                0x08005148                TIM8_TRG_COM_IRQHandler
+                0x08005148                TIM8_CC_IRQHandler
+                0x08005148                TIM1_CC_IRQHandler
+                0x08005148                PVD_IRQHandler
+                0x08005148                SDIO_IRQHandler
+                0x08005148                EXTI3_IRQHandler
+                0x08005148                EXTI0_IRQHandler
+                0x08005148                I2C2_EV_IRQHandler
+                0x08005148                ADC1_2_IRQHandler
+                0x08005148                SPI1_IRQHandler
+                0x08005148                TAMPER_IRQHandler
+                0x08005148                TIM8_UP_IRQHandler
+                0x08005148                DMA2_Channel2_IRQHandler
+                0x08005148                DMA1_Channel4_IRQHandler
+                0x08005148                USART3_IRQHandler
+                0x08005148                RTC_IRQHandler
+                0x08005148                DMA1_Channel7_IRQHandler
+                0x08005148                CAN1_RX1_IRQHandler
+                0x08005148                UART5_IRQHandler
+                0x08005148                ADC3_IRQHandler
+                0x08005148                TIM4_IRQHandler
+                0x08005148                DMA2_Channel1_IRQHandler
+                0x08005148                I2C1_EV_IRQHandler
+                0x08005148                DMA1_Channel6_IRQHandler
+                0x08005148                UART4_IRQHandler
+                0x08005148                TIM3_IRQHandler
+                0x08005148                RCC_IRQHandler
+                0x08005148                TIM1_TRG_COM_IRQHandler
+                0x08005148                DMA1_Channel1_IRQHandler
+                0x08005148                Default_Handler
+                0x08005148                EXTI15_10_IRQHandler
+                0x08005148                TIM5_IRQHandler
+                0x08005148                EXTI9_5_IRQHandler
+                0x08005148                SPI2_IRQHandler
+                0x08005148                DMA1_Channel5_IRQHandler
+                0x08005148                EXTI4_IRQHandler
+                0x08005148                USB_LP_CAN1_RX0_IRQHandler
+                0x08005148                USB_HP_CAN1_TX_IRQHandler
+                0x08005148                DMA1_Channel3_IRQHandler
+                0x08005148                FSMC_IRQHandler
+                0x08005148                TIM1_UP_IRQHandler
+                0x08005148                WWDG_IRQHandler
+                0x08005148                TIM2_IRQHandler
+                0x08005148                TIM1_BRK_IRQHandler
+                0x08005148                EXTI1_IRQHandler
+                0x08005148                DMA2_Channel4_5_IRQHandler
+                0x08005148                I2C2_ER_IRQHandler
+                0x08005148                DMA1_Channel2_IRQHandler
+                0x08005148                TIM8_BRK_IRQHandler
+                0x08005148                CAN1_SCE_IRQHandler
+                0x08005148                FLASH_IRQHandler
+                0x08005148                SPI3_IRQHandler
+                0x08005148                I2C1_ER_IRQHandler
+                0x08005148                USBWakeUp_IRQHandler
+                0x08005148                DMA2_Channel3_IRQHandler
+ *fill*         0x0800514a        0x2 
+ .text.__errno  0x0800514c        0xc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x0800514c                __errno
  .text.__libc_init_array
-                0x080066ec       0x4c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x080066ec                __libc_init_array
- .text.malloc   0x08006738       0x10 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
-                0x08006738                malloc
- .text.free     0x08006748       0x10 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
-                0x08006748                free
- .text.memset   0x08006758       0x10 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x08006758                memset
- .text._free_r  0x08006768       0x98 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
-                0x08006768                _free_r
+                0x08005158       0x4c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x08005158                __libc_init_array
+ .text.malloc   0x080051a4       0x10 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+                0x080051a4                malloc
+ .text.free     0x080051b4       0x10 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+                0x080051b4                free
+ .text.memset   0x080051c4       0x10 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x080051c4                memset
+ .text._free_r  0x080051d4       0x98 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                0x080051d4                _free_r
  .text._malloc_r
-                0x08006800       0xbc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
-                0x08006800                _malloc_r
- .text.printf   0x080068bc       0x30 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-printf.o)
-                0x080068bc                iprintf
-                0x080068bc                printf
- .text.putchar  0x080068ec       0x28 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putchar.o)
-                0x080068ec                putchar
- .text._sbrk_r  0x08006914       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
-                0x08006914                _sbrk_r
+                0x0800526c       0xbc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x0800526c                _malloc_r
+ .text.printf   0x08005328       0x30 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-printf.o)
+                0x08005328                iprintf
+                0x08005328                printf
+ .text.putchar  0x08005358       0x28 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putchar.o)
+                0x08005358                putchar
+ .text._sbrk_r  0x08005380       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                0x08005380                _sbrk_r
  .text._cleanup_r
-                0x08006934        0xc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08006934                _cleanup_r
+                0x080053a0        0xc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x080053a0                _cleanup_r
  .text.std.isra.0
-                0x08006940       0x48 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x080053ac       0x48 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x08006988       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08006988                __sfmoreglue
- .text.__sinit  0x080069b4       0x60 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x080069b4                __sinit
- .text.__sfp    0x08006a14       0x78 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08006a14                __sfp
+                0x080053f4       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x080053f4                __sfmoreglue
+ .text.__sinit  0x08005420       0x60 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08005420                __sinit
+ .text.__sfp    0x08005480       0x78 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08005480                __sfp
  .text._fwalk_reent
-                0x08006a8c       0x3c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
-                0x08006a8c                _fwalk_reent
+                0x080054f8       0x3c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
+                0x080054f8                _fwalk_reent
  .text.__malloc_lock
-                0x08006ac8        0x2 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
-                0x08006ac8                __malloc_lock
+                0x08005534        0x2 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x08005534                __malloc_lock
  .text.__malloc_unlock
-                0x08006aca        0x2 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
-                0x08006aca                __malloc_unlock
+                0x08005536        0x2 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x08005536                __malloc_unlock
  .text.__sfputc_r
-                0x08006acc       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x08005538       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x08006af8       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x08006af8                __sfputs_r
+                0x08005564       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x08005564                __sfputs_r
  .text._vfprintf_r
-                0x08006b1c      0x238 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x08006b1c                _vfprintf_r
-                0x08006b1c                _vfiprintf_r
+                0x08005588      0x238 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x08005588                _vfprintf_r
+                0x08005588                _vfiprintf_r
  .text._printf_common
-                0x08006d54       0xec c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08006d54                _printf_common
+                0x080057c0       0xec c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x080057c0                _printf_common
  .text._printf_i
-                0x08006e40      0x24c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08006e40                _printf_i
- .text._putc_r  0x0800708c       0x6c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putc.o)
-                0x0800708c                _putc_r
- .text.__sread  0x080070f8       0x22 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x080070f8                __sread
+                0x080058ac      0x24c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x080058ac                _printf_i
+ .text._putc_r  0x08005af8       0x6c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putc.o)
+                0x08005af8                _putc_r
+ .text.__sread  0x08005b64       0x22 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x08005b64                __sread
  .text.__swrite
-                0x0800711a       0x38 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x0800711a                __swrite
- .text.__sseek  0x08007152       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x08007152                __sseek
+                0x08005b86       0x38 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x08005b86                __swrite
+ .text.__sseek  0x08005bbe       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x08005bbe                __sseek
  .text.__sclose
-                0x08007176        0x8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
-                0x08007176                __sclose
- *fill*         0x0800717e        0x2 
+                0x08005be2        0x8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x08005be2                __sclose
+ *fill*         0x08005bea        0x2 
  .text.__swbuf_r
-                0x08007180       0xa8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
-                0x08007180                __swbuf_r
+                0x08005bec       0xa8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
+                0x08005bec                __swbuf_r
  .text._write_r
-                0x08007228       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
-                0x08007228                _write_r
+                0x08005c94       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
+                0x08005c94                _write_r
  .text.__swsetup_r
-                0x0800724c       0xdc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
-                0x0800724c                __swsetup_r
+                0x08005cb8       0xdc c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
+                0x08005cb8                __swsetup_r
  .text._close_r
-                0x08007328       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
-                0x08007328                _close_r
+                0x08005d94       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
+                0x08005d94                _close_r
  .text.__sflush_r
-                0x08007348      0x10c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
-                0x08007348                __sflush_r
+                0x08005db4      0x10c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+                0x08005db4                __sflush_r
  .text._fflush_r
-                0x08007454       0x54 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
-                0x08007454                _fflush_r
+                0x08005ec0       0x54 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+                0x08005ec0                _fflush_r
  .text._lseek_r
-                0x080074a8       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
-                0x080074a8                _lseek_r
+                0x08005f14       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
+                0x08005f14                _lseek_r
  .text.__swhatbuf_r
-                0x080074cc       0x46 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
-                0x080074cc                __swhatbuf_r
- *fill*         0x08007512        0x2 
+                0x08005f38       0x46 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+                0x08005f38                __swhatbuf_r
+ *fill*         0x08005f7e        0x2 
  .text.__smakebuf_r
-                0x08007514       0x78 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
-                0x08007514                __smakebuf_r
- .text.memchr   0x0800758c       0x1c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
-                0x0800758c                memchr
- .text._read_r  0x080075a8       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
-                0x080075a8                _read_r
+                0x08005f80       0x78 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+                0x08005f80                __smakebuf_r
+ .text.memchr   0x08005ff8       0x1c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
+                0x08005ff8                memchr
+ .text._read_r  0x08006014       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
+                0x08006014                _read_r
  .text._fstat_r
-                0x080075cc       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
-                0x080075cc                _fstat_r
+                0x08006038       0x24 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
+                0x08006038                _fstat_r
  .text._isatty_r
-                0x080075f0       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
-                0x080075f0                _isatty_r
+                0x0800605c       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
+                0x0800605c                _isatty_r
  *(.glue_7)
- .glue_7        0x08007610        0x0 linker stubs
+ .glue_7        0x0800607c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08007610        0x0 linker stubs
+ .glue_7t       0x0800607c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08007610        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x0800607c        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(.init)
- .init          0x08007610        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x08007610                _init
- .init          0x08007614        0x8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .init          0x0800607c        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x0800607c                _init
+ .init          0x08006080        0x8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
  *(.fini)
- .fini          0x0800761c        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x0800761c                _fini
- .fini          0x08007620        0x8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x08007628                . = ALIGN (0x4)
-                0x08007628                _etext = .
+ .fini          0x08006088        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x08006088                _fini
+ .fini          0x0800608c        0x8 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x08006094                . = ALIGN (0x4)
+                0x08006094                _etext = .
 
-.vfp11_veneer   0x08007628        0x0
- .vfp11_veneer  0x08007628        0x0 linker stubs
+.vfp11_veneer   0x08006094        0x0
+ .vfp11_veneer  0x08006094        0x0 linker stubs
 
-.v4_bx          0x08007628        0x0
- .v4_bx         0x08007628        0x0 linker stubs
+.v4_bx          0x08006094        0x0
+ .v4_bx         0x08006094        0x0 linker stubs
 
-.iplt           0x08007628        0x0
- .iplt          0x08007628        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.iplt           0x08006094        0x0
+ .iplt          0x08006094        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.rodata         0x08007628      0x8e8
-                0x08007628                . = ALIGN (0x4)
+.rodata         0x08006094      0x8e8
+                0x08006094                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08007628       0x12 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x0800763a        0x2 
- .rodata        0x0800763c        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .rodata        0x08007648       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .rodata        0x08006094       0x12 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x080060a6        0x2 
+ .rodata        0x080060a8        0xc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+ .rodata        0x080060b4       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
  *(.rodata*)
- .rodata.F6x8   0x08007658      0x228 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x08007658                F6x8
- .rodata.F8X16  0x08007880      0x5e0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x08007880                F8X16
+ .rodata.F6x8   0x080060c4      0x228 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x080060c4                F6x8
+ .rodata.F8X16  0x080062ec      0x5e0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x080062ec                F8X16
  .rodata.AHBPrescTable
-                0x08007e60       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
-                0x08007e60                AHBPrescTable
+                0x080068cc       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+                0x080068cc                AHBPrescTable
  .rodata.APBPrescTable
-                0x08007e70        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
-                0x08007e70                APBPrescTable
+                0x080068dc        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+                0x080068dc                APBPrescTable
  .rodata._global_impure_ptr
-                0x08007e78        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x08007e78                _global_impure_ptr
+                0x080068e4        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x080068e4                _global_impure_ptr
  .rodata.__sf_fake_stdin
-                0x08007e7c       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08007e7c                __sf_fake_stdin
+                0x080068e8       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x080068e8                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x08007e9c       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08007e9c                __sf_fake_stdout
+                0x08006908       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08006908                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x08007ebc       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x08007ebc                __sf_fake_stderr
+                0x08006928       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x08006928                __sf_fake_stderr
  .rodata.str1.1
-                0x08007edc       0x11 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x08006948       0x11 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
  .rodata.str1.1
-                0x08007eed       0x22 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08007f10                . = ALIGN (0x4)
- *fill*         0x08007f0f        0x1 
+                0x08006959       0x22 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0800697c                . = ALIGN (0x4)
+ *fill*         0x0800697b        0x1 
 
-.rel.dyn        0x08007f10        0x0
- .rel.iplt      0x08007f10        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.rel.dyn        0x0800697c        0x0
+ .rel.iplt      0x0800697c        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08007f10        0x0
-                0x08007f10                __exidx_start = .
+.ARM            0x0800697c        0x0
+                0x0800697c                __exidx_start = .
  *(.ARM.exidx*)
-                0x08007f10                __exidx_end = .
+                0x0800697c                __exidx_end = .
 
-.preinit_array  0x08007f10        0x0
-                0x08007f10                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0800697c        0x0
+                0x0800697c                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08007f10                PROVIDE (__preinit_array_end, .)
+                0x0800697c                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x08007f10        0x4
-                0x08007f10                PROVIDE (__init_array_start, .)
+.init_array     0x0800697c        0x4
+                0x0800697c                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x08007f10        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
-                0x08007f14                PROVIDE (__init_array_end, .)
+ .init_array    0x0800697c        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+                0x08006980                PROVIDE (__init_array_end, .)
 
-.fini_array     0x08007f14        0x4
+.fini_array     0x08006980        0x4
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08007f14        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x08006980        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08007f18                _sidata = LOADADDR (.data)
+                0x08006984                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x290 load address 0x08007f18
+.data           0x20000000      0x294 load address 0x08006984
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2057,182 +1982,129 @@ LOAD c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m
                 0x20000004        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                 0x20000004                uwTickFreq
  *fill*         0x20000005        0x3 
- .data.Velocity_KP_A
-                0x20000008        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x20000008                Velocity_KP_A
- .data.Velocity_KI_A
-                0x2000000c        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x2000000c                Velocity_KI_A
- .data.Velocity_KP_B
-                0x20000010        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x20000010                Velocity_KP_B
- .data.Velocity_KI_B
-                0x20000014        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x20000014                Velocity_KI_B
  .data.CMD_Data
-                0x20000018       0x1b CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x20000018                CMD_Data
- *fill*         0x20000033        0x1 
- .data.maze     0x20000034      0x121 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x20000034                maze
- *fill*         0x20000155        0x3 
+                0x20000008       0x1b CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x20000008                CMD_Data
+ *fill*         0x20000023        0x1 
+ .data.forward  0x20000024        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x20000024                forward
+ .data.reverse  0x2000002c        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x2000002c                reverse
+ .data.for_rev  0x20000034        0x8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x20000034                for_rev
+ .data.maze     0x2000003c      0x121 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x2000003c                maze
+ *fill*         0x2000015d        0x3 
  .data.dirStack
-                0x20000158       0xc8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x20000158                dirStack
- .data.x.8166   0x20000220        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .data.y.8167   0x20000221        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .data.x.8182   0x20000222        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .data.char_size.8184
-                0x20000223        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .data.num.8226
-                0x20000224        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x20000225        0x3 
+                0x20000160       0xc8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x20000160                dirStack
+ .data.x.8119   0x20000228        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .data.y.8120   0x20000229        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .data.num.8155
+                0x2000022a        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ *fill*         0x2000022b        0x1 
  .data.SystemCoreClock
-                0x20000228        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
-                0x20000228                SystemCoreClock
+                0x2000022c        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+                0x2000022c                SystemCoreClock
  .data.impure_data
-                0x2000022c       0x60 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x20000230       0x60 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x2000028c        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x2000028c                _impure_ptr
-                0x20000290                . = ALIGN (0x4)
-                0x20000290                _edata = .
+                0x20000290        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x20000290                _impure_ptr
+                0x20000294                . = ALIGN (0x4)
+                0x20000294                _edata = .
 
-.jcr            0x20000290        0x0 load address 0x080081a8
- .jcr           0x20000290        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.jcr            0x20000294        0x0 load address 0x08006c18
+ .jcr           0x20000294        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.igot.plt       0x20000290        0x0 load address 0x080081a8
- .igot.plt      0x20000290        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
-                0x20000290                . = ALIGN (0x4)
+.igot.plt       0x20000294        0x0 load address 0x08006c18
+ .igot.plt      0x20000294        0x0 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+                0x20000294                . = ALIGN (0x4)
 
-.bss            0x20000290     0x46d0 load address 0x080081a8
-                0x20000290                _sbss = .
-                0x20000290                __bss_start__ = _sbss
+.bss            0x20000294     0x459c load address 0x08006c18
+                0x20000294                _sbss = .
+                0x20000294                __bss_start__ = _sbss
  *(.bss)
- .bss           0x20000290       0x1c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .bss           0x20000294       0x1c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(.bss*)
- .bss.uwTick    0x200002ac        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x200002ac                uwTick
- .bss.irR1      0x200002b0        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
-                0x200002b0                irR1
- .bss.irR2      0x200002b1        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
-                0x200002b1                irR2
- .bss.irR3      0x200002b2        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
-                0x200002b2                irR3
- .bss.irR4      0x200002b3        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
-                0x200002b3                irR4
- .bss.irR5      0x200002b4        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
-                0x200002b4                irR5
+ .bss.uwTick    0x200002b0        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x200002b0                uwTick
+ .bss.irR1      0x200002b4        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
+                0x200002b4                irR1
+ .bss.irR2      0x200002b5        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
+                0x200002b5                irR2
+ .bss.irR3      0x200002b6        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
+                0x200002b6                irR3
+ .bss.irR4      0x200002b7        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
+                0x200002b7                irR4
+ .bss.irR5      0x200002b8        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
+                0x200002b8                irR5
  .bss.temp.8014
-                0x200002b5        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x200002b9        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  .bss.temp.8033
-                0x200002b6        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
+                0x200002ba        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  .bss.temp.8040
-                0x200002b7        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .bss.Bias_A    0x200002b8        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x200002b8                Bias_A
- .bss.Pwm_A     0x200002bc        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x200002bc                Pwm_A
- .bss.Last_bias_A
-                0x200002c0        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x200002c0                Last_bias_A
- .bss.Bias_B    0x200002c4        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x200002c4                Bias_B
- .bss.Pwm_B     0x200002c8        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x200002c8                Pwm_B
- .bss.Last_bias_B
-                0x200002cc        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                0x200002cc                Last_bias_B
+                0x200002bb        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  .bss.oled_buffer
-                0x200002d0      0x400 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x200002d0                oled_buffer
+                0x200002bc      0x400 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x200002bc                oled_buffer
  .bss.oled_val_buffer
-                0x200006d0     0x4000 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
-                0x200006d0                oled_val_buffer
- .bss.hi2c2     0x200046d0       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
-                0x200046d0                hi2c2
+                0x200006bc     0x4000 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x200006bc                oled_val_buffer
+ .bss.i         0x200046bc        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x200046bc                i
+ .bss.j         0x200046bd        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                0x200046bd                j
+ *fill*         0x200046be        0x2 
+ .bss.hi2c2     0x200046c0       0x54 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+                0x200046c0                hi2c2
  .bss.RxBuffer1
-                0x20004724        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x20004724                RxBuffer1
+                0x20004714        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x20004714                RxBuffer1
  .bss.RxBuffer2
-                0x20004725        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x20004725                RxBuffer2
- *fill*         0x20004726        0x2 
- .bss.leftInfo  0x20004728       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x20004728                leftInfo
- .bss.rightInfo
-                0x20004738       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x20004738                rightInfo
+                0x20004715        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x20004715                RxBuffer2
+ *fill*         0x20004716        0x2 
  .bss.dirStackIdx
-                0x20004748        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                0x20004748                dirStackIdx
- .bss.val.8136  0x2000474c        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x2000474d        0x3 
- .bss.str_tgtA.8185
-                0x20004750        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x20004756        0x2 
- .bss.str_tgtB.8186
-                0x20004758        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x2000475e        0x2 
- .bss.str_pwmA.8187
-                0x20004760        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x20004766        0x2 
- .bss.str_pwmB.8188
-                0x20004768        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x2000476e        0x2 
- .bss.str_encA.8189
-                0x20004770        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x20004776        0x2 
- .bss.str_encB.8190
-                0x20004778        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x2000477e        0x2 
- .bss.str_addA.8191
-                0x20004780        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x20004786        0x2 
- .bss.str_addB.8192
-                0x20004788        0x6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .bss.flag.8225
-                0x2000478e        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- *fill*         0x2000478f        0x1 
+                0x20004718        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x20004718                dirStackIdx
+ .bss.val.8089  0x2000471c        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .bss.flag.8154
+                0x2000471d        0x1 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ *fill*         0x2000471e        0x2 
  .bss.heap_end.5922
-                0x20004790        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
- .bss.htim3     0x20004794       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x20004794                htim3
- .bss.htim4     0x200047d4       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x200047d4                htim4
- .bss.htim6     0x20004814       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x20004814                htim6
- .bss.htim7     0x20004854       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x20004854                htim7
- .bss.htim8     0x20004894       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                0x20004894                htim8
- .bss.huart1    0x200048d4       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
-                0x200048d4                huart1
- .bss.huart2    0x20004914       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
-                0x20004914                huart2
+                0x20004720        0x4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+ .bss.htim6     0x20004724       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+                0x20004724                htim6
+ .bss.htim7     0x20004764       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+                0x20004764                htim7
+ .bss.huart1    0x200047a4       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+                0x200047a4                huart1
+ .bss.huart2    0x200047e4       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+                0x200047e4                huart2
  .bss.__malloc_sbrk_start
-                0x20004954        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
-                0x20004954                __malloc_sbrk_start
+                0x20004824        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x20004824                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x20004958        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
-                0x20004958                __malloc_free_list
+                0x20004828        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x20004828                __malloc_free_list
  *(COMMON)
- COMMON         0x2000495c        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
-                0x2000495c                errno
-                0x20004960                . = ALIGN (0x4)
-                0x20004960                _ebss = .
-                0x20004960                __bss_end__ = _ebss
+ COMMON         0x2000482c        0x4 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x2000482c                errno
+                0x20004830                . = ALIGN (0x4)
+                0x20004830                _ebss = .
+                0x20004830                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20004960      0x600 load address 0x080081a8
-                0x20004960                . = ALIGN (0x8)
-                0x20004960                PROVIDE (end, .)
+                0x20004830      0x600 load address 0x08006c18
+                0x20004830                . = ALIGN (0x8)
+                0x20004830                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
-                0x20004b60                . = (. + _Min_Heap_Size)
- *fill*         0x20004960      0x200 
-                0x20004f60                . = (. + _Min_Stack_Size)
- *fill*         0x20004b60      0x400 
-                0x20004f60                . = ALIGN (0x8)
+                0x20004a30                . = (. + _Min_Heap_Size)
+ *fill*         0x20004830      0x200 
+                0x20004e30                . = (. + _Min_Stack_Size)
+ *fill*         0x20004a30      0x400 
+                0x20004e30                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -2269,11 +2141,11 @@ LOAD c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m
  .ARM.attributes
                 0x00000248       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  .ARM.attributes
-                0x0000027b       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+                0x0000027b       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  .ARM.attributes
-                0x000002ae       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x000002ae       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
  .ARM.attributes
-                0x000002e1       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+                0x000002e1       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
  .ARM.attributes
                 0x00000314       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
  .ARM.attributes
@@ -2295,74 +2167,68 @@ LOAD c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m
  .ARM.attributes
                 0x000004df       0x21 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
  .ARM.attributes
-                0x00000500       0x1d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x00000500       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
  .ARM.attributes
-                0x0000051d       0x1d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                0x0000052d       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000053a       0x1d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixsfsi.o)
+                0x0000055a       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000557       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00000587       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
  .ARM.attributes
-                0x00000584       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x000005b4       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x000005b1       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x000005e1       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x000005de       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+                0x0000060e       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x0000060b       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x0000063b       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-printf.o)
  .ARM.attributes
-                0x00000638       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+                0x00000668       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putchar.o)
  .ARM.attributes
-                0x00000665       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00000695       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x00000692       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-printf.o)
+                0x000006c2       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
  .ARM.attributes
-                0x000006bf       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putchar.o)
+                0x000006ef       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x000006ec       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+                0x0000071c       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x00000719       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x00000749       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
  .ARM.attributes
-                0x00000746       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
+                0x00000776       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x00000773       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+                0x000007a3       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putc.o)
  .ARM.attributes
-                0x000007a0       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x000007d0       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x000007cd       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000007fd       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
  .ARM.attributes
-                0x000007fa       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putc.o)
+                0x0000082a       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
  .ARM.attributes
-                0x00000827       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+                0x00000857       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
  .ARM.attributes
-                0x00000854       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+                0x00000884       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
  .ARM.attributes
-                0x00000881       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
+                0x000008b1       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
  .ARM.attributes
-                0x000008ae       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
+                0x000008de       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
  .ARM.attributes
-                0x000008db       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
+                0x0000090b       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
  .ARM.attributes
-                0x00000908       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
+                0x00000938       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
  .ARM.attributes
-                0x00000935       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+                0x00000965       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
  .ARM.attributes
-                0x00000962       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
+                0x00000992       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
  .ARM.attributes
-                0x0000098f       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+                0x000009bf       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
  .ARM.attributes
-                0x000009bc       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
+                0x000009ec       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
  .ARM.attributes
-                0x000009e9       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
- .ARM.attributes
-                0x00000a16       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
- .ARM.attributes
-                0x00000a43       0x2d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
- .ARM.attributes
-                0x00000a70       0x1d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00000a19       0x1d c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
 OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xf4d5
+.debug_info     0x00000000     0xe87a
  .debug_info    0x00000000      0x6f0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_info    0x000006f0      0xb20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_info    0x00001210      0x6ef CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -2374,21 +2240,21 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .debug_info    0x00007e33     0x1143 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_info    0x00008f76      0x1f9 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
  .debug_info    0x0000916f      0x7d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .debug_info    0x00009943      0x8ce CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .debug_info    0x0000a211      0x9a2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
- .debug_info    0x0000abb3      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
- .debug_info    0x0000ad87      0x2bc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
- .debug_info    0x0000b043      0x790 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
- .debug_info    0x0000b7d3     0x10e2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .debug_info    0x0000c8b5      0x21a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x0000cacf      0x854 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_info    0x0000d323      0x6bf CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
- .debug_info    0x0000d9e2      0x3ce CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_info    0x0000ddb0      0xd2d CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
- .debug_info    0x0000eadd      0x92a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
- .debug_info    0x0000f407       0xce CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_info    0x00009943      0x9a2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+ .debug_info    0x0000a2e5      0x1d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .debug_info    0x0000a4b9      0x2c6 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .debug_info    0x0000a77f      0x2bc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+ .debug_info    0x0000aa3b      0x790 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+ .debug_info    0x0000b1cb      0xf13 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .debug_info    0x0000c0de      0x21a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x0000c2f8      0x854 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_info    0x0000cb4c      0x6bf CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+ .debug_info    0x0000d20b      0x3ce CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_info    0x0000d5d9      0x8a9 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+ .debug_info    0x0000de82      0x92a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+ .debug_info    0x0000e7ac       0xce CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_abbrev   0x00000000     0x267e
+.debug_abbrev   0x00000000     0x2571
  .debug_abbrev  0x00000000      0x1b2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_abbrev  0x000001b2      0x2bd CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_abbrev  0x0000046f      0x1b3 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -2400,21 +2266,21 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .debug_abbrev  0x0000102b      0x1f7 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_abbrev  0x00001222      0x102 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
  .debug_abbrev  0x00001324      0x160 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .debug_abbrev  0x00001484      0x18c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .debug_abbrev  0x00001610      0x1df CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
- .debug_abbrev  0x000017ef      0x11e CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
- .debug_abbrev  0x0000190d      0x105 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
- .debug_abbrev  0x00001a12      0x16c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
- .debug_abbrev  0x00001b7e      0x2cc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .debug_abbrev  0x00001e4a       0xd4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x00001f1e      0x14a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00002068      0x174 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
- .debug_abbrev  0x000021dc      0x120 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x000022fc      0x1d0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
- .debug_abbrev  0x000024cc      0x1a0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
- .debug_abbrev  0x0000266c       0x12 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_abbrev  0x00001484      0x1df CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+ .debug_abbrev  0x00001663      0x11e CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .debug_abbrev  0x00001781      0x109 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .debug_abbrev  0x0000188a      0x105 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+ .debug_abbrev  0x0000198f      0x16c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+ .debug_abbrev  0x00001afb      0x2a3 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x00001d9e       0xd4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x00001e72      0x14a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x00001fbc      0x174 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+ .debug_abbrev  0x00002130      0x120 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x00002250      0x16f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+ .debug_abbrev  0x000023bf      0x1a0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+ .debug_abbrev  0x0000255f       0x12 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_aranges  0x00000000     0x11f0
+.debug_aranges  0x00000000     0x1180
  .debug_aranges
                 0x00000000       0xe0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_aranges
@@ -2438,33 +2304,33 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .debug_aranges
                 0x00000cc8       0x90 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  .debug_aranges
-                0x00000d58       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+                0x00000d58       0x90 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  .debug_aranges
-                0x00000dc8       0x90 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+                0x00000de8       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
  .debug_aranges
-                0x00000e58       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+                0x00000e20       0x50 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
  .debug_aranges
-                0x00000e90       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+                0x00000e70       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
  .debug_aranges
-                0x00000eb0       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+                0x00000e90       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
  .debug_aranges
-                0x00000ee0       0xb8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                0x00000ec0       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
  .debug_aranges
-                0x00000f98       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x00000f68       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .debug_aranges
-                0x00000fb8       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+                0x00000f88       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
  .debug_aranges
-                0x00001038       0xb0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+                0x00001008       0xb0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
  .debug_aranges
-                0x000010e8       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+                0x000010b8       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
  .debug_aranges
-                0x00001110       0x78 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+                0x000010e0       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
  .debug_aranges
-                0x00001188       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+                0x00001118       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
  .debug_aranges
-                0x000011c8       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x00001158       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_ranges   0x00000000     0x1098
+.debug_ranges   0x00000000     0x1028
  .debug_ranges  0x00000000       0xd0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_ranges  0x000000d0       0xf0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_ranges  0x000001c0       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -2476,21 +2342,21 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .debug_ranges  0x00000a70      0x1c0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_ranges  0x00000c30       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
  .debug_ranges  0x00000c48       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .debug_ranges  0x00000cc8       0x60 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .debug_ranges  0x00000d28       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
- .debug_ranges  0x00000da8       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
- .debug_ranges  0x00000dd0       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
- .debug_ranges  0x00000de0       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
- .debug_ranges  0x00000e00       0xa8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .debug_ranges  0x00000ea8       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_ranges  0x00000eb8       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_ranges  0x00000f28       0xa0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
- .debug_ranges  0x00000fc8       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_ranges  0x00000fe0       0x68 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
- .debug_ranges  0x00001048       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
- .debug_ranges  0x00001078       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_ranges  0x00000cc8       0x80 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+ .debug_ranges  0x00000d48       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .debug_ranges  0x00000d70       0x40 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .debug_ranges  0x00000db0       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+ .debug_ranges  0x00000dc0       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+ .debug_ranges  0x00000de0       0x98 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .debug_ranges  0x00000e78       0x10 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_ranges  0x00000e88       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_ranges  0x00000ef8       0xa0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+ .debug_ranges  0x00000f98       0x18 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_ranges  0x00000fb0       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+ .debug_ranges  0x00000fd8       0x30 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+ .debug_ranges  0x00001008       0x20 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_line     0x00000000     0x905d
+.debug_line     0x00000000     0x8e7c
  .debug_line    0x00000000      0x482 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_line    0x00000482      0x4d2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_line    0x00000954      0xb68 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -2502,21 +2368,21 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .debug_line    0x00005444      0xba2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_line    0x00005fe6      0x29f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
  .debug_line    0x00006285      0x4d2 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .debug_line    0x00006757      0x432 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .debug_line    0x00006b89      0x4fb CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
- .debug_line    0x00007084       0xef CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
- .debug_line    0x00007173      0x27b CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
- .debug_line    0x000073ee      0x2dd CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
- .debug_line    0x000076cb      0x706 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .debug_line    0x00007dd1      0x1fd CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x00007fce      0x391 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_line    0x0000835f      0x2c0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
- .debug_line    0x0000861f      0x246 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_line    0x00008865      0x412 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
- .debug_line    0x00008c77      0x32f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
- .debug_line    0x00008fa6       0xb7 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_line    0x00006757      0x4fb CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+ .debug_line    0x00006c52       0xef CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .debug_line    0x00006d41      0x3dc CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .debug_line    0x0000711d      0x281 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+ .debug_line    0x0000739e      0x2dd CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+ .debug_line    0x0000767b      0x697 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .debug_line    0x00007d12      0x1fd CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x00007f0f      0x391 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_line    0x000082a0      0x2c0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+ .debug_line    0x00008560      0x246 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_line    0x000087a6      0x2f0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+ .debug_line    0x00008a96      0x32f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+ .debug_line    0x00008dc5       0xb7 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_str      0x00000000     0x4c26
+.debug_str      0x00000000     0x4a8a
  .debug_str     0x00000000      0x897 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                                 0x8f8 (size before relaxing)
  .debug_str     0x00000897      0x44e CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -2539,29 +2405,29 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
                                 0x255 (size before relaxing)
  .debug_str     0x00003eda      0x1be CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
                                 0x386 (size before relaxing)
- .debug_str     0x00004098      0x16f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-                                0x6ae (size before relaxing)
- .debug_str     0x00004207      0x167 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+ .debug_str     0x00004098      0x167 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
                                 0x78d (size before relaxing)
- .debug_str     0x0000436e       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .debug_str     0x000041ff       0x7c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
                                 0x205 (size before relaxing)
- .debug_str     0x000043ea       0x65 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+ .debug_str     0x0000427b       0xab CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+                                0x283 (size before relaxing)
+ .debug_str     0x00004326       0x65 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
                                 0x29a (size before relaxing)
- .debug_str     0x0000444f       0x5e CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+ .debug_str     0x0000438b       0x5e CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
                                 0x74c (size before relaxing)
- .debug_str     0x000044ad      0x1c7 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
-                                0xb7a (size before relaxing)
- .debug_str     0x00004674       0x55 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x000043e9      0x15e CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+                                0xade (size before relaxing)
+ .debug_str     0x00004547       0x55 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
                                 0x25c (size before relaxing)
- .debug_str     0x000046c9      0x124 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_str     0x0000459c      0x124 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
                                 0x84d (size before relaxing)
- .debug_str     0x000047ed      0x24a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+ .debug_str     0x000046c0      0x24a CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
                                 0x464 (size before relaxing)
- .debug_str     0x00004a37       0x87 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_str     0x0000490a       0x87 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
                                 0x2ef (size before relaxing)
- .debug_str     0x00004abe       0xdf CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
-                                0xd08 (size before relaxing)
- .debug_str     0x00004b9d       0x89 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+ .debug_str     0x00004991       0x70 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+                                0xa50 (size before relaxing)
+ .debug_str     0x00004a01       0x89 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
                                 0xa57 (size before relaxing)
 
 .comment        0x00000000       0x6e
@@ -2577,9 +2443,9 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
@@ -2590,7 +2456,7 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
  .comment       0x0000006e       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
 
-.debug_frame    0x00000000     0x520c
+.debug_frame    0x00000000     0x4fe0
  .debug_frame   0x00000000      0x334 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_frame   0x00000334      0x428 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_frame   0x0000075c      0x20c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -2602,43 +2468,43 @@ OUTPUT(maze_stm32_cubemx+clion.elf elf32-littlearm)
  .debug_frame   0x00002f88      0x838 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_frame   0x000037c0       0x5c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
  .debug_frame   0x0000381c      0x260 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .debug_frame   0x00003a7c      0x1c8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .debug_frame   0x00003c44      0x220 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
- .debug_frame   0x00003e64       0xa4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
- .debug_frame   0x00003f08       0x34 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
- .debug_frame   0x00003f3c       0x74 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
- .debug_frame   0x00003fb0      0x2d8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
- .debug_frame   0x00004288       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x000042c0      0x17c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_frame   0x0000443c      0x2d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
- .debug_frame   0x00004710       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_frame   0x00004768      0x1c8 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
- .debug_frame   0x00004930       0xb4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
- .debug_frame   0x000049e4       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x00004a04       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x00004a30       0x30 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
- .debug_frame   0x00004a60       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
- .debug_frame   0x00004a80       0x38 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00004ab8       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00004ae4       0x74 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-printf.o)
- .debug_frame   0x00004b58       0x58 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putchar.o)
- .debug_frame   0x00004bb0       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00004bdc      0x11c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x00004cf8       0x54 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
- .debug_frame   0x00004d4c       0x30 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x00004d7c       0xac c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x00004e28       0x60 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00004e88       0x48 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putc.o)
- .debug_frame   0x00004ed0       0x5c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
- .debug_frame   0x00004f2c       0x88 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
- .debug_frame   0x00004fb4       0x40 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00004ff4       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
- .debug_frame   0x00005020       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
- .debug_frame   0x0000504c       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
- .debug_frame   0x00005078       0x68 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
- .debug_frame   0x000050e0       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
- .debug_frame   0x0000510c       0x54 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
- .debug_frame   0x00005160       0x28 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
- .debug_frame   0x00005188       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
- .debug_frame   0x000051b4       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
- .debug_frame   0x000051e0       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00003a7c      0x220 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
+ .debug_frame   0x00003c9c       0xa4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
+ .debug_frame   0x00003d40      0x10c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+ .debug_frame   0x00003e4c       0x34 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
+ .debug_frame   0x00003e80       0x74 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj
+ .debug_frame   0x00003ef4      0x290 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
+ .debug_frame   0x00004184       0x38 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x000041bc      0x17c CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x00004338      0x2d4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj
+ .debug_frame   0x0000460c       0x58 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x00004664       0xa0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj
+ .debug_frame   0x00004704       0xb4 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj
+ .debug_frame   0x000047b8       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000047d8       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00004804       0x30 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00004834       0x20 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00004854       0x38 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000488c       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x000048b8       0x74 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-printf.o)
+ .debug_frame   0x0000492c       0x58 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putchar.o)
+ .debug_frame   0x00004984       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x000049b0      0x11c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00004acc       0x54 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00004b20       0x30 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00004b50       0xac c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x00004bfc       0x60 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00004c5c       0x48 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-putc.o)
+ .debug_frame   0x00004ca4       0x5c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x00004d00       0x88 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00004d88       0x40 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00004dc8       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x00004df4       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00004e20       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-closer.o)
+ .debug_frame   0x00004e4c       0x68 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00004eb4       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x00004ee0       0x54 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00004f34       0x28 c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x00004f5c       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-readr.o)
+ .debug_frame   0x00004f88       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00004fb4       0x2c c:/progra~2/gnutoo~1/50a5a~1.420/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-isattyr.o)

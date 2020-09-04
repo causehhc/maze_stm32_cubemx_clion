@@ -28,7 +28,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "User/maze.h"
-#include "User/motor.h"
+#include "User/stepMotor.h"
 #include "User/infrared.h"
 #include "User/oled.h"
 #include <stdio.h>
@@ -55,9 +55,7 @@
 uint8_t RxBuffer1; //串口接收1
 uint8_t RxBuffer2; //串口接收2
 
-motorInfoType leftInfo;
-motorInfoType rightInfo;
-uint8_t maze[DPI][DPI] = {0x11};//新路�??????1，有墙是1
+uint8_t maze[DPI][DPI] = {0x11};//新路�??????????1，有墙是1
 
 char dirStack[STKDEEP] = {-1};
 int dirStackIdx = 0;
@@ -75,15 +73,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void para_init(carInfoType *carInfo, char x, char y, char dir){
-  leftInfo.ENC = 0;
-  leftInfo.PWM = 0;
-  leftInfo.ADD = 0;
-  leftInfo.TGT = 0;
-
-  rightInfo.ENC = 0;
-  rightInfo.PWM = 0;
-  rightInfo.ADD = 0;
-  rightInfo.TGT = 0;
 
   carInfo->x = x;
   carInfo->y = y;
@@ -95,11 +84,11 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
   maze[x][y] = 0x00;
 }
 
-/** 绝对方向�??????       相对方向�??????
-  *     0           0：直�??????
-  * 3       1       1：右�??????
-  *     2           2：掉�??????
-  *                 3：左�??????
+/** 绝对方向�??????????       相对方向�??????????
+  *     0           0：直�??????????
+  * 3       1       1：右�??????????
+  *     2           2：掉�??????????
+  *                 3：左�??????????
 **/
 char banEdge(carInfoType carInfo, char absDir){
   if(carInfo.y!=1 || absDir!=0){
@@ -113,7 +102,7 @@ char banEdge(carInfoType carInfo, char absDir){
   }
   return 0;
 }
-/* 判断此方向是否有�??????*/
+/* 判断此方向是否有�??????????*/
 char isWall(carInfoType carInfo, char absDir){
   char relDir = abs_to_rel(carInfo.dir, absDir);
   char ir = read_DirIr(relDir);
@@ -134,7 +123,7 @@ char isNew(carInfoType carInfo, char absDir){
   return read_map_path(maze, carInfo, absDir);
 }
 
-/* 搜索可走的所有方�??????*/
+/* 搜索可走的所有方�??????????*/
 char search_dir(carInfoType carInfo){
   char aimDir = -1;
   for(int absDir=0; absDir < 4; absDir++){
@@ -151,26 +140,24 @@ char search_dir(carInfoType carInfo){
   return aimDir;
 }
 
-/* 前往相邻的下�??????个方�??????*/
+/* 前往相邻的下�??????????个方�??????????*/
 void go_to_next(carInfoType carInfo, char nextDir){
   if(nextDir==255)  {
-    go_stop(&leftInfo, &rightInfo);
     return;
   }
   char relDir = abs_to_rel(carInfo.dir, nextDir);
   if(relDir == 0) {
-    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_straight(104);
   }else if(relDir == 1) {
-    go_right(&leftInfo, &rightInfo, 2300,1);
-    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_right(48);
+    go_straight(104);
   }else if(relDir == 2) {
-    go_turn(&leftInfo, &rightInfo, 2300,1);
-    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_turn(99);
+    go_straight(104);
   }else if(relDir == 3) {
-    go_left(&leftInfo, &rightInfo, 2300,1);
-    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_left(48);
+    go_straight(104);
   }else{
-    go_stop(&leftInfo, &rightInfo);
   }
 }
 
@@ -179,7 +166,7 @@ void flash_mapPathInfo(carInfoType carInfo, char nextDir){
   write_map_path(maze, carInfo, nextDir, 0);
 }
 
-/* 刷新方向�??????*/
+/* 刷新方向�??????????*/
 void flash_pathStack(char dir){
   dirStack[dirStackIdx++] = dir;
 }
@@ -278,60 +265,6 @@ void flash_OLED_ir(){
   }
 }
 
-void change(int x, char *str, char len){
-  for(int i=0; i<len; i++){
-    str[i] = '0';
-  }
-  if(x >= 0){
-    str[0] = '+';
-  }else{
-    str[0] = '-';
-    x = -x;
-  }
-  str[--len] = '\0';
-  while(x){
-    str[--len] = x%10 + '0';
-    x /= 10;
-  }
-}
-
-void flash_OLED_info(){
-  static char x=70,y=5;
-  static uint8_t char_size = 1;
-  static char str_tgtA[6];
-  static char str_tgtB[6];
-  static char str_pwmA[6];
-  static char str_pwmB[6];
-  static char str_encA[6];
-  static char str_encB[6];
-
-  static char str_addA[6];
-  static char str_addB[6];
-
-  change(leftInfo.TGT, str_tgtA, 6);
-  change(rightInfo.TGT, str_tgtB, 6);
-  change(leftInfo.PWM, str_pwmA, 6);
-  change(rightInfo.PWM, str_pwmB, 6);
-  change(leftInfo.ENC, str_encA, 6);
-  change(rightInfo.ENC, str_encB, 6);
-  change(leftInfo.ADD, str_addA, 6);
-  change(rightInfo.ADD, str_addB, 6);
-
-  if(1){
-    OLED_ShowString(x,2,str_encA,char_size);
-    OLED_ShowString(x,3,str_tgtA,char_size);
-    OLED_ShowString(x,4,str_pwmA,char_size);
-
-    OLED_ShowString(x,5,str_encB,char_size);
-    OLED_ShowString(x,6,str_tgtB,char_size);
-    OLED_ShowString(x,7,str_pwmB,char_size);
-  } else{
-    OLED_ShowString(x,2,str_addA,char_size);
-    OLED_ShowString(x,4,str_addB,char_size);
-  }
-}
-
-
 void start_run(){
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
   char x=70,y=5;
@@ -345,7 +278,11 @@ void start_run(){
       break;
     }
     flash_OLED_ir();
-    flash_OLED_info();
+//    flash_OLED_info();
+  }
+  while(1){
+//    go_left(99);
+    go_right(99);
   }
 }
 /* USER CODE END 0 */
@@ -359,8 +296,8 @@ int main(void)
   /* USER CODE BEGIN 1 */
   carInfoType carInfo; //小车自身信息
   char sprintFlag = 0;  //冲刺标记
-  char nextDir = 0; //下一步绝对方�??????
-  char backFlag = 0; //下一步绝对方�??????
+  char nextDir = 0; //下一步绝对方�??????????
+  char backFlag = 0; //下一步绝对方�??????????
 
   /* USER CODE END 1 */
 
@@ -382,21 +319,12 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_TIM3_Init();
-  MX_TIM4_Init();
   MX_TIM6_Init();
-  MX_TIM8_Init();
   MX_I2C2_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_1|TIM_CHANNEL_2);
-  HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_1|TIM_CHANNEL_2);
-  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_1);
-  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_2);
-  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_3);
-  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_4);
   HAL_UART_Receive_IT(&huart1, &RxBuffer1, 1);
   HAL_UART_Receive_IT(&huart2, &RxBuffer2, 1);
   HAL_TIM_Base_Start_IT(&htim6);
@@ -410,7 +338,7 @@ int main(void)
 
   start_run();
   uint8_t str[] = "Run... ";
-  OLED_ShowString(3,8,str,12);
+  OLED_ShowString(70,5,str,12);
 
   /* USER CODE END 2 */
 
@@ -427,17 +355,15 @@ int main(void)
 //      break;
 
       if(sprintFlag == 0){  //探索阶段
-        nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�??????步的方向
+        nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�??????????步的方向
         backFlag = 0;
       }else {  //冲刺阶段
-        nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下�??????步的方向
+        nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下�??????????步的方向
         if(nextDir == 255){ //ENDOFCODE
-          leftInfo.TGT = 0;
-          rightInfo.TGT = 0;
           HAL_TIM_Base_Stop_IT(&htim6);
           HAL_TIM_Base_Stop_IT(&htim7);
           uint8_t str[] = "FINISH ";
-          OLED_ShowString(3,8,str,12);
+          OLED_ShowString(70,5,str,12);
           while(1);
         }
       }
@@ -446,7 +372,7 @@ int main(void)
         nextDir = backtrack(dirStack, &dirStackIdx);
         backFlag = 1;
         if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-          dirStackIdx = creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
+          dirStackIdx = creat_bestPath(carInfo, maze, dirStack);  //计算�????优路�????
           sprintFlag = 1; //切换冲刺标记
         }
       }
@@ -454,7 +380,7 @@ int main(void)
       go_to_next(carInfo, nextDir);  //执行
 
       /*刷新信息*/
-      if(!backFlag) flash_pathStack(nextDir); //刷新方向�??????
+      if(!backFlag) flash_pathStack(nextDir); //刷新方向�??????????
       flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
       flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
 
@@ -462,17 +388,9 @@ int main(void)
       flash_OLED_maze();
       flash_OLED_carPos(carInfo);
       flash_OLED_ir();
-      flash_OLED_info();
-
-//      for(int i=0;i<15;i++){
-//        printf("%d ",dirStack[i]);
-//      }
-//      printf("\n");
-//      printf("%d %d %d %d\n",carInfo.x, carInfo.y, carInfo.dir, dirStackIdx);
-//      trans(maze);
+//      flash_OLED_info();
     }
     flash_OLED_ir();
-    go_stop(&leftInfo, &rightInfo);
   }
   /* USER CODE END 3 */
 }
@@ -517,24 +435,7 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //10ms
-    //xiuzheng
-//    if(irR2){
-//      if(rightInfo.TGT < 0){
-//        rightInfo.TGT += 1;
-//      }
-//    }
-//    if(irR4){
-//      if(leftInfo.TGT > 0){
-//        leftInfo.TGT -= 1;
-//      }
-//    }
-    //motorControl
-    check_ENC(&leftInfo, &rightInfo);
-    plus_ADD(&leftInfo, &rightInfo);
-    incremental_PI_A(&leftInfo);
-    incremental_PI_B(&rightInfo);
-    range_PWM(&leftInfo, &rightInfo, 7000);
-    set_PWM(&leftInfo, &rightInfo);
+
   }
   if (htim->Instance == htim7.Instance){ //10ms
     static uint8_t flag = 0;

@@ -662,6 +662,33 @@ Src/User/queue.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.s
 .PHONY : Src/User/queue.c.s
 
+Src/User/stepMotor.obj: Src/User/stepMotor.c.obj
+
+.PHONY : Src/User/stepMotor.obj
+
+# target to build an object file
+Src/User/stepMotor.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
+.PHONY : Src/User/stepMotor.c.obj
+
+Src/User/stepMotor.i: Src/User/stepMotor.c.i
+
+.PHONY : Src/User/stepMotor.i
+
+# target to preprocess a source file
+Src/User/stepMotor.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.i
+.PHONY : Src/User/stepMotor.c.i
+
+Src/User/stepMotor.s: Src/User/stepMotor.c.s
+
+.PHONY : Src/User/stepMotor.s
+
+# target to generate assembly for a file
+Src/User/stepMotor.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.s
+.PHONY : Src/User/stepMotor.c.s
+
 Src/gpio.obj: Src/gpio.c.obj
 
 .PHONY : Src/gpio.obj
@@ -983,6 +1010,9 @@ help:
 	@echo ... Src/User/queue.obj
 	@echo ... Src/User/queue.i
 	@echo ... Src/User/queue.s
+	@echo ... Src/User/stepMotor.obj
+	@echo ... Src/User/stepMotor.i
+	@echo ... Src/User/stepMotor.s
 	@echo ... Src/gpio.obj
 	@echo ... Src/gpio.i
 	@echo ... Src/gpio.s

@@ -301,6 +301,12 @@
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.h">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stepMotor.c">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stepMotor.h">
+			<Option target="maze_stm32_cubemx+clion.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/gpio.c">
 			<Option target="maze_stm32_cubemx+clion.elf"/>
 		</Unit>

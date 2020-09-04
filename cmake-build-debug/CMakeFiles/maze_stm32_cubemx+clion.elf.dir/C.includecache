@@ -274,13 +274,11 @@ math.h
 main.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/main.h
 
-C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/motor.h
-tim.h
-C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/tim.h
-
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.h
 stm32f1xx_hal.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stm32f1xx_hal.h
+
+C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stepMotor.h
 
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/main.c
 main.h
@@ -295,8 +293,8 @@ gpio.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/gpio.h
 User/maze.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.h
-User/motor.h
-C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/motor.h
+User/stepMotor.h
+C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stepMotor.h
 User/infrared.h
 C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/infrared.h
 User/oled.h
