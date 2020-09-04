@@ -29,5 +29,6 @@ void init_stack(char dirStack[STKDEEP]);
 char backtrack(char *dirStack, int *dirStackIdx);
 char bestPath(char *dirStack, int *dirStackIdx);
 char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
+void trans(uint8_t highTable[DPI][DPI]);
 
 #endif //MAZE_STM32_CUBEMX_CLION_MAZE_H

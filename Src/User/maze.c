@@ -99,6 +99,7 @@ char backtrack(char *dirStack, int *dirStackIdx){
   char backDir = -1;
   if(--(*dirStackIdx) != -1){
     backDir = dirStack[*dirStackIdx];
+    dirStack[(*dirStackIdx)] = -1;
     if(backDir >= 0) backDir += 2;
     if(backDir >= 4) backDir -= 4;
   }
@@ -128,7 +129,7 @@ char isConnect(uint8_t maze[DPI][DPI], char newX,char newY){
   return 1;
 }
 
-void trans(char highTable[DPI][DPI]){
+void trans(uint8_t highTable[DPI][DPI]){
   for(char x=0; x<DPI; x++){
     printf("=====");
   }
