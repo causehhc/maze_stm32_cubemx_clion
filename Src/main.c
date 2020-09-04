@@ -153,23 +153,23 @@ char search_dir(carInfoType carInfo){
 
 /* 前往相邻的下�??????个方�??????*/
 void go_to_next(carInfoType carInfo, char nextDir){
+  if(nextDir==255)  {
+    go_stop(&leftInfo, &rightInfo);
+    return;
+  }
   char relDir = abs_to_rel(carInfo.dir, nextDir);
   if(relDir == 0) {
     go_straight(&leftInfo, &rightInfo, 2300,2);
-  }
-  if(relDir == 1) {
+  }else if(relDir == 1) {
     go_right(&leftInfo, &rightInfo, 2300,1);
     go_straight(&leftInfo, &rightInfo, 2300,2);
-  }
-  if(relDir == 2) {
+  }else if(relDir == 2) {
     go_turn(&leftInfo, &rightInfo, 2300,1);
     go_straight(&leftInfo, &rightInfo, 2300,2);
-  }
-  if(relDir == 3) {
+  }else if(relDir == 3) {
     go_left(&leftInfo, &rightInfo, 2300,1);
     go_straight(&leftInfo, &rightInfo, 2300,2);
-  }
-  if(relDir == 255) {
+  }else{
     go_stop(&leftInfo, &rightInfo);
   }
 }
@@ -214,15 +214,15 @@ void flash_OLED_carPos(carInfoType carInfo){
       OLED_writeDPI(i + carInfo.x*(LEN / DPI)+1, j + carInfo.y*(LEN / DPI)+1, 1);
     }
   }
-//  if(carInfo.dir == 0){
-//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1-2, 1);
-//  }else if(carInfo.dir == 1){
-//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1+2, carInfo.y*(LEN / DPI)+1, 1);
-//  }else if(carInfo.dir == 2){
-//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1+2, 1);
-//  }else{
-//    OLED_writeDPI(carInfo.x*(LEN / DPI)+1-2, carInfo.y*(LEN / DPI)+1, 1);
-//  }
+  if(carInfo.dir == 0){
+    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1-1, 1);
+  }else if(carInfo.dir == 1){
+    OLED_writeDPI(carInfo.x*(LEN / DPI)+1+1, carInfo.y*(LEN / DPI)+1, 1);
+  }else if(carInfo.dir == 2){
+    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1+1, 1);
+  }else{
+    OLED_writeDPI(carInfo.x*(LEN / DPI)+1-1, carInfo.y*(LEN / DPI)+1, 1);
+  }
 }
 
 void flash_OLED_ir(){
@@ -472,6 +472,7 @@ int main(void)
 //      trans(maze);
     }
     flash_OLED_ir();
+    go_stop(&leftInfo, &rightInfo);
   }
   /* USER CODE END 3 */
 }
