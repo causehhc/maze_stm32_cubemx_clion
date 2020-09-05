@@ -152,7 +152,7 @@ void go_to_next(carInfoType carInfo, char nextDir){
     go_right(48);
     go_straight(104);
   }else if(relDir == 2) {
-    go_turn(99);
+    go_turn(96);
     go_straight(104);
   }else if(relDir == 3) {
     go_left(48);
@@ -280,10 +280,10 @@ void start_run(){
     flash_OLED_ir();
 //    flash_OLED_info();
   }
-  while(1){
-//    go_left(99);
-    go_right(99);
-  }
+//  while(1){
+////    go_left(99);
+//    go_right(99);
+//  }
 }
 /* USER CODE END 0 */
 
@@ -350,8 +350,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    if(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
-      while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
+//    if(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
+//      while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
 //      break;
 
       if(sprintFlag == 0){  //探索阶段
@@ -377,7 +377,7 @@ int main(void)
         }
       }
 
-      go_to_next(carInfo, nextDir);  //执行
+//      go_to_next(carInfo, nextDir);  //执行
 
       /*刷新信息*/
       if(!backFlag) flash_pathStack(nextDir); //刷新方向�??????????
@@ -389,7 +389,7 @@ int main(void)
       flash_OLED_carPos(carInfo);
       flash_OLED_ir();
 //      flash_OLED_info();
-    }
+//    }
     flash_OLED_ir();
   }
   /* USER CODE END 3 */
@@ -435,7 +435,11 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //10ms
-
+//    if(irR2){
+//      chanLM(8);
+//    }else if(irR4){
+//      chanRM(8);
+//    }
   }
   if (htim->Instance == htim7.Instance){ //10ms
     static uint8_t flag = 0;

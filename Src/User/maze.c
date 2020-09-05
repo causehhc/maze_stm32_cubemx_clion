@@ -147,8 +147,17 @@ void initTable(char highTable[HIDPI][HIDPI]){
   }
 }
 
-char isConnect(uint8_t maze[DPI][DPI], char newX,char newY){
+char isConnect(uint8_t maze[DPI][DPI], char newX,char newY, char absDir){
   char flag = 1;
+  if(absDir==0){
+    newY++;
+  }else if(absDir==1){
+    newX--;
+  }else if(absDir==2){
+    newY--;
+  }else if(absDir==3){
+    newX++;
+  }
   if(maze[newX][newY] & 0x01){
     flag = 0;
   }
@@ -189,8 +198,23 @@ void trans2(char highTable[HIDPI][HIDPI]){
   }
 }
 
+void test(uint8_t maze[DPI][DPI]){
+  maze[1][1] = 0;
+  maze[2][1] = 0;
+  maze[3][1] = 0;
+  maze[3][2] = 0;
+  maze[3][3] = 0;
+  maze[2][3] = 0;
+  maze[1][3] = 0;
+  maze[4][3] = 0;
+  maze[5][3] = 0;
+}
+
 /* 创建最优路径*/
 char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
+  test(maze);
+  trans(maze);
+
   Queue *q = initQueue();
   type pos;
   pos.x = carInfo.x;
@@ -210,7 +234,7 @@ char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack)
       else if (absDir == 1) newX = tempPos.x + 1;
       else if (absDir == 2) newY = tempPos.y + 1;
       else if (absDir == 3) newX = tempPos.x - 1;
-      if (isConnect(maze, newX*2-1, newY*2-1)) {
+      if (isConnect(maze, newX*2-1, newY*2-1, absDir)) {
         if (highTable[newX][newY] == 255) {
           pos.x = newX;
           pos.y = newY;
@@ -219,9 +243,9 @@ char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack)
         }
       }
     }
+    trans2(highTable);
   }
-  trans(maze);
-  trans2(highTable);
+
   char idx=0;
   pos.x = ENDX;
   pos.y = ENDY;
