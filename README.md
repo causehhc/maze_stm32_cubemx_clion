@@ -8,10 +8,11 @@ traditional版本与51版本的编写思路相似，区别在于新增了编码�
 ## 片上资源分布  
 + SYSCLK：72MHz  
 + DEBUG：SWD  
-+ TIM3：编码器模式  
-+ TIM4：编码器模式  
-+ TIM6：触发10ms中断  
-+ TIM8：4通道PWM生成  
+~~+ TIM3：编码器模式~~  
+~~+ TIM4：编码器模式~~  
++ TIM6：触发10ms中断（避障）  
++ TIM7：触发10ms中断（红外）  
+~~+ TIM8：4通道PWM生成~~  
 + IIC2：OLED屏幕显示走迷宫进度  
 + USART1：串口调试  
 ![avatar](PIC/1.png)  
@@ -19,17 +20,14 @@ traditional版本与51版本的编写思路相似，区别在于新增了编码�
 ### 1、文件结构
 + main：主函数
 + infrared：红外驱动
-+ maze：迷宫算法相关
-+ motor：PI电机驱动
++ maze：迷宫算法相关  
++ ~~motor：PI电机驱动~~
++ stepMotor: 步进电机控制
++ oled: oled驱动
++ queue: 队列实现
 ### 2、数据设计
-+ carInfoType：小车自身信息结构体
-````
-typedef struct {
-    char x; //坐标x
-    char y; //坐标y
-    char dir; //绝对方向
-}carInfoType;
-````
++ ~~carInfoType：小车自身信息结构体~~ 
+
 + motorInfoType：电机自身信息结构体
 ````
 typedef struct {
@@ -39,13 +37,7 @@ typedef struct {
     int PWM;  //电机实际PWM赋值
 }motorInfoType;
 ````
-+ PI控制器相关变量
-````
-float Velocity_KP_A = 10,Velocity_KI_A = 10;
-int Bias_A,Pwm_A,Last_bias_A;
-float Velocity_KP_B = 10,Velocity_KI_B = 10;
-int Bias_B,Pwm_B,Last_bias_B;
-````
++ ~~PI控制器相关变量~~
 ### 2、程序设计
 #### 2.1、绝对方向与相对方向
 ````
@@ -70,14 +62,9 @@ int Bias_B,Pwm_B,Last_bias_B;
 #### 2.3、10ms中断
 + 路线修正
     + 分别检测左右斜向红外避障模块，改变电机转速期望值来对路线进行修正。
-+ 电机PI驱动  
-    + 检测当前编码器示数
-    + 对编码器示数进行累加
-    + 左轮PI控制
-    + 右轮PI控制
-    + PWM限幅
-    + PWM赋值
++ ~~电机PI驱动~~  
++ 红外避障检测
 #### 2.4、最优路径BFS
-~~//TODO~~
++ BFS
 
   
