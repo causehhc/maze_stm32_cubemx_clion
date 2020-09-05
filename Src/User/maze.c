@@ -212,7 +212,7 @@ void test(uint8_t maze[DPI][DPI]){
 
 /* 创建最优路径*/
 char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
-  test(maze);
+//  test(maze);
   trans(maze);
 
   Queue *q = initQueue();
@@ -243,9 +243,8 @@ char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack)
         }
       }
     }
-    trans2(highTable);
   }
-
+  trans2(highTable);
   char idx=0;
   pos.x = ENDX;
   pos.y = ENDY;

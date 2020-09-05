@@ -31,7 +31,6 @@
 #include "User/stepMotor.h"
 #include "User/infrared.h"
 #include "User/oled.h"
-#include <stdio.h>
 
 /* USER CODE END Includes */
 
@@ -61,6 +60,8 @@ char dirStack[STKDEEP] = {-1};
 int dirStackIdx = 0;
 
 extern char irR1, irR2, irR3, irR4, irR5;
+
+char debug = 1;
 
 /* USER CODE END PV */
 
@@ -265,7 +266,7 @@ void flash_OLED_ir(){
   }
 }
 
-void start_run(){
+char start_run(){
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
   char x=70,y=5;
   OLED_writeDPI(x, y, 1);
@@ -274,16 +275,17 @@ void start_run(){
   OLED_writeDPI(x, y+1, 1);
   while(1){
     if(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
-      while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
+      while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
+        HAL_Delay(1000);
+        if(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
+          return 0;
+        }
+      }
       break;
     }
     flash_OLED_ir();
-//    flash_OLED_info();
   }
-//  while(1){
-////    go_left(99);
-//    go_right(99);
-//  }
+  return 1;
 }
 /* USER CODE END 0 */
 
@@ -336,9 +338,13 @@ int main(void)
   flash_OLED_maze();
   flash_OLED_carPos(carInfo);
 
-  start_run();
-  uint8_t str[] = "Run... ";
-  OLED_ShowString(70,5,str,12);
+  debug = start_run();
+  if(debug){
+    OLED_ShowString(70,5,"Debug  ",12);
+  }else{
+    OLED_ShowString(70,5,"Run... ",12);
+  }
+//  uint8_t str[] = "Run... ";
 
   /* USER CODE END 2 */
 
@@ -346,13 +352,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    char flag=0;
+    char flag = 0;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//    if(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
-//      while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
-//      break;
+    if(debug && !HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
+      while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
 
       if(sprintFlag == 0){  //探索阶段
         nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�??????????步的方向
@@ -362,8 +367,7 @@ int main(void)
         if(nextDir == 255){ //ENDOFCODE
           HAL_TIM_Base_Stop_IT(&htim6);
           HAL_TIM_Base_Stop_IT(&htim7);
-          uint8_t str[] = "FINISH ";
-          OLED_ShowString(70,5,str,12);
+          OLED_ShowString(70,5,"FINISH ",12);
           while(1);
         }
       }
@@ -377,7 +381,7 @@ int main(void)
         }
       }
 
-//      go_to_next(carInfo, nextDir);  //执行
+      go_to_next(carInfo, nextDir);  //执行
 
       /*刷新信息*/
       if(!backFlag) flash_pathStack(nextDir); //刷新方向�??????????
@@ -387,9 +391,7 @@ int main(void)
       /*刷新OLED*/
       flash_OLED_maze();
       flash_OLED_carPos(carInfo);
-      flash_OLED_ir();
-//      flash_OLED_info();
-//    }
+    }
     flash_OLED_ir();
   }
   /* USER CODE END 3 */
@@ -435,11 +437,13 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //10ms
-//    if(irR2){
-//      chanLM(8);
-//    }else if(irR4){
-//      chanRM(8);
-//    }
+    if(!debug){
+      if(irR2){
+        chanLM(8);
+      }else if(irR4){
+        chanRM(8);
+      }
+    }
   }
   if (htim->Instance == htim7.Instance){ //10ms
     static uint8_t flag = 0;
@@ -467,10 +471,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     }
 
     if(flag)  num++;
-    if(num>5) {
-      num=0;
-//      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin); //翻转LED
-    }
+    if(num>5) num=0;
     flag = !flag;
   }
 }
