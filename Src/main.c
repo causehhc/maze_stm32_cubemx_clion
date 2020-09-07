@@ -28,7 +28,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "User/maze.h"
-#include "User/stepMotor.h"
+#include "User/motor.h"
 #include "User/infrared.h"
 #include "User/oledToMaze.h"
 #include "User/dfs.h"
@@ -56,9 +56,12 @@
 uint8_t RxBuffer1; //串口接收1
 uint8_t RxBuffer2; //串口接收2
 
-uint8_t maze[DPI][DPI] = {0x11};  //新路是1，有墙是1
-char dirStack[STKDEEP] = {-1};  //回溯栈
-int dirStackIdx = 0;  //回溯栈下标
+motorInfoType leftInfo;
+motorInfoType rightInfo;
+
+uint8_t maze[DPI][DPI] = {0x11};  //新路�????1，有墙是1
+char dirStack[STKDEEP] = {-1};  //回溯�????
+int dirStackIdx = 0;  //回溯栈下�????
 char irR1=0, irR2=0, irR3=0, irR4=0, irR5=0; //五个方向的ir标记
 /* USER CODE END PV */
 
@@ -70,8 +73,18 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-/*一些参数的初始化*/
+/*�????些参数的初始�????*/
 void para_init(carInfoType *carInfo, char x, char y, char dir){
+  leftInfo.ENC = 0;
+  leftInfo.PWM = 0;
+  leftInfo.ADD = 0;
+  leftInfo.TGT = 0;
+
+  rightInfo.ENC = 0;
+  rightInfo.PWM = 0;
+  rightInfo.ADD = 0;
+  rightInfo.TGT = 0;
+
   carInfo->x = x;
   carInfo->y = y;
   carInfo->dir = dir;
@@ -82,7 +95,7 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
   maze[x][y] = 0x00;
 }
 
-/* 判断此方向是否有墙*/
+/* 判断此方向是否有�????*/
 char isWall(carInfoType carInfo, char absDir){
   char relDir = abs_to_rel(carInfo.dir, absDir);
   char ir = read_DirIr(relDir);
@@ -103,7 +116,7 @@ char isNew(carInfoType carInfo, char absDir){
   return read_map_path(maze, carInfo, absDir);
 }
 
-/* 搜索可走的所有方向*/
+/* 搜索可走的所有方�????*/
 char search_dir(carInfoType carInfo){
   char aimDir = -1;
   for(int absDir=0; absDir < 4; absDir++){
@@ -120,26 +133,30 @@ char search_dir(carInfoType carInfo){
   return aimDir;
 }
 
-/* 前往相邻的下一个方向*/
+/* 前往相邻的下�????个方�????*/
 void go_to_next(carInfoType carInfo, char nextDir){
   if(nextDir==255)  {
     return;
   }
   char relDir = abs_to_rel(carInfo.dir, nextDir);
   if(relDir == 0) {
-    go_straight(104);
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_stop(&leftInfo, &rightInfo);
   }else if(relDir == 1) {
-    go_right(48);
-    go_straight(104);
+    go_right(&leftInfo, &rightInfo, 2300,1);
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_stop(&leftInfo, &rightInfo);
   }else if(relDir == 2) {
-    go_turn(96);
-    go_straight(104);
+    go_turn(&leftInfo, &rightInfo, 2300,1);
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_stop(&leftInfo, &rightInfo);
   }else if(relDir == 3) {
-    go_left(48);
-    go_straight(104);
+    go_left(&leftInfo, &rightInfo, 2300,1);
+    go_straight(&leftInfo, &rightInfo, 2300,2);
+    go_stop(&leftInfo, &rightInfo);
   }
 }
-/*选择模式并开始运行*/
+/*选择模式并开始运�????*/
 char start_run(){
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
   OLED_writeDPI(INFOX, INFOY, 1);
@@ -171,8 +188,8 @@ int main(void)
   /* USER CODE BEGIN 1 */
   carInfoType carInfo;  //小车自身信息
   char sprintFlag = 0;  //冲刺标记
-  char nextDir = 0; //下一步绝对方向
-  char backFlag = 0;  //下一步绝对方向标记切换
+  char nextDir = 0; //下一步绝对方�????
+  char backFlag = 0;  //下一步绝对方向标记切�????
   char debug = 1; //模式切换
 
   /* USER CODE END 1 */
@@ -200,9 +217,20 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_TIM7_Init();
+  MX_TIM3_Init();
+  MX_TIM4_Init();
+  MX_TIM8_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_1|TIM_CHANNEL_2);
+  HAL_TIM_Encoder_Start(&htim4, TIM_CHANNEL_1|TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim8,TIM_CHANNEL_4);
   HAL_UART_Receive_IT(&huart1, &RxBuffer1, 1);
   HAL_UART_Receive_IT(&huart2, &RxBuffer2, 1);
+  HAL_TIM_Base_Start_IT(&htim5);
   HAL_TIM_Base_Start_IT(&htim6);
   HAL_TIM_Base_Start_IT(&htim7);
   OLED_Init();
@@ -231,10 +259,10 @@ int main(void)
     if(debug) while (HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
 
     if(sprintFlag == 0){  //探索阶段
-      nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下一步的方向
+      nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�????步的方向
       backFlag = 0;
     }else {  //冲刺阶段
-      nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下一步的方向
+      nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下�????步的方向
       if(nextDir == 255){ //ENDOFCODE
         HAL_TIM_Base_Stop_IT(&htim6);
         HAL_TIM_Base_Stop_IT(&htim7);
@@ -247,7 +275,7 @@ int main(void)
       nextDir = back_track(dirStack, &dirStackIdx);
       backFlag = 1;
       if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-        dirStackIdx = creat_bestPath(carInfo, maze, dirStack);  //计算最优路径
+        dirStackIdx = creat_bestPath(carInfo, maze, dirStack);  //计算�????优路�????
         sprintFlag = 1; //切换冲刺标记
       }
     }
@@ -255,7 +283,7 @@ int main(void)
     go_to_next(carInfo, nextDir);  //执行
 
     /*刷新信息*/
-    if(!backFlag) flash_pathStack(dirStack, &dirStackIdx, nextDir); //刷新方向栈
+    if(!backFlag) flash_pathStack(dirStack, &dirStackIdx, nextDir); //刷新方向�????
     flash_mapPathInfo(maze, carInfo, nextDir); //刷新地图信息
     flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
 
@@ -305,8 +333,28 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-  if (htim->Instance == htim6.Instance){ //100ms
+  if (htim->Instance == htim5.Instance){ //100ms
     flash_OLED_ir();
+  }
+  if (htim->Instance == htim6.Instance){ //10ms
+    //fix_Path
+//    if(irR2){
+//      if(rightInfo.TGT < 0){
+//        rightInfo.TGT += 1;
+//      }
+//    }
+//    if(irR4){
+//      if(leftInfo.TGT > 0){
+//        leftInfo.TGT -= 1;
+//      }
+//    }
+    //motorControl
+    check_ENC(&leftInfo, &rightInfo);
+    plus_ADD(&leftInfo, &rightInfo);
+    incremental_PI_A(&leftInfo);
+    incremental_PI_B(&rightInfo);
+    range_PWM(&leftInfo, &rightInfo, 7000);
+    set_PWM(&leftInfo, &rightInfo);
   }
   if (htim->Instance == htim7.Instance){ //10ms
     static uint8_t checkFlag = 0;

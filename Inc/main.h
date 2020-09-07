@@ -66,22 +66,6 @@ void Error_Handler(void);
 #define IR3_GPIO_Port GPIOC
 #define IR4_Pin GPIO_PIN_3
 #define IR4_GPIO_Port GPIOC
-#define R1_Pin GPIO_PIN_12
-#define R1_GPIO_Port GPIOB
-#define R2_Pin GPIO_PIN_13
-#define R2_GPIO_Port GPIOB
-#define R3_Pin GPIO_PIN_14
-#define R3_GPIO_Port GPIOB
-#define R4_Pin GPIO_PIN_15
-#define R4_GPIO_Port GPIOB
-#define L1_Pin GPIO_PIN_6
-#define L1_GPIO_Port GPIOC
-#define L2_Pin GPIO_PIN_7
-#define L2_GPIO_Port GPIOC
-#define L3_Pin GPIO_PIN_8
-#define L3_GPIO_Port GPIOC
-#define L4_Pin GPIO_PIN_9
-#define L4_GPIO_Port GPIOC
 #define KEY_Pin GPIO_PIN_11
 #define KEY_GPIO_Port GPIOA
 #define IR5_Pin GPIO_PIN_12
@@ -100,6 +84,12 @@ typedef struct {
     char y; //坐标y
     char dir; //绝对方向
 }carInfoType;
+typedef struct {
+    int ENC;  //当前编码器示�?
+    int ADD;  //编码器累计示�?
+    int TGT;  //电机转�?�期望�??
+    int PWM;  //电机实际PWM赋�??
+}motorInfoType;
 #define DPI 17
 #define HIGHDPI 10
 #define LEN 64

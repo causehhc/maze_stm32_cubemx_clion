@@ -622,7 +622,40 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.c
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm3.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ ../Inc/main.h
+ ../Inc/stm32f1xx_hal_conf.h
+ ../Inc/tim.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/motor.c
+ C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/motor.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -698,41 +731,6 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.c
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/queue.h
-CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm3.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/stm32f1xx_hal_conf.h
- C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stepMotor.c
- C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stepMotor.h
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -841,9 +839,9 @@ CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/dfs.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/infrared.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/maze.h
+ C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/motor.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oled.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/oledToMaze.h
- C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/User/stepMotor.h
  C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/Src/main.c
 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
