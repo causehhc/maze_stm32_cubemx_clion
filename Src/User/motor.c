@@ -43,7 +43,7 @@
 //  if(leftInfo->PWM < -amplitude) leftInfo->PWM = -amplitude;
 //  if(leftInfo->PWM > amplitude) leftInfo->PWM = amplitude;
 //  if(rightInfo->PWM < -amplitude) rightInfo->PWM = -amplitude;
-//  if(rightInfo->PWM > amplitude) rightInfo->PWM = amplitude;
+////  if(rightInfo->PWM > amplitude) rightInfo->PWM = amplitude;
 //}
 //
 //void set_PWM(motorInfoType *leftInfo, motorInfoType *rightInfo){

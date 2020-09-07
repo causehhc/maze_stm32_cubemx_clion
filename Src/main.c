@@ -54,7 +54,7 @@
 uint8_t RxBuffer1; //串口接收1
 uint8_t RxBuffer2; //串口接收2
 
-uint8_t maze[DPI][DPI] = {0x11};//新路�??????????1，有墙是1
+uint8_t maze[DPI][DPI] = {0x11};//新路�????????????1，有墙是1
 
 char dirStack[STKDEEP] = {-1};
 int dirStackIdx = 0;
@@ -85,11 +85,11 @@ void para_init(carInfoType *carInfo, char x, char y, char dir){
   maze[x][y] = 0x00;
 }
 
-/** 绝对方向�??????????       相对方向�??????????
-  *     0           0：直�??????????
-  * 3       1       1：右�??????????
-  *     2           2：掉�??????????
-  *                 3：左�??????????
+/** 绝对方向�????????????       相对方向�????????????
+  *     0           0：直�????????????
+  * 3       1       1：右�????????????
+  *     2           2：掉�????????????
+  *                 3：左�????????????
 **/
 char banEdge(carInfoType carInfo, char absDir){
   if(carInfo.y!=1 || absDir!=0){
@@ -103,7 +103,7 @@ char banEdge(carInfoType carInfo, char absDir){
   }
   return 0;
 }
-/* 判断此方向是否有�??????????*/
+/* 判断此方向是否有�????????????*/
 char isWall(carInfoType carInfo, char absDir){
   char relDir = abs_to_rel(carInfo.dir, absDir);
   char ir = read_DirIr(relDir);
@@ -124,7 +124,7 @@ char isNew(carInfoType carInfo, char absDir){
   return read_map_path(maze, carInfo, absDir);
 }
 
-/* 搜索可走的所有方�??????????*/
+/* 搜索可走的所有方�????????????*/
 char search_dir(carInfoType carInfo){
   char aimDir = -1;
   for(int absDir=0; absDir < 4; absDir++){
@@ -141,7 +141,7 @@ char search_dir(carInfoType carInfo){
   return aimDir;
 }
 
-/* 前往相邻的下�??????????个方�??????????*/
+/* 前往相邻的下�????????????个方�????????????*/
 void go_to_next(carInfoType carInfo, char nextDir){
   if(nextDir==255)  {
     return;
@@ -167,7 +167,7 @@ void flash_mapPathInfo(carInfoType carInfo, char nextDir){
   write_map_path(maze, carInfo, nextDir, 0);
 }
 
-/* 刷新方向�??????????*/
+/* 刷新方向�????????????*/
 void flash_pathStack(char dir){
   dirStack[dirStackIdx++] = dir;
 }
@@ -278,14 +278,18 @@ char start_run(){
       while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
         HAL_Delay(1000);
         if(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
-          return 0;
+          return 1;
         }
       }
       break;
     }
     flash_OLED_ir();
   }
-  return 1;
+//  while (1){
+//    go_straight(1);
+//    flash_OLED_ir();
+//  }
+  return 0;
 }
 /* USER CODE END 0 */
 
@@ -298,8 +302,8 @@ int main(void)
   /* USER CODE BEGIN 1 */
   carInfoType carInfo; //小车自身信息
   char sprintFlag = 0;  //冲刺标记
-  char nextDir = 0; //下一步绝对方�??????????
-  char backFlag = 0; //下一步绝对方�??????????
+  char nextDir = 0; //下一步绝对方�????????????
+  char backFlag = 0; //下一步绝对方�????????????
 
   /* USER CODE END 1 */
 
@@ -341,6 +345,7 @@ int main(void)
   debug = start_run();
   if(debug){
     OLED_ShowString(70,5,"Debug  ",12);
+    while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
   }else{
     OLED_ShowString(70,5,"Run... ",12);
   }
@@ -356,42 +361,42 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    if(debug && !HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin)){
-      while(!HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
-
-      if(sprintFlag == 0){  //探索阶段
-        nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�??????????步的方向
-        backFlag = 0;
-      }else {  //冲刺阶段
-        nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下�??????????步的方向
-        if(nextDir == 255){ //ENDOFCODE
-          HAL_TIM_Base_Stop_IT(&htim6);
-          HAL_TIM_Base_Stop_IT(&htim7);
-          OLED_ShowString(70,5,"FINISH ",12);
-          while(1);
-        }
-      }
-
-      if(nextDir == 255){ //如果无法得出下一步方向，进行回溯
-        nextDir = backtrack(dirStack, &dirStackIdx);
-        backFlag = 1;
-        if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
-          dirStackIdx = creat_bestPath(carInfo, maze, dirStack);  //计算�????优路�????
-          sprintFlag = 1; //切换冲刺标记
-        }
-      }
-
-      go_to_next(carInfo, nextDir);  //执行
-
-      /*刷新信息*/
-      if(!backFlag) flash_pathStack(nextDir); //刷新方向�??????????
-      flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
-      flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
-
-      /*刷新OLED*/
-      flash_OLED_maze();
-      flash_OLED_carPos(carInfo);
+    if(debug) {
+      while (HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
     }
+
+    if(sprintFlag == 0){  //探索阶段
+      nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�????????????步的方向
+      backFlag = 0;
+    }else {  //冲刺阶段
+      nextDir = bestPath(dirStack, &dirStackIdx); //根据计算得出的最优路径得出下�????????????步的方向
+      if(nextDir == 255){ //ENDOFCODE
+        HAL_TIM_Base_Stop_IT(&htim6);
+        HAL_TIM_Base_Stop_IT(&htim7);
+        OLED_ShowString(70,5,"FINISH ",12);
+        while(1);
+      }
+    }
+
+    if(nextDir == 255){ //如果无法得出下一步方向，进行回溯
+      nextDir = backtrack(dirStack, &dirStackIdx);
+      backFlag = 1;
+      if(nextDir == 255){ //如果回溯栈空，说明以遍历回起点，准备冲刺
+        dirStackIdx = creat_bestPath(carInfo, maze, dirStack);  //计算�??????优路�??????
+        sprintFlag = 1; //切换冲刺标记
+      }
+    }
+
+    go_to_next(carInfo, nextDir);  //执行
+
+    /*刷新信息*/
+    if(!backFlag) flash_pathStack(nextDir); //刷新方向�????????????
+    flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
+    flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
+
+    /*刷新OLED*/
+    flash_OLED_maze();
+    flash_OLED_carPos(carInfo);
     flash_OLED_ir();
   }
   /* USER CODE END 3 */
@@ -436,14 +441,15 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-  if (htim->Instance == htim6.Instance){ //10ms
-    if(!debug){
-      if(irR2){
-        chanLM(8);
-      }else if(irR4){
-        chanRM(8);
-      }
-    }
+  if (htim->Instance == htim6.Instance){ //100ms
+//    if(!debug){
+//      if(irR2){
+//        chanLM(1);
+//      }
+//      if(irR4){
+//        chanRM(1);
+//      }
+//    }
   }
   if (htim->Instance == htim7.Instance){ //10ms
     static uint8_t flag = 0;
