@@ -31,7 +31,6 @@ char isEmpty(Queue *q){
 }
 
 type queue_poll(Queue *q){
-  if(isEmpty(q))  while(1);
   QNode *temp = q->front;
   type data;
   if(q->front == q->rear){
@@ -44,4 +43,3 @@ type queue_poll(Queue *q){
   free(temp);
   return data;
 }
-

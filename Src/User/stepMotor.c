@@ -3,14 +3,13 @@
 //
 #include "stepMotor.h"
 #include "gpio.h"
-#include "tim.h"
 
 extern char irR1, irR2, irR4;
 
-unsigned char forward[]={0x11,0x33,0x22,0x66,0x44,0xcc,0x88,0x99};//����ͬʱ��ת
-unsigned char reverse[]={0x11,0x99,0x88,0xcc,0x44,0x66,0x22,0x33};//����ͬʱ��ת
-unsigned char for_rev[]={0x11,0x93,0x82,0xc6,0x44,0x6c,0x28,0x39};//�����ҷ�
-unsigned char rev_for[]={0x11,0x39,0x28,0x6c,0x44,0xc6,0x82,0x93};//������
+unsigned char forward[]={0x11,0x33,0x22,0x66,0x44,0xcc,0x88,0x99};
+unsigned char reverse[]={0x11,0x99,0x88,0xcc,0x44,0x66,0x22,0x33};
+unsigned char for_rev[]={0x11,0x93,0x82,0xc6,0x44,0x6c,0x28,0x39};
+unsigned char rev_for[]={0x11,0x39,0x28,0x6c,0x44,0xc6,0x82,0x93};
 unsigned char i,j;
 
 void fuzhi(unsigned char temp){
@@ -33,9 +32,6 @@ void fuzhi(unsigned char temp){
   else HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, GPIO_PIN_RESET);
 }
 
-void deley_kk(uint16_t num){
-  while(num--);
-}
 void chanLM(char num)   //左修正
 {
   for(j=0;j<num;j++) {
@@ -56,7 +52,7 @@ void chanRM(char num)   //右修正
   }
 }
 
-void xiuzheng(){
+void fix_path(){
   while(irR2&&!irR1) chanLM(1);
   while(irR4&&! irR1) chanRM(1);
 }
@@ -70,7 +66,7 @@ void go_straight(char num)      //直走
       fuzhi(for_rev[i]);
 
       HAL_Delay(1);
-      xiuzheng();
+      fix_path();
 
     }
   }

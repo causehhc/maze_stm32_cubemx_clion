@@ -10,6 +10,6 @@
 
 void flash_OLED_maze(uint8_t maze[DPI][DPI]);
 void flash_OLED_carPos(carInfoType carInfo);
-void flash_OLED_ir(char x, char y);
+void flash_OLED_ir();
 
 #endif //MAZE_STM32_CUBEMX_CLION_OLEDTOMAZE_H

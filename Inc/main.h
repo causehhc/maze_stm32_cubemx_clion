@@ -66,8 +66,6 @@ void Error_Handler(void);
 #define IR3_GPIO_Port GPIOC
 #define IR4_Pin GPIO_PIN_3
 #define IR4_GPIO_Port GPIOC
-#define IR55_Pin GPIO_PIN_4
-#define IR55_GPIO_Port GPIOC
 #define R1_Pin GPIO_PIN_12
 #define R1_GPIO_Port GPIOB
 #define R2_Pin GPIO_PIN_13
@@ -103,12 +101,15 @@ typedef struct {
     char dir; //绝对方向
 }carInfoType;
 #define DPI 17
+#define HIGHDPI 10
 #define LEN 64
-#define DPI 17
+#define STKDEEP 200
+
 #define ENDX 1
 #define ENDY 2
-#define HIGHDPI 10
-#define STKDEEP 200
+
+#define INFOX 70
+#define INFOY 5
 
 /* USER CODE END Private defines */
 

@@ -5,9 +5,6 @@
 #ifndef MAZE_STM32_CUBEMX_CLION_QUEUE_H
 #define MAZE_STM32_CUBEMX_CLION_QUEUE_H
 
-#define HEAPDEEP 200
-
-//typedef char type ;
 typedef struct {
     char x;
     char y;

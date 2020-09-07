@@ -4,15 +4,11 @@
 
 #include "infrared.h"
 
-/** 绝对方向：       相对方向：
-  *     0           0：直行
-  * 3       1       1：右转
-  *     2           2：掉头
-  *                 3：左转
-**/
 
-char irR1=0, irR2=0, irR3=0, irR4=0, irR5=0;
 
+extern char irR1, irR2, irR3, irR4, irR5;
+
+/*打开某个ir发射管*/
 void ir_on(char num){
   num -= 1;
   if(num&0x01){
@@ -32,6 +28,7 @@ void ir_on(char num){
   }
 }
 
+/*读取某个相对方向的ir*/
 char read_DirIr(char relDir){
   if(relDir == 0) return irR1;
   if(relDir == 1) return irR5;

@@ -14,6 +14,7 @@ char read_map_wall(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir);
 char read_map_path(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir);
 void write_map_wall(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir, char val);
 void write_map_path(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir, char val);
+char isEdge(carInfoType carInfo, char absDir);
 void flash_mapPathInfo(uint8_t maze[DPI][DPI], carInfoType carInfo, char nextDir);
 void flash_carInfo(carInfoType *carInfo, char nextDir);
 

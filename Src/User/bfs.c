@@ -6,18 +6,6 @@
 #include "queue.h"
 #include <stdio.h>
 
-/*回溯方向栈*/
-char backtrack(char *dirStack, int *dirStackIdx){
-  char backDir = -1;
-  if(--(*dirStackIdx) != -1){
-    backDir = dirStack[*dirStackIdx];
-    dirStack[(*dirStackIdx)] = -1;
-    if(backDir >= 0) backDir += 2;
-    if(backDir >= 4) backDir -= 4;
-  }
-  return backDir;
-}
-
 /*前往下一个最优路径*/
 char bestPath(char *dirStack, int *dirStackIdx){
   if(*dirStackIdx == -1) return -1;
@@ -48,7 +36,8 @@ char isConnect(uint8_t maze[DPI][DPI], char newX,char newY, char absDir){
   return flag;
 }
 
-void trans(uint8_t maze[DPI][DPI]){
+/*串口传输地图*/
+void trans_maze(uint8_t maze[DPI][DPI]){
   for(char x=0; x<DPI; x++){
     printf("=====");
   }
@@ -60,7 +49,9 @@ void trans(uint8_t maze[DPI][DPI]){
     printf("\n");
   }
 }
-void trans2(char highTable[HIGHDPI][HIGHDPI]){
+
+/*串口传输登高表*/
+void trans_highTable(char highTable[HIGHDPI][HIGHDPI]){
   for(char x=0; x < HIGHDPI; x++){
     printf("=====");
   }
@@ -75,8 +66,7 @@ void trans2(char highTable[HIGHDPI][HIGHDPI]){
 
 /*创建最优路径*/
 char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack){
-  trans(maze);
-
+//  trans_maze(maze);
   Queue *q = initQueue();
   type pos;
   pos.x = carInfo.x;
@@ -106,9 +96,9 @@ char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack)
       }
     }
   }
-  trans2(highTable);
+//  trans_highTable(highTable);
 
-  char idx=0;
+  int idx=0;
   pos.x = ENDX;
   pos.y = ENDY;
   while(!(pos.x==carInfo.x && pos.y==carInfo.y)){

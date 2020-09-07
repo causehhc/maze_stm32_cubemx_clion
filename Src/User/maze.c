@@ -4,15 +4,13 @@
 
 #include "maze.h"
 
-
-
 /** 绝对方向：       相对方向：
   *     0           0：直行
   * 3       1       1：右转
   *     2           2：掉头
   *                 3：左转
 **/
-//新路�??????1，有墙是1
+//新路是1，有墙是1
 
 void init_maze(uint8_t maze[DPI][DPI]){
   for(char x=0; x<DPI; x++) {
@@ -33,7 +31,7 @@ char rel_to_abs(char nowAbsDir, char relDir){
 
 /*绝对方向->相对方向*/
 char abs_to_rel(char nowAbsDir, char absDir){
-  static char temp = 0;
+  char temp = 0;
   temp = (absDir - nowAbsDir) % 4;
   if(temp>127)	temp += 4;
   return temp;
@@ -96,6 +94,20 @@ void write_map_path(uint8_t maze[DPI][DPI], carInfoType carInfo, char absDir, ch
   if(val) temp = 0x11;
   else temp = 0x01;
   write_map(maze, absDir, carInfo.x, carInfo.y, temp);
+}
+
+/*迷宫边缘检测*/
+char isEdge(carInfoType carInfo, char absDir){
+  if(carInfo.y!=1 || absDir!=0){
+    if(carInfo.y!=15 || absDir!=2){
+      if(carInfo.x!=1 || absDir!=3){
+        if(carInfo.x!=15 || absDir!=1){
+          return 1;
+        }
+      }
+    }
+  }
+  return 0;
 }
 
 /* 刷新地图路径信息*/

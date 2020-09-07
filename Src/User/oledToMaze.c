@@ -9,6 +9,7 @@ uint8_t oled_val_buffer[128][128] = {0};
 
 extern char irR1, irR2, irR3, irR4, irR5;
 
+/*显示某个oled的像素点*/
 void OLED_writeDPI(char x, char y, char val){
   if(oled_val_buffer[x][y] != val){
     OLED_Set_Pos(2+x, y/8);
@@ -19,6 +20,7 @@ void OLED_writeDPI(char x, char y, char val){
   }
 }
 
+/*刷新oled迷宫*/
 void flash_OLED_maze(uint8_t maze[DPI][DPI]){
   static char val;
   for(char x=0; x<DPI; x++) {
@@ -34,6 +36,7 @@ void flash_OLED_maze(uint8_t maze[DPI][DPI]){
   }
 }
 
+/*刷新oled小车位置*/
 void flash_OLED_carPos(carInfoType carInfo){
   for (char i = 0; i < (LEN / DPI)/2; i++) {
     for (char j = 0; j < (LEN / DPI)/2; j++) {
@@ -51,10 +54,11 @@ void flash_OLED_carPos(carInfoType carInfo){
   }
 }
 
-void flash_OLED_ir(char x, char y){
-  for(char i=0; i<3; i++) OLED_writeDPI(x, y-1-i, irR1);
-  for(char i=0; i<3; i++) OLED_writeDPI(x-1-i, y-1-i, irR2);
-  for(char i=0; i<3; i++) OLED_writeDPI(x-1-i, y, irR3);
-  for(char i=0; i<3; i++) OLED_writeDPI(x+1+i, y-1-i, irR4);
-  for(char i=0; i<3; i++) OLED_writeDPI(x+1+i, y, irR5);
+/*刷新oled红外*/
+void flash_OLED_ir(){
+  for(char i=0; i<3; i++) OLED_writeDPI(INFOX, INFOY-1-i, irR1);
+  for(char i=0; i<3; i++) OLED_writeDPI(INFOX-1-i, INFOY-1-i, irR2);
+  for(char i=0; i<3; i++) OLED_writeDPI(INFOX-1-i, INFOY, irR3);
+  for(char i=0; i<3; i++) OLED_writeDPI(INFOX+1+i, INFOY-1-i, irR4);
+  for(char i=0; i<3; i++) OLED_writeDPI(INFOX+1+i, INFOY, irR5);
 }

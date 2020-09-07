@@ -7,7 +7,7 @@
 
 #include "main.h"
 
-char backtrack(char *dirStack, int *dirStackIdx);
+char back_track(char *dirStack, int *dirStackIdx);
 char bestPath(char *dirStack, int *dirStackIdx);
 char creat_bestPath(carInfoType carInfo, uint8_t maze[DPI][DPI], char *dirStack);
 
