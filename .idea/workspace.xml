@@ -29,45 +29,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="V0.99">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f1xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/stepMotor.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/stepMotor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32f1xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/tim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze_stm32_cubemx+clion.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/maze_stm32_cubemx+clion.ioc" afterDir="false" />
-    </list>
+    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="V0.99" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +131,7 @@
       <workItem from="1599446483655" duration="6249000" />
       <workItem from="1599460591884" duration="43000" />
       <workItem from="1599460678554" duration="16000" />
-      <workItem from="1599461794302" duration="1671000" />
+      <workItem from="1599461794302" duration="2013000" />
     </task>
     <task id="LOCAL-00001" summary="DEMO">
       <created>1598270141761</created>
@@ -332,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599460622133</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="V0.99">
+      <created>1599465160461</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1599465160461</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,41 +402,41 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2253" y="351" width="1534" height="661" key="GridCell.Tab.-1.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1598957886403" />
-    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1599464948821">
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1599465276621">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1493" height="54" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
     <state width="1460" height="300" key="GridCell.Tab.0.bottom/0.0.1536.834/11.-2160.2731.1409@0.0.1536.834" timestamp="1599289379455" />
     <state width="1460" height="300" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.-1085.2731.1409@0.0.1536.834" timestamp="1599291011538" />
     <state width="1537" height="778" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598967676554" />
-    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599464948821" />
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599465276621" />
     <state width="1520" height="300" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1599137714669" />
-    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1599464948820">
+    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1599465276621">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1493" height="54" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
     <state width="1460" height="300" key="GridCell.Tab.0.center/0.0.1536.834/11.-2160.2731.1409@0.0.1536.834" timestamp="1599289379445" />
     <state width="1460" height="300" key="GridCell.Tab.0.center/0.0.1536.834/1920.-1085.2731.1409@0.0.1536.834" timestamp="1599291011535" />
     <state width="1537" height="778" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598967676554" />
-    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599464948820" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599465276621" />
     <state width="1520" height="300" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1599137714669" />
-    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1599464948820">
+    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1599465276621">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1493" height="54" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
     <state width="1460" height="300" key="GridCell.Tab.0.left/0.0.1536.834/11.-2160.2731.1409@0.0.1536.834" timestamp="1599289379442" />
     <state width="1460" height="300" key="GridCell.Tab.0.left/0.0.1536.834/1920.-1085.2731.1409@0.0.1536.834" timestamp="1599291011533" />
     <state width="1537" height="778" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598967676554" />
-    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599464948820" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599465276621" />
     <state width="1520" height="300" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1599137714669" />
-    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1599464948821">
+    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1599465276621">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1493" height="54" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434008592" />
     <state width="1460" height="300" key="GridCell.Tab.0.right/0.0.1536.834/11.-2160.2731.1409@0.0.1536.834" timestamp="1599289379452" />
     <state width="1460" height="300" key="GridCell.Tab.0.right/0.0.1536.834/1920.-1085.2731.1409@0.0.1536.834" timestamp="1599291011537" />
     <state width="1537" height="778" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598967676554" />
-    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599464948821" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599465276621" />
     <state width="1520" height="300" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1599137714669" />
     <state width="1460" height="300" key="GridCell.Tab.1.bottom" timestamp="1599460552527">
       <screen x="1920" y="0" width="1920" height="1050" />
@@ -587,12 +556,12 @@
     <state x="270" y="61" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434079593" />
     <state x="2258" y="77" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1598863195774" />
     <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1599114444805" />
-    <state x="2371" y="189" key="Vcs.Push.Dialog.v2" timestamp="1599461846643">
+    <state x="2371" y="189" key="Vcs.Push.Dialog.v2" timestamp="1599465282794">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598445586005" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598794475506" />
-    <state x="2371" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599461846643" />
+    <state x="2371" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599465282794" />
     <state x="2625" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599231056478">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
