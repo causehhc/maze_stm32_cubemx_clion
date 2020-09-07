@@ -527,6 +527,60 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 
+Src/User/bfs.obj: Src/User/bfs.c.obj
+
+.PHONY : Src/User/bfs.obj
+
+# target to build an object file
+Src/User/bfs.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.obj
+.PHONY : Src/User/bfs.c.obj
+
+Src/User/bfs.i: Src/User/bfs.c.i
+
+.PHONY : Src/User/bfs.i
+
+# target to preprocess a source file
+Src/User/bfs.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.i
+.PHONY : Src/User/bfs.c.i
+
+Src/User/bfs.s: Src/User/bfs.c.s
+
+.PHONY : Src/User/bfs.s
+
+# target to generate assembly for a file
+Src/User/bfs.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.s
+.PHONY : Src/User/bfs.c.s
+
+Src/User/dfs.obj: Src/User/dfs.c.obj
+
+.PHONY : Src/User/dfs.obj
+
+# target to build an object file
+Src/User/dfs.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/dfs.c.obj
+.PHONY : Src/User/dfs.c.obj
+
+Src/User/dfs.i: Src/User/dfs.c.i
+
+.PHONY : Src/User/dfs.i
+
+# target to preprocess a source file
+Src/User/dfs.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/dfs.c.i
+.PHONY : Src/User/dfs.c.i
+
+Src/User/dfs.s: Src/User/dfs.c.s
+
+.PHONY : Src/User/dfs.s
+
+# target to generate assembly for a file
+Src/User/dfs.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/dfs.c.s
+.PHONY : Src/User/dfs.c.s
+
 Src/User/infrared.obj: Src/User/infrared.c.obj
 
 .PHONY : Src/User/infrared.obj
@@ -634,6 +688,33 @@ Src/User/oled.s: Src/User/oled.c.s
 Src/User/oled.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.s
 .PHONY : Src/User/oled.c.s
+
+Src/User/oledToMaze.obj: Src/User/oledToMaze.c.obj
+
+.PHONY : Src/User/oledToMaze.obj
+
+# target to build an object file
+Src/User/oledToMaze.c.obj:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj
+.PHONY : Src/User/oledToMaze.c.obj
+
+Src/User/oledToMaze.i: Src/User/oledToMaze.c.i
+
+.PHONY : Src/User/oledToMaze.i
+
+# target to preprocess a source file
+Src/User/oledToMaze.c.i:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.i
+.PHONY : Src/User/oledToMaze.c.i
+
+Src/User/oledToMaze.s: Src/User/oledToMaze.c.s
+
+.PHONY : Src/User/oledToMaze.s
+
+# target to generate assembly for a file
+Src/User/oledToMaze.c.s:
+	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.s
+.PHONY : Src/User/oledToMaze.c.s
 
 Src/User/queue.obj: Src/User/queue.c.obj
 
@@ -995,6 +1076,12 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+	@echo ... Src/User/bfs.obj
+	@echo ... Src/User/bfs.i
+	@echo ... Src/User/bfs.s
+	@echo ... Src/User/dfs.obj
+	@echo ... Src/User/dfs.i
+	@echo ... Src/User/dfs.s
 	@echo ... Src/User/infrared.obj
 	@echo ... Src/User/infrared.i
 	@echo ... Src/User/infrared.s
@@ -1007,6 +1094,9 @@ help:
 	@echo ... Src/User/oled.obj
 	@echo ... Src/User/oled.i
 	@echo ... Src/User/oled.s
+	@echo ... Src/User/oledToMaze.obj
+	@echo ... Src/User/oledToMaze.i
+	@echo ... Src/User/oledToMaze.s
 	@echo ... Src/User/queue.obj
 	@echo ... Src/User/queue.i
 	@echo ... Src/User/queue.s

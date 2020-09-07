@@ -6,9 +6,6 @@
 #include "i2c.h"
 #include "oledfont.h"          //头文件
 
-uint8_t oled_buffer[8][128] = {0};
-uint8_t oled_val_buffer[128][128] = {0};
-
 uint8_t CMD_Data[]={
         0xAE, 0x00, 0x10, 0x40, 0xB0, 0x81, 0xFF, 0xA1, 0xA6, 0xA8, 0x3F,
         0xC8, 0xD3, 0x00, 0xD5, 0x80, 0xD8, 0x05, 0xD9, 0xF1, 0xDA, 0x12,
@@ -148,12 +145,3 @@ void OLED_ShowCHinese(uint8_t x,uint8_t y,uint8_t no){
     }
 }
 
-void OLED_writeDPI(char x, char y, char val){
-  if(oled_val_buffer[x][y] != val){
-    OLED_Set_Pos(2+x, y/8);
-    if(val == 1)  oled_buffer[y / 8][x] |= (0x01 << (y % 8));
-    else oled_buffer[y / 8][x] &= ~(0x01 << (y % 8));
-    OLED_WR_DATA(oled_buffer[y / 8][x]);
-    oled_val_buffer[x][y] = val;
-  }
-}

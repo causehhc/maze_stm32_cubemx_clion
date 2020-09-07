@@ -29,22 +29,44 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="V0.22">
+    <list default="true" id="f8bbab80-6c94-4ec9-af80-0f85facb1d71" name="Default Changelist" comment="V0.90">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/User/stepMotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/stepMotor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/infrared.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/infrared.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/maze.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/maze.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/maze.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/User/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/User/oled.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/tim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/maze_stm32_cubemx+clion.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maze_stm32_cubemx+clion.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/maze_stm32_cubemx+clion.ioc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +119,7 @@
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../maze_stm32_cubemx_clion-STEP" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,6 +165,8 @@
       <workItem from="1599291431843" duration="54000" />
       <workItem from="1599291512887" duration="6000" />
       <workItem from="1599395342668" duration="62000" />
+      <workItem from="1599446185179" duration="196000" />
+      <workItem from="1599446483655" duration="2740000" />
     </task>
     <task id="LOCAL-00001" summary="DEMO">
       <created>1598270141761</created>
@@ -277,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599283614665</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="V0.90">
+      <created>1599446270152</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599446270152</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +344,8 @@
     <MESSAGE value="V0.20 not bizhang" />
     <MESSAGE value="V0.21" />
     <MESSAGE value="V0.22" />
-    <option name="LAST_COMMIT_MESSAGE" value="V0.22" />
+    <MESSAGE value="V0.90" />
+    <option name="LAST_COMMIT_MESSAGE" value="V0.90" />
   </component>
   <component name="WindowStateProjectService">
     <state x="338" y="197" width="582" height="440" key="#Notifications" timestamp="1598433749744">
@@ -342,14 +374,14 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="441" height="438" key="DebuggerActiveHint/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599206424319" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1599291516907">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="2606" y="217" key="FileChooserDialogImpl" timestamp="1599446380003">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598260559657" />
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.-1085.2731.1409@0.0.1536.834" timestamp="1599291516907" />
     <state x="2896" y="-794" key="FileChooserDialogImpl/0.0.1536.834/1920.-1085.2731.1409@1920.-1085.2731.1409" timestamp="1599291364630" />
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598751298068" />
-    <state x="2606" y="217" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599017510438" />
+    <state x="2606" y="217" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599446380003" />
     <state x="587" y="314" key="Github.ShareDialog" timestamp="1598260604570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -528,12 +560,12 @@
     <state x="270" y="61" key="SettingsEditor/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598434079593" />
     <state x="2258" y="77" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1598863195774" />
     <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1599114444805" />
-    <state x="2371" y="189" key="Vcs.Push.Dialog.v2" timestamp="1599283622067">
+    <state x="2371" y="189" key="Vcs.Push.Dialog.v2" timestamp="1599446293603">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1598445586005" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1598794475506" />
-    <state x="2371" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599283622067" />
+    <state x="2371" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599446293603" />
     <state x="2625" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599231056478">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -566,15 +598,6 @@
     <state x="2459" y="195" width="840" height="854" key="search.everywhere.popup/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1599279103255" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Src/main.c</url>
-          <line>446</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
         <watch expression="queue" />

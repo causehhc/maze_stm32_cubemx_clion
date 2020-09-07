@@ -30,7 +30,9 @@
 #include "User/maze.h"
 #include "User/stepMotor.h"
 #include "User/infrared.h"
-#include "User/oled.h"
+#include "User/oledToMaze.h"
+#include "User/dfs.h"
+#include "User/bfs.h"
 
 /* USER CODE END Includes */
 
@@ -162,109 +164,7 @@ void go_to_next(carInfoType carInfo, char nextDir){
   }
 }
 
-/* 刷新地图路径信息*/
-void flash_mapPathInfo(carInfoType carInfo, char nextDir){
-  write_map_path(maze, carInfo, nextDir, 0);
-}
 
-/* 刷新方向�????????????*/
-void flash_pathStack(char dir){
-  dirStack[dirStackIdx++] = dir;
-}
-
-/* 刷新小车自身信息*/
-void flash_carInfo(carInfoType *carInfo, char nextDir){
-  if(nextDir == 0)  carInfo->y-=2;
-  if(nextDir == 1)  carInfo->x+=2;
-  if(nextDir == 2)  carInfo->y+=2;
-  if(nextDir == 3)  carInfo->x-=2;
-  if(nextDir != 255 ) carInfo->dir = nextDir;
-}
-
-void flash_OLED_maze(){
-  static char val;
-  for(char x=0; x<DPI; x++) {
-    for (char y = 0; y < DPI; y++) {
-      if(maze[x][y] & 0x01) val = 1;
-      else  val = 0;
-      for (char i = 0; i < LEN / DPI; i++) {
-        for (char j = 0; j < LEN / DPI; j++) {
-          OLED_writeDPI(i + x * (LEN / DPI), j + y * (LEN / DPI), val);
-        }
-      }
-    }
-  }
-}
-
-void flash_OLED_carPos(carInfoType carInfo){
-  for (char i = 0; i < (LEN / DPI)/2; i++) {
-    for (char j = 0; j < (LEN / DPI)/2; j++) {
-      OLED_writeDPI(i + carInfo.x*(LEN / DPI)+1, j + carInfo.y*(LEN / DPI)+1, 1);
-    }
-  }
-  if(carInfo.dir == 0){
-    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1-1, 1);
-  }else if(carInfo.dir == 1){
-    OLED_writeDPI(carInfo.x*(LEN / DPI)+1+1, carInfo.y*(LEN / DPI)+1, 1);
-  }else if(carInfo.dir == 2){
-    OLED_writeDPI(carInfo.x*(LEN / DPI)+1, carInfo.y*(LEN / DPI)+1+1, 1);
-  }else{
-    OLED_writeDPI(carInfo.x*(LEN / DPI)+1-1, carInfo.y*(LEN / DPI)+1, 1);
-  }
-}
-
-void flash_OLED_ir(){
-  static char x=70,y=5;
-  if(irR1){
-    OLED_writeDPI(x, y-1, 1);
-    OLED_writeDPI(x, y-2, 1);
-    OLED_writeDPI(x, y-3, 1);
-  }else{
-    OLED_writeDPI(x, y-1, 0);
-    OLED_writeDPI(x, y-2, 0);
-    OLED_writeDPI(x, y-3, 0);
-  }
-
-  if(irR2){
-    OLED_writeDPI(x-1, y-1, 1);
-    OLED_writeDPI(x-2, y-2, 1);
-    OLED_writeDPI(x-3, y-3, 1);
-  }else{
-    OLED_writeDPI(x-1, y-1, 0);
-    OLED_writeDPI(x-2, y-2, 0);
-    OLED_writeDPI(x-3, y-3, 0);
-  }
-
-  if(irR3){
-    OLED_writeDPI(x-1, y, 1);
-    OLED_writeDPI(x-2, y, 1);
-    OLED_writeDPI(x-3, y, 1);
-  }else{
-    OLED_writeDPI(x-1, y, 0);
-    OLED_writeDPI(x-2, y, 0);
-    OLED_writeDPI(x-3, y, 0);
-  }
-
-  if(irR4){
-    OLED_writeDPI(x+1, y-1, 1);
-    OLED_writeDPI(x+2, y-2, 1);
-    OLED_writeDPI(x+3, y-3, 1);
-  }else{
-    OLED_writeDPI(x+1, y-1, 0);
-    OLED_writeDPI(x+2, y-2, 0);
-    OLED_writeDPI(x+3, y-3, 0);
-  }
-
-  if(irR5){
-    OLED_writeDPI(x+1, y, 1);
-    OLED_writeDPI(x+2, y, 1);
-    OLED_writeDPI(x+3, y, 1);
-  }else{
-    OLED_writeDPI(x+1, y, 0);
-    OLED_writeDPI(x+2, y, 0);
-    OLED_writeDPI(x+3, y, 0);
-  }
-}
 
 char start_run(){
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
@@ -283,12 +183,8 @@ char start_run(){
       }
       break;
     }
-    flash_OLED_ir();
+//    flash_OLED_ir(70, 5);
   }
-//  while (1){
-//    go_straight(1);
-//    flash_OLED_ir();
-//  }
   return 0;
 }
 /* USER CODE END 0 */
@@ -339,7 +235,7 @@ int main(void)
   OLED_Init();
   OLED_Clear();
   para_init(&carInfo, 1, 1, 1);
-  flash_OLED_maze();
+  flash_OLED_maze(maze);
   flash_OLED_carPos(carInfo);
 
   debug = start_run();
@@ -349,7 +245,6 @@ int main(void)
   }else{
     OLED_ShowString(70,5,"Run... ",12);
   }
-//  uint8_t str[] = "Run... ";
 
   /* USER CODE END 2 */
 
@@ -357,13 +252,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    char flag = 0;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    if(debug) {
-      while (HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
-    }
+    if(debug) while (HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin));
 
     if(sprintFlag == 0){  //探索阶段
       nextDir = search_dir(carInfo); //根据是否有墙和是否走过得出下�????????????步的方向
@@ -390,14 +282,14 @@ int main(void)
     go_to_next(carInfo, nextDir);  //执行
 
     /*刷新信息*/
-    if(!backFlag) flash_pathStack(nextDir); //刷新方向�????????????
-    flash_mapPathInfo(carInfo, nextDir); //刷新地图信息
+    if(!backFlag) flash_pathStack(dirStack, &dirStackIdx, nextDir); //刷新方向�????????????
+    flash_mapPathInfo(maze, carInfo, nextDir); //刷新地图信息
     flash_carInfo(&carInfo, nextDir); //刷新小车自身信息
 
     /*刷新OLED*/
-    flash_OLED_maze();
+    flash_OLED_maze(maze);
     flash_OLED_carPos(carInfo);
-    flash_OLED_ir();
+//    flash_OLED_ir(70, 5);
   }
   /* USER CODE END 3 */
 }
@@ -442,43 +334,39 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
   if (htim->Instance == htim6.Instance){ //100ms
-//    if(!debug){
-//      if(irR2){
-//        chanLM(1);
-//      }
-//      if(irR4){
-//        chanRM(1);
-//      }
-//    }
+
   }
   if (htim->Instance == htim7.Instance){ //10ms
-    static uint8_t flag = 0;
-    static uint8_t num = 1;
+    static uint8_t check_flag = 0;
+    static uint8_t ir_num = 1;
 
-    if(!flag){
-      ir_on(num);
+    if(!check_flag){
+      ir_on(ir_num);
     }else{
-      if(num==1){
+      if(ir_num == 1){
         if(HAL_GPIO_ReadPin(IR1_GPIO_Port, IR1_Pin))  irR1 = 0;
         else irR1 = 1;
-      }else if(num==2){
+      }else if(ir_num == 2){
         if(HAL_GPIO_ReadPin(IR2_GPIO_Port, IR2_Pin))  irR2 = 0;
         else irR2 = 1;
-      }else if(num==3){
+      }else if(ir_num == 3){
         if(HAL_GPIO_ReadPin(IR3_GPIO_Port, IR3_Pin))  irR3 = 0;
         else irR3 = 1;
-      }else if(num==4){
+      }else if(ir_num == 4){
         if(HAL_GPIO_ReadPin(IR4_GPIO_Port, IR4_Pin))  irR4 = 0;
         else irR4 = 1;
-      }else if(num==5){
+      }else if(ir_num == 5){
         if(HAL_GPIO_ReadPin(IR5_GPIO_Port, IR5_Pin))  irR5 = 0;
         else irR5 = 1;
       }
     }
 
-    if(flag)  num++;
-    if(num>5) num=0;
-    flag = !flag;
+    if(check_flag)  ir_num++;
+    if(ir_num > 5) {
+      flash_OLED_ir(70, 5);
+      ir_num=0;
+    }
+    check_flag = !check_flag;
   }
 }
 

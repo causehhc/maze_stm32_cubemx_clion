@@ -97,6 +97,18 @@ void Error_Handler(void);
 #define A2_Pin GPIO_PIN_5
 #define A2_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
+typedef struct {
+    char x; //坐标x
+    char y; //坐标y
+    char dir; //绝对方向
+}carInfoType;
+#define DPI 17
+#define LEN 64
+#define DPI 17
+#define ENDX 1
+#define ENDY 2
+#define HIGHDPI 10
+#define STKDEEP 200
 
 /* USER CODE END Private defines */
 
