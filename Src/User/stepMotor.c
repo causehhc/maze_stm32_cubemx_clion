@@ -12,7 +12,9 @@ unsigned char for_rev[]={0x11,0x93,0x82,0xc6,0x44,0x6c,0x28,0x39};
 unsigned char rev_for[]={0x11,0x39,0x28,0x6c,0x44,0xc6,0x82,0x93};
 unsigned char i,j;
 
-void fuzhi(unsigned char temp){
+static uint16_t step = 0;
+
+void write_pin(unsigned char temp){
   if(temp&0x01) HAL_GPIO_WritePin(L4_GPIO_Port, L4_Pin, GPIO_PIN_SET);
   else HAL_GPIO_WritePin(L4_GPIO_Port, L4_Pin, GPIO_PIN_RESET);
   if(temp&0x02) HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
@@ -36,7 +38,7 @@ void chanLM(char num)   //左修正
 {
   for(j=0;j<num;j++) {
     for (i = 0; i < 8; i++) {
-      fuzhi(forward[i] | 0xf0);
+      write_pin(forward[i] | 0xf0);
       HAL_Delay(1);
     }
   }
@@ -46,15 +48,23 @@ void chanRM(char num)   //右修正
 {
   for(j=0;j<num;j++) {
     for (i = 0; i < 8; i++) {
-      fuzhi(reverse[i] | 0x0f);
+      write_pin(reverse[i] | 0x0f);
       HAL_Delay(1);
     }
   }
 }
 
-void fix_path(){
-  while(irR2&&!irR1) chanLM(1);
-  while(irR4&&! irR1) chanRM(1);
+char fix_path(){
+  step = 0;
+  while(irR2 && !irR1) {
+    chanLM(1);
+    step++;
+  }
+  while(irR4 && !irR1) {
+    chanRM(1);
+    step++;
+  }
+  return step;
 }
 
 void go_straight(char num)      //直走
@@ -63,12 +73,11 @@ void go_straight(char num)      //直走
   {
     for(i=0;i<8;i++)
     {
-      fuzhi(for_rev[i]);
-
+      write_pin(for_rev[i]);
       HAL_Delay(1);
       fix_path();
-
     }
+    num -= step/2;
   }
 }
 
@@ -78,7 +87,7 @@ void go_left(char num)   //左转
   {
     for(i=0;i<8;i++)
     {
-      fuzhi(reverse[i]);
+      write_pin(reverse[i]);
       HAL_Delay(1);
     }
   }
@@ -90,7 +99,7 @@ void go_right(char num)   //右转
   {
     for(i=0;i<8;i++)
     {
-      fuzhi(forward[i]);
+      write_pin(forward[i]);
       HAL_Delay(1);
     }
   }
@@ -102,7 +111,7 @@ void go_turn(char num)      //后转
   {
     for(i=0;i<8;i++)
     {
-      fuzhi(forward[i]);
+      write_pin(forward[i]);
       HAL_Delay(1);
     }
   }
