@@ -40,7 +40,7 @@ char abs_to_rel(char nowAbsDir, char absDir){
 /*读取地图相关信息*/
 char read_map(uint8_t maze[DPI][DPI], char absDir, char x, char y, char res){
   if(absDir == 0) res &= maze[x][y-2];
-  if(absDir == 1) res &= maze[x+1][y];
+  if(absDir == 1) res &= maze[x+2][y];
   if(absDir == 2) res &= maze[x][y+2];
   if(absDir == 3) res &= maze[x-1][y];
   return res;
