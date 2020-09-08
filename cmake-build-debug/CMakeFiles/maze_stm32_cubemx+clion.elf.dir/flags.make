@@ -7,11 +7,11 @@ ASM_FLAGS = -g
 
 ASM_DEFINES = -DSTM32F103xE -DUSE_HAL_DRIVER
 
-ASM_INCLUDES = -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\CMSIS\Device\ST\STM32F1xx\Include -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\CMSIS\Include 
+ASM_INCLUDES = -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\STM32F1xx_HAL_Driver\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\CMSIS\Device\ST\STM32F1xx\Include -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\CMSIS\Include 
 
 C_FLAGS = -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 -g  
 
 C_DEFINES = -DSTM32F103xE -DUSE_HAL_DRIVER
 
-C_INCLUDES = -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\CMSIS\Device\ST\STM32F1xx\Include -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\Drivers\CMSIS\Include 
+C_INCLUDES = -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\STM32F1xx_HAL_Driver\Inc -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\CMSIS\Device\ST\STM32F1xx\Include -IC:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\Drivers\CMSIS\Include 
 

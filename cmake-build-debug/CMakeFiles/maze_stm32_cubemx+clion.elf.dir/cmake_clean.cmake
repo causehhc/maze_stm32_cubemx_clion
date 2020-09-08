@@ -18,7 +18,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/dfs.c.obj"
   "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj"
   "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj"
-  "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj"
   "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj"
   "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj"
   "CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj"

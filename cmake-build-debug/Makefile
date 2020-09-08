@@ -47,10 +47,10 @@ RM = "D:\Program Files\jetbrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion
+CMAKE_SOURCE_DIR = C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\cmake-build-debug\CMakeFiles C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -635,33 +635,6 @@ Src/User/maze.c.s:
 	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.s
 .PHONY : Src/User/maze.c.s
 
-Src/User/motor.obj: Src/User/motor.c.obj
-
-.PHONY : Src/User/motor.obj
-
-# target to build an object file
-Src/User/motor.c.obj:
-	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
-.PHONY : Src/User/motor.c.obj
-
-Src/User/motor.i: Src/User/motor.c.i
-
-.PHONY : Src/User/motor.i
-
-# target to preprocess a source file
-Src/User/motor.c.i:
-	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.i
-.PHONY : Src/User/motor.c.i
-
-Src/User/motor.s: Src/User/motor.c.s
-
-.PHONY : Src/User/motor.s
-
-# target to generate assembly for a file
-Src/User/motor.c.s:
-	$(MAKE) -f CMakeFiles\maze_stm32_cubemx+clion.elf.dir\build.make CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.s
-.PHONY : Src/User/motor.c.s
-
 Src/User/oled.obj: Src/User/oled.c.obj
 
 .PHONY : Src/User/oled.obj
@@ -1088,9 +1061,6 @@ help:
 	@echo ... Src/User/maze.obj
 	@echo ... Src/User/maze.i
 	@echo ... Src/User/maze.s
-	@echo ... Src/User/motor.obj
-	@echo ... Src/User/motor.i
-	@echo ... Src/User/motor.s
 	@echo ... Src/User/oled.obj
 	@echo ... Src/User/oled.i
 	@echo ... Src/User/oled.s

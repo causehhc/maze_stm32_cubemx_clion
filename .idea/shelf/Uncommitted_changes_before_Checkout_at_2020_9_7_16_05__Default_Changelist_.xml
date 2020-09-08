@@ -1,0 +1,179 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]" date="1599465928185" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 2020/9/7 16:05 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_dma.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_pwr.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/dfs.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/dfs.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/dfs.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_gpio_ex.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_i2c.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/infrared.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/gpio.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/gpio.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/stepMotor.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stepMotor.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/syscalls.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/syscalls.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_exti.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_uart.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_flash.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_tim_ex.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/queue.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_cortex.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_rcc_ex.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/maze_stm32_cubemx+clion.elf" />
+    <option name="AFTER_PATH" value="cmake-build-debug/maze_stm32_cubemx+clion.elf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/maze_stm32_cubemx+clion.elf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_hal_msp.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_msp.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/maze.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_rcc.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_flash_ex.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/oledToMaze.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/stm32f1xx_it.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_it.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/startup/startup_stm32f103xe.s.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/startup_stm32f103xe.s.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/oled.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/bfs.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_tim.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/tim.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/tim.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/system_stm32f1xx.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/system_stm32f1xx.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/stm32f1xx_hal_gpio.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/usart.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/usart.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/i2c.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_9_7_16_05_[Default_Changelist]/i2c.c.obj" />
+  </binary>
+</changelist>

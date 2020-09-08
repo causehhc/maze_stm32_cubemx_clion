@@ -1,4 +1,4 @@
-"D:\Program Files\jetbrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx+clion
+"D:\Program Files\jetbrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Cause_Hhc\Desktop\workSpace\maze_stm32_cubemx_clion
 -- The C compiler identification is GNU 5.4.1
 -- The CXX compiler identification is GNU 5.4.1
 -- The ASM compiler identification is GNU
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx+clion/cmake-build-debug
+-- Build files have been written to: C:/Users/Cause_Hhc/Desktop/workSpace/maze_stm32_cubemx_clion/cmake-build-debug

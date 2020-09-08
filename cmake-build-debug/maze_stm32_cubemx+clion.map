@@ -981,14 +981,6 @@ Discarded input sections
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
  .text.rel_to_abs
                 0x00000000       0x28 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
- .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .debug_line    0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .debug_str     0x00000000      0x115 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .comment       0x00000000       0x6f CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
- .ARM.attributes
-                0x00000000       0x33 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
  .text          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  .data          0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
  .bss           0x00000000        0x0 CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
@@ -1398,7 +1390,6 @@ LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/bfs.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/dfs.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/infrared.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/maze.c.obj
-LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/motor.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oled.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/oledToMaze.c.obj
 LOAD CMakeFiles/maze_stm32_cubemx+clion.elf.dir/Src/User/queue.c.obj
